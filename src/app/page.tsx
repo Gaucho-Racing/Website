@@ -101,7 +101,6 @@ export default function HomePage() {
           muted={true}
           url='ucsb-flyover.mp4'
           height={(calcWidth / 16) * 9}
-          // height={windowHeight}
           width={calcWidth}
           controls={false}
           style={{
@@ -115,7 +114,7 @@ export default function HomePage() {
           }}
         />
       </div>
-      <div className={`bg-gr-purple bg-opacity-50 flex justify-center items-center w-full h-${'screen'} z-10`} style={{}}>
+      <div className={`bg-gr-purple bg-opacity-50 flex justify-center items-center w-full h-screen z-10`} style={{}}>
         <div className='text-white flex flex-col items-center justify-center'>
           <h1 className='text-5xl font-bold p-4'>
             Gaucho Racing
