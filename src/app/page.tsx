@@ -135,8 +135,8 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat",
       }}>
         <div className='bg-black bg-opacity-70 p-16'>
-          <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-32 lg:mb-32'>
-            <h1 className='text-5xl font-medium p-8'>
+          <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-32 lg:mb-48'>
+            <h1 className='text-5xl font-medium p-16'>
               Our Story
             </h1>
             <h3 className='text-xl font-thin'>
@@ -150,15 +150,31 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <div className='bg-black bg-opacity-70 p-16'>
+        <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-16 lg:mb-32'>
+          <h1 className='text-5xl font-medium p-16'>
+            Our Mission
+          </h1>
+          <h3 className='text-xl font-thin'>
+            Gaucho Racing aims to enable students to gain hands-on experience in all phases of the engineering process and propel them forward into their careers.
+            As part of UCSB’s official SAE International Student Chapter, our main focus is to participate each year in the Formula SAE Electric Competition.
+            This involves students working together as a team to research, design, and manufacture a single seater electric race car from the ground up.
+          </h3>
+          <h3 className='text-xl font-thin mt-2 lg:mt-4'>
+            Our team is also responsible for funding this project each year which will connect our students with industry sponsors and build crucial relationships for our success.
+            Through this project, students will gain essential engineering and networking skills in demand in this industry and be prepared to launch their futures in engineering. 
+          </h3>
+        </div>
+      </div>
       <div className='' style={{
-        backgroundImage: "url('home/about.jpeg')",
+        backgroundImage: "url('home/fsae.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}>
         <div className='bg-black bg-opacity-70 p-16'>
-          <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-32 lg:mb-32'>
-            <h1 className='text-5xl font-medium p-8'>
+          <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-32 lg:mb-48'>
+            <h1 className='text-5xl font-medium p-16'>
               What is FSAE Electric?
             </h1>
             <h3 className='text-xl font-thin'>
@@ -175,8 +191,8 @@ export default function HomePage() {
         </div>
       </div>
       <div className='bg-black bg-opacity-70 p-16'>
-        <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-32 lg:mb-32'>
-          <h1 className='text-5xl font-medium p-8'>
+        <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-16 lg:mb-32'>
+          <h1 className='text-5xl font-medium p-16'>
             Join the Ride
           </h1>
           <h3 className='text-xl font-thin'>
