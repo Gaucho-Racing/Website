@@ -8,6 +8,7 @@ import { SOCIAL_LINKS } from "./utils/consts";
 import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
 import Footer from "./components/footer";
+import Image from "next/image";
 
 export default function HomePage() {
 
@@ -68,7 +69,7 @@ export default function HomePage() {
               CARS
             </span>
           </button>
-          <img src='logo/mechanic-logo.png' alt='Logo' className='h-24 ml-4 mr-4' />
+          <Image src='/logo/mechanic-logo.png' alt='Logo' height={24} width={230} className='h-24 ml-4 mr-4' />
           <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-gray-400 hover:text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
               SPONSORS
