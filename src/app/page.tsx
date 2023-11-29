@@ -12,7 +12,10 @@ import Image from "next/image";
 
 export default function HomePage() {
 
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
   const [calcWidth, setCalcWidth] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
   const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
@@ -27,6 +30,7 @@ export default function HomePage() {
   }, []);
 
   const handleScroll = () => {
+    setScrollY(window.scrollY);
     if (window.scrollY > 0) {
       setShowNavbar(true);
     } else {
@@ -40,6 +44,9 @@ export default function HomePage() {
       height: window.innerHeight,
     };
 
+    setWindowHeight(newWindowDimensions.height);
+    setWindowWidth(newWindowDimensions.width);
+
     const viewportHeight = newWindowDimensions.height;
     const aspectRatio = 16 / 9;
 
@@ -52,7 +59,7 @@ export default function HomePage() {
 
   return (
     <main className=''>
-      {showNavbar ? <nav className='bg-black h-32 w-full flex justify-center items-center fixed top-0 z-10'>
+      {scrollY > windowHeight - 132 ? <nav className='bg-black h-32 w-full flex justify-center items-center fixed top-0 z-10'>
         <div className='flex items-center mt-3 mb-3'>
           <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
@@ -94,6 +101,7 @@ export default function HomePage() {
           muted={true}
           url='ucsb-flyover.mp4'
           height={(calcWidth / 16) * 9}
+          // height={windowHeight}
           width={calcWidth}
           controls={false}
           style={{
@@ -107,7 +115,7 @@ export default function HomePage() {
           }}
         />
       </div>
-      <div className='bg-gr-purple bg-opacity-50 flex justify-center items-center h-screen'>
+      <div className={`bg-gr-purple bg-opacity-50 flex justify-center items-center w-full h-${'screen'} z-10`} style={{}}>
         <div className='text-white flex flex-col items-center justify-center'>
           <h1 className='text-5xl font-bold p-4'>
             Gaucho Racing
@@ -125,6 +133,9 @@ export default function HomePage() {
             <Link href={SOCIAL_LINKS.linkedin}>
               <LinkedinIcon className='h-8 w-8 ml-4 mr-4' />
             </Link>
+          </div>
+          <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2'>
+            <Image src='/home/scroll-down.png' alt='Logo' height={50} width={100} className='mb-16 ml-4 mr-4'/>
           </div>
         </div>
       </div>
