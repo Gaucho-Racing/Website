@@ -121,7 +121,10 @@ export default function HomePage() {
             transform: "translate(-50%, -50%)",
             objectFit: "cover",
             zIndex: -20,
-            opacity: 1,
+            // opacity: 1,
+            opacity: scrollY < windowHeight - 132 ? "1" : "0",
+            transition: "all .3s",
+            visibility: scrollY < windowHeight - 132 ? "visible" : "hidden",
           }}
         />
       </div>
