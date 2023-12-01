@@ -9,6 +9,7 @@ import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
 import Footer from "./components/footer";
 import Image from "next/image";
+import Header from "./components/header";
 
 export default function HomePage() {
 
@@ -59,7 +60,7 @@ export default function HomePage() {
 
   return (
     <main className=''>
-      <nav className='bg-black h-32 w-full flex justify-center items-center fixed top-0 z-10' style={{
+      <Header selectedPage={1} className='bg-black h-32 w-full flex justify-center items-center fixed top-0 z-10' style={{
         background: "rgba(0,0,0)",
         position: "fixed",
         zIndex: 1,
@@ -70,41 +71,7 @@ export default function HomePage() {
         opacity: scrollY > windowHeight - 132 ? "1" : "0",
         transition: "all .3s",
         visibility: scrollY > windowHeight - 132 ? "visible" : "hidden",
-      }}>
-        <div className='flex items-center mt-3 mb-3'>
-          <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-              ABOUT
-            </span>
-          </button>
-          <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-gray-400 hover:text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-              TEAM
-            </span>
-          </button>
-          <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-gray-400 hover:text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-              CARS
-            </span>
-          </button>
-          <Image src='/logo/mechanic-logo.png' alt='Logo' height={24} width={230} className='h-24 ml-4 mr-4' />
-          <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-gray-400 hover:text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-              SPONSORS
-            </span>
-          </button>
-          <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-gray-400 hover:text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-              NEWS
-            </span>
-          </button>
-          <button className="relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light text-gray-400 hover:text-white rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-              CONTACT
-            </span>
-          </button>
-        </div>
-      </nav>
+      }} />
       <div className=''>
         <ReactPlayer 
           playing
