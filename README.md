@@ -4,7 +4,17 @@ This website is built with React using Next.js and Tailwind CSS.
 
 ## Getting Started
 
-First, run the development server:
+Make sure you have node.js installed, along with either npm or yarn for your package manager.
+
+First, install the dependencies:
+
+```bash
+npm i
+# or
+yarn
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
