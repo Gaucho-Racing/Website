@@ -17,7 +17,6 @@ export default function HomePage() {
   const [windowWidth, setWindowWidth] = useState(0);
   const [calcWidth, setCalcWidth] = useState(0);
   const [scrollY, setScrollY] = useState(0);
-  const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
     handleScroll();
@@ -32,11 +31,6 @@ export default function HomePage() {
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
-    if (window.scrollY > 0) {
-      setShowNavbar(true);
-    } else {
-      setShowNavbar(false);
-    }
   };
 
   const handleResize = () => {
