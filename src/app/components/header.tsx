@@ -42,7 +42,7 @@ export default function Header(props: {
                 props.selectedPage == 1 ? "text-white" : "text-gray-400"
               }`}
             >
-              <span className="relative rounded-md bg-black bg-opacity-40 px-5 py-2.5 transition-all duration-75 ease-in">
+              <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
                 HOME
               </span>
             </button>

@@ -110,26 +110,60 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="bg-white p-16">
-          <div className="flex flex-col items-center justify-center text-black lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
-            <h1 className="p-16 text-5xl font-medium">Our Mission</h1>
-            <h3 className="text-xl font-thin">
-              Gaucho Racing aims to enable students to gain hands-on experience
-              in all phases of the engineering process and propel them forward
-              into their careers. As part of UCSB’s official SAE International
-              Student Chapter, our main focus is to participate each year in the
-              Formula SAE Electric Competition. This involves students working
-              together as a team to research, design, and manufacture a single
-              seater electric race car from the ground up.
-            </h3>
-            <h3 className="mt-2 text-xl font-thin lg:mt-4">
-              Our team is also responsible for funding this project each year
-              which will connect our students with industry sponsors and build
-              crucial relationships for our success. Through this project,
-              students will gain essential engineering and networking skills in
-              demand in this industry and be prepared to launch their futures in
-              engineering.
-            </h3>
+        <div className="bg-red-200 p-16">
+          <div className="flex items-center justify-start bg-red-300">
+            <div className="flex flex-col items-center justify-center bg-sky-200 text-black">
+              <Image
+                src="/home/fsae.jpeg"
+                alt="FSAE"
+                height={200}
+                width={1000}
+                objectFit="cover"
+                className="ml-4 mr-4"
+              />
+              <h1 className="p-16 text-5xl font-medium">About FSAE</h1>
+              <h3 className="text-xl font-thin">
+                Formula SAE is a collegiate engineering competitions with over
+                500 participating schools that challenges teams of students to
+                design and build a formula style car. The car is evaluated in
+                automotive design and performance through a series of intensive
+                events which focus on safety, handling and speed. Members on
+                each team must develop and practice engineering, leadership,
+                communication and marketing skills to be successful in this ever
+                evolving competition.
+              </h3>
+              <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 text-black">
+                <span className="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 group-hover:text-white">
+                  Learn More
+                </span>
+              </button>
+            </div>
+            <div className="flex flex-col items-center justify-center bg-sky-200 text-black">
+              <Image
+                src="/home/about.jpeg"
+                alt="FSAE"
+                height={200}
+                width={1000}
+                objectFit="cover"
+                className="ml-4 mr-4"
+              />
+              <h1 className="p-16 text-5xl font-medium">Our Mission</h1>
+              <h3 className="text-xl font-thin">
+                Gaucho Racing aims to enable students to gain hands-on
+                experience in all phases of the engineering process and propel
+                them forward into their careers. As part of UCSB’s official SAE
+                International Student Chapter, our main focus is to participate
+                each year in the Formula SAE Electric Competition. This involves
+                students working together as a team to research, design, and
+                manufacture a single seater electric race car from the ground
+                up.
+              </h3>
+              <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 text-black">
+                <span className="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 group-hover:text-white">
+                  Learn More
+                </span>
+              </button>
+            </div>
           </div>
         </div>
         <div className="bg-white p-16">
