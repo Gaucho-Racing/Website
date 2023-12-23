@@ -57,26 +57,23 @@ export default function HomePage() {
       <main className="">
         <Header
           selectedPage={1}
-          className="h-32"
-          style={{
-            position: "fixed",
-            zIndex: 1,
-            top: "0",
-            right: "0",
-            bottom: "0",
-            left: "0",
-          }}
+          className="fixed bottom-0 left-0 right-0 top-0 z-10 h-24"
         />
-        <Client>
-          <div className="">
+        <div
+          style={{
+            width: "100%",
+            height: "80vh",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          <Client>
             <ReactPlayer
               playing
               loop
               muted={true}
               url="ucsb-flyover.mp4"
-              // height={(calcWidth / 16) * 9}
-              // width={calcWidth}
-              height={200}
+              height={(calcWidth / 16) * 9}
               width={calcWidth}
               controls={false}
               style={{
@@ -86,67 +83,35 @@ export default function HomePage() {
                 transform: "translate(-50%, -50%)",
                 objectFit: "cover",
                 zIndex: -20,
-                // opacity: 1,
-                opacity: scrollY < windowHeight - 132 ? "1" : "0",
                 transition: "all .3s",
-                visibility: scrollY < windowHeight - 132 ? "visible" : "hidden",
               }}
             />
-          </div>
-        </Client>
-        <div
-          className={`z-10 flex h-screen w-full items-center justify-center bg-gr-purple bg-opacity-50`}
-          style={{}}
-        >
-          <div className="flex flex-col items-center justify-center text-white">
-            <h1 className="p-4 text-5xl font-bold">Gaucho Racing</h1>
-            <h2 className="text-2xl font-light">
-              University of California, Santa Barbara
-            </h2>
-            <div className="flex p-8">
-              <Link href={SOCIAL_LINKS.instagram}>
-                <InstagramIcon className="ml-4 mr-4 h-8 w-8" />
-              </Link>
-              <Link href={SOCIAL_LINKS.twitter}>
-                <TwitterIcon className="ml-4 mr-4 h-8 w-8" />
-              </Link>
-              <Link href={SOCIAL_LINKS.linkedin}>
-                <LinkedinIcon className="ml-4 mr-4 h-8 w-8" />
-              </Link>
+          </Client>
+          <div
+            className={`absolute flex w-full items-center justify-center bg-gr-purple bg-opacity-50`}
+            style={{ height: "80vh" }}
+          >
+            <div className="flex flex-col items-center justify-center text-white">
+              <h1 className="p-4 text-5xl font-bold">Gaucho Racing</h1>
+              <h2 className="text-2xl font-light">
+                University of California, Santa Barbara
+              </h2>
+              <div className="flex p-8">
+                <Link href={SOCIAL_LINKS.instagram}>
+                  <InstagramIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+                <Link href={SOCIAL_LINKS.twitter}>
+                  <TwitterIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+                <Link href={SOCIAL_LINKS.linkedin}>
+                  <LinkedinIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          className=""
-          style={{
-            backgroundImage: "url('home/about.jpeg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="bg-black bg-opacity-70 p-16">
-            <div className="flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16 text-5xl font-medium">Our Story</h1>
-              <h3 className="text-xl font-thin">
-                Gaucho Racing is the continuation of a long history of
-                motorsports in Santa Barbara. Though teams have come and gone,
-                it is our goal to create something that is lasting and will
-                persevere through the years to highlight the engineering and
-                business prowess of UC Santa Barbara Students. We put a strong
-                focus on educating new members, providing them with the tools
-                they need to succeed, both in school and outside.
-              </h3>
-              <h3 className="mt-2 text-xl font-thin lg:mt-4">
-                Gaucho Racing strives to build a diverse and multidisciplinary
-                team, able to challenge each other's ideas and assumptions, as
-                we believe this leads to the best work, innovation and growth.
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+        <div className="bg-white p-16">
+          <div className="flex flex-col items-center justify-center text-black lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
             <h1 className="p-16 text-5xl font-medium">Our Mission</h1>
             <h3 className="text-xl font-thin">
               Gaucho Racing aims to enable students to gain hands-on experience
@@ -167,42 +132,8 @@ export default function HomePage() {
             </h3>
           </div>
         </div>
-        <div
-          className=""
-          style={{
-            backgroundImage: "url('home/fsae.jpeg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="bg-black bg-opacity-70 p-16">
-            <div className="flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16 text-5xl font-medium">
-                What is FSAE Electric?
-              </h1>
-              <h3 className="text-xl font-thin">
-                FSAE Electric, initiated in 2013, is a cutting-edge addition to
-                the Formula SAE competition. It focuses on the development of
-                vehicles powered exclusively by electric motors, aligning with
-                the global shift towards sustainable and eco-friendly
-                transportation solutions.
-              </h3>
-              <h3 className="mt-2 text-xl font-thin lg:mt-4">
-                Each year, over 400 teams from universities worldwide
-                participate in events hosted globally. Teams go head-to-head,
-                defending their design choices in static events under the
-                scrutiny of industry judges. The real test comes in dynamic
-                events, where our vehicles' performance and our drivers' skills
-                are put to the ultimate test. Winning top honors requires
-                excelling in multiple categories, showcasing the culmination of
-                our team's hard work and dedication.
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+        <div className="bg-white p-16">
+          <div className="flex flex-col items-center justify-center text-black lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
             <h1 className="p-16 text-5xl font-medium">Join the Ride</h1>
             <h3 className="text-xl font-thin">
               Are you passionate about electric vehicles, cutting-edge

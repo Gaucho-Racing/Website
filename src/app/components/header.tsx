@@ -19,13 +19,9 @@ import AutodeskLogo from "./logos/sponsors/autodesk";
 export default function Header(props: {
   selectedPage: number;
   className: string;
-  style: React.CSSProperties;
 }) {
   return (
-    <nav
-      className={`${props.className} fixed top-0 z-10 w-full bg-gr-purple bg-opacity-40`}
-      style={props.style}
-    >
+    <nav className={`${props.className} fixed top-0 z-10 w-full bg-black`}>
       <div className="m-3 flex items-center justify-between ">
         <Link href="/">
           <div className="flex items-center">
@@ -36,7 +32,7 @@ export default function Header(props: {
               width={64}
               className="ml-4 mr-4"
             />
-            <h1 className="text-lg font-bold text-white">Gaucho Racing</h1>
+            <h1 className="text-4xl font-medium text-white">Gaucho Racing</h1>
           </div>
         </Link>
         <div>
@@ -46,7 +42,7 @@ export default function Header(props: {
                 props.selectedPage == 1 ? "text-white" : "text-gray-400"
               }`}
             >
-              <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
+              <span className="relative rounded-md bg-black bg-opacity-40 px-5 py-2.5 transition-all duration-75 ease-in">
                 HOME
               </span>
             </button>
