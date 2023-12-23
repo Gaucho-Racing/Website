@@ -28,8 +28,8 @@ export default function Header(props: {
             <Image
               src="/logo/gr-logo-blank.png"
               alt="Logo"
-              height={64}
-              width={64}
+              height={56}
+              width={56}
               className="ml-4 mr-4"
             />
             <h1 className="text-4xl font-medium text-white">Gaucho Racing</h1>

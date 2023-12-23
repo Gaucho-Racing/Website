@@ -6,19 +6,7 @@ export default function TeamPage() {
     <main className="">
       <Header
         selectedPage={2}
-        className="fixed top-0 z-10 flex h-32 w-full items-center justify-center bg-black"
-        style={{
-          background: "rgba(0,0,0)",
-          position: "fixed",
-          zIndex: 1,
-          top: "0",
-          right: "0",
-          bottom: "0",
-          left: "0",
-          // opacity: scrollY > windowHeight - 132 ? "1" : "0",
-          // transition: "all .3s",
-          // visibility: scrollY > windowHeight - 132 ? "visible" : "hidden",
-        }}
+        className="fixed bottom-0 left-0 right-0 top-0 z-10 h-24"
       />
       <div
         className=""
