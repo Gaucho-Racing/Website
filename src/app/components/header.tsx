@@ -6,22 +6,14 @@ import { SOCIAL_LINKS } from "../utils/consts";
 import Image from "next/image";
 import AutodeskLogo from "./logos/sponsors/autodesk";
 
-/**
- * Header component for the website.
- *
- * @param {object} props - The properties passed to the component.
- * @param {number} props.selectedPage - The currently selected header page to highlight (0 for none).
- * @param {string} props.className - The CSS class for the component.
- * @param {React.CSSProperties} props.style - The CSS styles for the component.
- *
- * @returns {JSX.Element} The Header component.
- */
-export default function Header(props: {
+interface HeaderProps {
   selectedPage: number;
   className: string;
-}) {
+}
+
+const Header: React.FC<HeaderProps> = ({ selectedPage, className }) => {
   return (
-    <nav className={`${props.className} fixed top-0 z-10 w-full bg-black`}>
+    <nav className={`${className} fixed top-0 z-10 w-full bg-black`}>
       <div className="m-3 flex items-center justify-between ">
         <Link href="/">
           <div className="flex items-center">
@@ -39,7 +31,7 @@ export default function Header(props: {
           <Link href="/">
             <button
               className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
-                props.selectedPage == 1 ? "text-white" : "text-gray-400"
+                selectedPage == 1 ? "text-white" : "text-gray-400"
               }`}
             >
               <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -50,7 +42,7 @@ export default function Header(props: {
           <Link href="/team">
             <button
               className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
-                props.selectedPage == 2 ? "text-white" : "text-gray-400"
+                selectedPage == 2 ? "text-white" : "text-gray-400"
               }`}
             >
               <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -61,7 +53,7 @@ export default function Header(props: {
           <Link href="/cars">
             <button
               className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
-                props.selectedPage == 3 ? "text-white" : "text-gray-400"
+                selectedPage == 3 ? "text-white" : "text-gray-400"
               }`}
             >
               <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -72,7 +64,7 @@ export default function Header(props: {
           <Link href="/sponsors">
             <button
               className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
-                props.selectedPage == 4 ? "text-white" : "text-gray-400"
+                selectedPage == 4 ? "text-white" : "text-gray-400"
               }`}
             >
               <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -83,7 +75,7 @@ export default function Header(props: {
           <Link href="/news">
             <button
               className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
-                props.selectedPage == 5 ? "text-white" : "text-gray-400"
+                selectedPage == 5 ? "text-white" : "text-gray-400"
               }`}
             >
               <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -94,7 +86,7 @@ export default function Header(props: {
           <Link href="/contact">
             <button
               className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
-                props.selectedPage == 6 ? "text-white" : "text-gray-400"
+                selectedPage == 6 ? "text-white" : "text-gray-400"
               }`}
             >
               <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -106,4 +98,6 @@ export default function Header(props: {
       </div>
     </nav>
   );
-}
+};
+
+export default Header;

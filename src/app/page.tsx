@@ -11,6 +11,7 @@ import Footer from "./components/footer";
 import Image from "next/image";
 import Header from "./components/header";
 import { Client, HydrationProvider } from "react-hydration-provider";
+import SectionCard from "./components/home/section_card";
 
 export default function HomePage() {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -110,19 +111,14 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="bg-red-200 p-16">
-          <div className="flex items-center justify-start bg-red-300">
-            <div className="flex flex-col items-center justify-center bg-sky-200 text-black">
-              <Image
-                src="/home/fsae.jpeg"
-                alt="FSAE"
-                height={200}
-                width={1000}
-                objectFit="cover"
-                className="ml-4 mr-4"
-              />
-              <h1 className="p-16 text-5xl font-medium">About FSAE</h1>
-              <h3 className="text-xl font-thin">
+        <div className="bg-white p-16">
+          <div className="items-stretch xl:flex">
+            <SectionCard
+              title="About FSAE"
+              imageUrl="/home/fsae.jpeg"
+              className="basis-1/3 p-2 lg:p-8"
+            >
+              <h3 className="text-lg font-thin lg:text-xl">
                 Formula SAE is a collegiate engineering competitions with over
                 500 participating schools that challenges teams of students to
                 design and build a formula style car. The car is evaluated in
@@ -132,23 +128,13 @@ export default function HomePage() {
                 communication and marketing skills to be successful in this ever
                 evolving competition.
               </h3>
-              <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 text-black">
-                <span className="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 group-hover:text-white">
-                  Learn More
-                </span>
-              </button>
-            </div>
-            <div className="flex flex-col items-center justify-center bg-sky-200 text-black">
-              <Image
-                src="/home/about.jpeg"
-                alt="FSAE"
-                height={200}
-                width={1000}
-                objectFit="cover"
-                className="ml-4 mr-4"
-              />
-              <h1 className="p-16 text-5xl font-medium">Our Mission</h1>
-              <h3 className="text-xl font-thin">
+            </SectionCard>
+            <SectionCard
+              title="Our Mission"
+              imageUrl="/home/about.jpeg"
+              className="basis-1/3 p-2 lg:p-8"
+            >
+              <h3 className="text-lg font-thin lg:text-xl">
                 Gaucho Racing aims to enable students to gain hands-on
                 experience in all phases of the engineering process and propel
                 them forward into their careers. As part of UCSB’s official SAE
@@ -158,12 +144,20 @@ export default function HomePage() {
                 manufacture a single seater electric race car from the ground
                 up.
               </h3>
-              <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 text-black">
-                <span className="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 group-hover:text-white">
-                  Learn More
-                </span>
-              </button>
-            </div>
+            </SectionCard>
+            <SectionCard
+              title="Newsletter"
+              imageUrl="/home/newsletter.jpg"
+              buttonText="Sign Up"
+              className="basis-1/3 p-2 lg:p-8"
+            >
+              <h3 className="text-lg font-thin lg:text-xl">
+                In order to stay updated on our team, please be sure to sign up
+                for our quarterly newsletter! This newsletter features progress
+                from our subteams, exclusive pictures and videos, and other
+                information regarding the Gaucho Racing Project.
+              </h3>
+            </SectionCard>
           </div>
         </div>
         <div className="bg-white p-16">
