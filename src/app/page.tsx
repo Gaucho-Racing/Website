@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import InstagramIcon from "./components/icons/instagram";
@@ -11,9 +11,9 @@ import Footer from "./components/footer";
 import Image from "next/image";
 import Header from "./components/header";
 import { Client, HydrationProvider } from "react-hydration-provider";
+import SectionCard from "./components/home/section_card";
 
 export default function HomePage() {
-
   const [windowHeight, setWindowHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
   const [calcWidth, setCalcWidth] = useState(0);
@@ -55,26 +55,25 @@ export default function HomePage() {
 
   return (
     <HydrationProvider>
-      <main className=''>
-        <Header selectedPage={1} className='bg-black h-32 w-full flex justify-center items-center fixed top-0 z-10' style={{
-          background: "rgba(0,0,0)",
-          position: "fixed",
-          zIndex: 1,
-          top: "0",
-          right: "0",
-          bottom: "0",
-          left: "0",
-          opacity: scrollY > windowHeight - 132 ? "1" : "0",
-          transition: "all .3s",
-          visibility: scrollY > windowHeight - 132 ? "visible" : "hidden",
-        }} />
-        <Client>
-          <div className=''>
-            <ReactPlayer 
+      <main className="">
+        <Header
+          selectedPage={1}
+          className="fixed bottom-0 left-0 right-0 top-0 z-10 h-24"
+        />
+        <div
+          style={{
+            width: "100%",
+            height: "80vh",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          <Client>
+            <ReactPlayer
               playing
               loop
               muted={true}
-              url='ucsb-flyover.mp4'
+              url="ucsb-flyover.mp4"
               height={(calcWidth / 16) * 9}
               width={calcWidth}
               controls={false}
@@ -85,115 +84,99 @@ export default function HomePage() {
                 transform: "translate(-50%, -50%)",
                 objectFit: "cover",
                 zIndex: -20,
-                // opacity: 1,
-                opacity: scrollY < windowHeight - 132 ? "1" : "0",
                 transition: "all .3s",
-                visibility: scrollY < windowHeight - 132 ? "visible" : "hidden",
               }}
             />
-          </div>
-        </Client>
-        <div className={`bg-gr-purple bg-opacity-50 flex justify-center items-center w-full h-screen z-10`} style={{}}>
-          <div className='text-white flex flex-col items-center justify-center'>
-            <h1 className='text-5xl font-bold p-4'>
-              Gaucho Racing
-            </h1>
-            <h2 className='text-2xl font-light'>
-              University of California, Santa Barbara
-            </h2>
-            <div className='flex p-8'>
-              <Link href={SOCIAL_LINKS.instagram}>
-                <InstagramIcon className='h-8 w-8 ml-4 mr-4' />
-              </Link>
-              <Link href={SOCIAL_LINKS.twitter}>
-                <TwitterIcon className='h-8 w-8 ml-4 mr-4' />
-              </Link>
-              <Link href={SOCIAL_LINKS.linkedin}>
-                <LinkedinIcon className='h-8 w-8 ml-4 mr-4' />
-              </Link>
-            </div>
-            <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2'>
-              <Image src='/home/scroll-down.png' alt='Logo' height={50} width={100} className='mb-16 ml-4 mr-4'/>
+          </Client>
+          <div
+            className={`absolute flex w-full items-center justify-center bg-gr-purple bg-opacity-50`}
+            style={{ height: "80vh" }}
+          >
+            <div className="flex flex-col items-center justify-center text-white">
+              <h1 className="p-4 text-5xl font-bold">Gaucho Racing</h1>
+              <h2 className="text-2xl font-light">
+                University of California, Santa Barbara
+              </h2>
+              <div className="flex p-8">
+                <Link href={SOCIAL_LINKS.instagram}>
+                  <InstagramIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+                <Link href={SOCIAL_LINKS.twitter}>
+                  <TwitterIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+                <Link href={SOCIAL_LINKS.linkedin}>
+                  <LinkedinIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <div className='' style={{
-          backgroundImage: "url('home/about.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}>
-          <div className='bg-black bg-opacity-70 p-16'>
-            <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-32 lg:mb-48'>
-              <h1 className='text-5xl font-medium p-16'>
-                Our Story
-              </h1>
-              <h3 className='text-xl font-thin'>
-                Gaucho Racing is the continuation of a long history of motorsports in Santa Barbara.
-                Though teams have come and gone, it is our goal to create something that is lasting and will persevere through the years to highlight the engineering and business prowess of UC Santa Barbara Students.
-                We put a strong focus on educating new members, providing them with the tools they need to succeed, both in school and outside.
+        <div className="bg-white p-16">
+          <div className="items-stretch xl:flex">
+            <SectionCard
+              title="About FSAE"
+              imageUrl="/home/fsae.jpeg"
+              className="basis-1/3 p-2 lg:p-8"
+            >
+              <h3 className="text-lg font-thin lg:text-xl">
+                Formula SAE is a collegiate engineering competitions with over
+                500 participating schools that challenges teams of students to
+                design and build a formula style car. The car is evaluated in
+                automotive design and performance through a series of intensive
+                events which focus on safety, handling and speed. Members on
+                each team must develop and practice engineering, leadership,
+                communication and marketing skills to be successful in this ever
+                evolving competition.
               </h3>
-              <h3 className='text-xl font-thin mt-2 lg:mt-4'>
-                Gaucho Racing strives to build a diverse and multidisciplinary team, able to challenge each other's ideas and assumptions, as we believe this leads to the best work, innovation and growth.
+            </SectionCard>
+            <SectionCard
+              title="Our Mission"
+              imageUrl="/home/about.jpeg"
+              className="basis-1/3 p-2 lg:p-8"
+            >
+              <h3 className="text-lg font-thin lg:text-xl">
+                Gaucho Racing aims to enable students to gain hands-on
+                experience in all phases of the engineering process and propel
+                them forward into their careers. As part of UCSB’s official SAE
+                International Student Chapter, our main focus is to participate
+                each year in the Formula SAE Electric Competition. This involves
+                students working together as a team to research, design, and
+                manufacture a single seater electric race car from the ground
+                up.
               </h3>
-            </div>
+            </SectionCard>
+            <SectionCard
+              title="Newsletter"
+              imageUrl="/home/newsletter.jpg"
+              buttonText="Sign Up"
+              className="basis-1/3 p-2 lg:p-8"
+            >
+              <h3 className="text-lg font-thin lg:text-xl">
+                In order to stay updated on our team, please be sure to sign up
+                for our quarterly newsletter! This newsletter features progress
+                from our subteams, exclusive pictures and videos, and other
+                information regarding the Gaucho Racing Project.
+              </h3>
+            </SectionCard>
           </div>
         </div>
-        <div className='bg-black bg-opacity-70 p-16'>
-          <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-16 lg:mb-32'>
-            <h1 className='text-5xl font-medium p-16'>
-              Our Mission
-            </h1>
-            <h3 className='text-xl font-thin'>
-              Gaucho Racing aims to enable students to gain hands-on experience in all phases of the engineering process and propel them forward into their careers.
-              As part of UCSB’s official SAE International Student Chapter, our main focus is to participate each year in the Formula SAE Electric Competition.
-              This involves students working together as a team to research, design, and manufacture a single seater electric race car from the ground up.
+        <div className="bg-white p-16">
+          <div className="flex flex-col items-center justify-center text-black lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+            <h1 className="p-16 text-5xl font-medium">Join the Ride</h1>
+            <h3 className="text-xl font-thin">
+              Are you passionate about electric vehicles, cutting-edge
+              technology, and being part of a dynamic team? Join us on our
+              journey as we continue to make strides in the world of Formula SAE
+              Electric. Whether you're an engineering enthusiast, a future
+              driver, or someone eager to contribute to sustainable innovation,
+              there's a place for you at Gaucho Racing.
             </h3>
-            <h3 className='text-xl font-thin mt-2 lg:mt-4'>
-              Our team is also responsible for funding this project each year which will connect our students with industry sponsors and build crucial relationships for our success.
-              Through this project, students will gain essential engineering and networking skills in demand in this industry and be prepared to launch their futures in engineering. 
+            <h3 className="mt-2 text-xl font-thin lg:mt-4">
+              Explore the future of automotive technology with us - where every
+              innovation drives us closer to excellence on and off the track!
             </h3>
-          </div>
-        </div>
-        <div className='' style={{
-          backgroundImage: "url('home/fsae.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}>
-          <div className='bg-black bg-opacity-70 p-16'>
-            <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-32 lg:mb-48'>
-              <h1 className='text-5xl font-medium p-16'>
-                What is FSAE Electric?
-              </h1>
-              <h3 className='text-xl font-thin'>
-                FSAE Electric, initiated in 2013, is a cutting-edge addition to the Formula SAE competition.
-                It focuses on the development of vehicles powered exclusively by electric motors, aligning with the global shift towards sustainable and eco-friendly transportation solutions.
-              </h3>
-              <h3 className='text-xl font-thin mt-2 lg:mt-4'>
-                Each year, over 400 teams from universities worldwide participate in events hosted globally.
-                Teams go head-to-head, defending their design choices in static events under the scrutiny of industry judges.
-                The real test comes in dynamic events, where our vehicles' performance and our drivers' skills are put to the ultimate test.
-                Winning top honors requires excelling in multiple categories, showcasing the culmination of our team's hard work and dedication.
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div className='bg-black bg-opacity-70 p-16'>
-          <div className='text-white flex flex-col items-center justify-center lg:mr-64 lg:ml-64 lg:mt-16 lg:mb-32'>
-            <h1 className='text-5xl font-medium p-16'>
-              Join the Ride
-            </h1>
-            <h3 className='text-xl font-thin'>
-              Are you passionate about electric vehicles, cutting-edge technology, and being part of a dynamic team?
-              Join us on our journey as we continue to make strides in the world of Formula SAE Electric.
-              Whether you're an engineering enthusiast, a future driver, or someone eager to contribute to sustainable innovation, there's a place for you at Gaucho Racing.
-            </h3>
-            <h3 className='text-xl font-thin mt-2 lg:mt-4'>
-              Explore the future of automotive technology with us - where every innovation drives us closer to excellence on and off the track!
-            </h3>
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mt-8 overflow-hidden text-md font-light rounded-lg group bg-gradient-to-br from-gr-purple to-gr-pink text-white">
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md group-hover:bg-opacity-0">
+            <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 font-light text-white">
+              <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0">
                 Join Us
               </span>
             </button>
@@ -204,4 +187,3 @@ export default function HomePage() {
     </HydrationProvider>
   );
 }
-
