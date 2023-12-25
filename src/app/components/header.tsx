@@ -22,30 +22,33 @@ import AutodeskLogo from "./logos/sponsors/autodesk";
 export default function Header(props: { selectedPage: number, className: string, style: React.CSSProperties }) {
     return (
         <nav className={props.className} style={props.style}>
-            <div className='flex items-center mt-3 mb-3'>
+            <div className='mx-16 w-full flex justify-between items-center mt-3 mb-3'>
+							<div>
+								<Link href='/'>
+									<Image src='/logo/mechanic-logo.png' alt='Logo' height={24} width={230} className='h-24 ml-4 mr-4' />
+								</Link>
+							</div>
+							<div>
               <Link href='/'>
                 <button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink ${props.selectedPage == 1 ? 'text-white' : 'text-gray-400'}`}>
                   <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-                    ABOUT
+                    HOME
                   </span>
                 </button>
               </Link>
               <Link href='/team'>
                 <button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink ${props.selectedPage == 2 ? 'text-white' : 'text-gray-400'}`}>
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-                        TEAM
+                      ABOUT
                     </span>
                 </button>
               </Link>
               <Link href='/cars'>
                 <button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink ${props.selectedPage == 3 ? 'text-white' : 'text-gray-400'}`}>
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
-                    CARS
+											FSAE 
                     </span>
                 </button>
-              </Link>
-              <Link href='/'>
-                <Image src='/logo/mechanic-logo.png' alt='Logo' height={24} width={230} className='h-24 ml-4 mr-4' />
               </Link>
               <Link href='/sponsors'>
                 <button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink ${props.selectedPage == 4 ? 'text-white' : 'text-gray-400'}`}>
@@ -54,6 +57,7 @@ export default function Header(props: { selectedPage: number, className: string,
                     </span>
                 </button>
               </Link>
+				{/*
               <Link href='/news'>
                 <button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-md font-light rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink ${props.selectedPage == 5 ? 'text-white' : 'text-gray-400'}`}>
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md">
@@ -68,6 +72,8 @@ export default function Header(props: { selectedPage: number, className: string,
                     </span>
                 </button>
               </Link>
+				*/}
+            </div>
             </div>
         </nav>
     );
