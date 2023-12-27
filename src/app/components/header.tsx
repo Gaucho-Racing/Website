@@ -6,23 +6,18 @@ import { SOCIAL_LINKS } from "../utils/consts";
 import Image from "next/image";
 import AutodeskLogo from "./logos/sponsors/autodesk";
 
-/**
- * Header component for the website.
- *
- * @param {object} props - The properties passed to the component.
- * @param {number} props.selectedPage - The currently selected header page to highlight (0 for none).
- * @param {string} props.className - The CSS class for the component.
- * @param {React.CSSProperties} props.style - The CSS styles for the component.
- *
- * @returns {JSX.Element} The Header component.
- */
-export default function Header(props: {
+interface HeaderProps {
   selectedPage: number;
-  className: string;
-  style: React.CSSProperties;
-}) {
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const Header = (props: HeaderProps) => {
   return (
-    <nav className={props.className} style={props.style}>
+    <nav
+      className={`fixed top-0 flex h-32 w-full items-center justify-center bg-black ${props.className}`}
+      style={props.style}
+    >
       <div className="mb-3 mt-3 flex items-center">
         <Link href="/">
           <button
@@ -102,4 +97,6 @@ export default function Header(props: {
       </div>
     </nav>
   );
-}
+};
+
+export default Header;

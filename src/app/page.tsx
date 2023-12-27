@@ -57,7 +57,7 @@ export default function HomePage() {
       <main className="">
         <Header
           selectedPage={1}
-          className="fixed top-0 z-10 flex h-32 w-full items-center justify-center bg-black"
+          className="z-10"
           style={{
             background: "rgba(0,0,0)",
             position: "fixed",

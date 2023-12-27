@@ -6,7 +6,7 @@ export default function TeamPage() {
     <main className="">
       <Header
         selectedPage={2}
-        className="fixed top-0 z-10 flex h-32 w-full items-center justify-center bg-black"
+        className=""
         style={{
           background: "rgba(0,0,0)",
           position: "fixed",
