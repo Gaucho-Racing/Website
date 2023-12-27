@@ -7,6 +7,7 @@ import TwitterIcon from "./components/icons/twitter";
 import { SOCIAL_LINKS } from "./utils/consts";
 import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Footer from "./components/footer";
 import Image from "next/image";
 import Header from "./components/header";
@@ -101,29 +102,67 @@ export default function HomePage() {
           style={{}}
         >
           <div className="flex flex-col items-center justify-center text-white">
-            <h1 className="p-4 text-5xl font-bold">Gaucho Racing</h1>
-            <h2 className="text-2xl font-light">
+            <motion.div
+              whileHover={{ scale: 1.2, opacity: 0.8 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Image
+                src="/logo/mechanic-logo.png"
+                alt="Logo"
+                height={48}
+                width={460}
+                className="mb-8"
+              />
+            </motion.div>
+            <h2 className="text-2xl font-medium">
               University of California, Santa Barbara
             </h2>
             <div className="flex p-8">
-              <Link href={SOCIAL_LINKS.instagram}>
-                <InstagramIcon className="ml-4 mr-4 h-8 w-8" />
-              </Link>
-              <Link href={SOCIAL_LINKS.twitter}>
-                <TwitterIcon className="ml-4 mr-4 h-8 w-8" />
-              </Link>
-              <Link href={SOCIAL_LINKS.linkedin}>
-                <LinkedinIcon className="ml-4 mr-4 h-8 w-8" />
-              </Link>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                transition={{ duration: 0.25 }}
+              >
+                <Link href={SOCIAL_LINKS.instagram}>
+                  <InstagramIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                transition={{ duration: 0.25 }}
+              >
+                <Link href={SOCIAL_LINKS.twitter}>
+                  <TwitterIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                transition={{ duration: 0.25 }}
+              >
+                <Link href={SOCIAL_LINKS.linkedin}>
+                  <LinkedinIcon className="ml-4 mr-4 h-8 w-8" />
+                </Link>
+              </motion.div>
             </div>
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
-              <Image
-                src="/home/scroll-down.png"
-                alt="Logo"
-                height={50}
-                width={100}
-                className="mb-16 ml-4 mr-4"
-              />
+              <motion.div
+                animate={{
+                  y: [0, 0, 10, 10, 0],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 2,
+                  bounce: 0.75,
+                  type: "tween",
+                }}
+              >
+                <Image
+                  src="/home/scroll-down.png"
+                  alt="Logo"
+                  height={50}
+                  width={100}
+                  className="mb-16 ml-4 mr-4"
+                />
+              </motion.div>
             </div>
           </div>
         </div>
