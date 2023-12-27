@@ -56,22 +56,24 @@ export default function HomePage() {
   return (
     <HydrationProvider>
       <main className="">
-        <Header
-          selectedPage={1}
-          className="z-10"
-          style={{
-            background: "rgba(0,0,0)",
-            position: "fixed",
-            zIndex: 1,
-            top: "0",
-            right: "0",
-            bottom: "0",
-            left: "0",
-            opacity: scrollY > windowHeight - 132 ? "1" : "0",
-            transition: "all .3s",
-            visibility: scrollY > windowHeight - 132 ? "visible" : "hidden",
-          }}
-        />
+        <motion.div initial={{ opacity: 0 }}>
+          <Header
+            selectedPage={1}
+            className="z-10"
+            style={{
+              background: "rgba(0,0,0)",
+              position: "fixed",
+              zIndex: 1,
+              top: "0",
+              right: "0",
+              bottom: "0",
+              left: "0",
+              opacity: scrollY > windowHeight - 132 ? "1" : "0",
+              transition: "all .3s",
+              visibility: scrollY > windowHeight - 132 ? "visible" : "hidden",
+            }}
+          />
+        </motion.div>
         <Client>
           <div className="">
             <ReactPlayer
@@ -102,10 +104,7 @@ export default function HomePage() {
           style={{}}
         >
           <div className="flex flex-col items-center justify-center text-white">
-            <motion.div
-              whileHover={{ scale: 1.2, opacity: 0.8 }}
-              transition={{ duration: 0.5 }}
-            >
+            <motion.div>
               <Image
                 src="/logo/mechanic-logo.png"
                 alt="Logo"
@@ -114,9 +113,16 @@ export default function HomePage() {
                 className="mb-8"
               />
             </motion.div>
-            <h2 className="text-2xl font-medium">
-              University of California, Santa Barbara
-            </h2>
+            <motion.div
+              // animate it to fade in upwards on load
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1, type: "" }}
+              transition={{ ease: "easeOut", duration: 0.5 }}
+            >
+              <h2 className="text-2xl font-medium">
+                University of California, Santa Barbara
+              </h2>
+            </motion.div>
             <div className="flex p-8">
               <motion.div
                 whileHover={{ scale: 1.2 }}
