@@ -17,7 +17,9 @@ const config: Config = {
       colors: {
         'gr-pink': '#dc0090',
         'gr-purple': '#691a76',
+        'gr-dark-purple': '#7a24cd',
         'gr-light-blue': '#009aa',
+        'gr-light-pink': '#c487f8',
         'gr-dark-blue': '#15355e'
       },
     },

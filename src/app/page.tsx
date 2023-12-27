@@ -60,7 +60,7 @@ export default function HomePage() {
 
   return (
     <main className=''>
-      <Header selectedPage={1} className='bg-gr-purple h-32 w-full flex justify-between items-center fixed top-0 z-10' style={{
+      <Header selectedPage={1} className='bg-gr-light-pink h-32 w-full flex justify-between items-center fixed top-0 z-10' style={{
         position: "fixed",
         zIndex: 1,
         top: "0",
