@@ -104,7 +104,11 @@ export default function HomePage() {
           style={{}}
         >
           <div className="flex flex-col items-center justify-center text-white">
-            <motion.div>
+            <motion.div
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.25 }}
+            >
               <Image
                 src="/logo/mechanic-logo.png"
                 alt="Logo"
@@ -114,16 +118,20 @@ export default function HomePage() {
               />
             </motion.div>
             <motion.div
-              // animate it to fade in upwards on load
               initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1, type: "" }}
-              transition={{ ease: "easeOut", duration: 0.5 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.25, delay: 0.15 }}
             >
               <h2 className="text-2xl font-medium">
                 University of California, Santa Barbara
               </h2>
             </motion.div>
-            <div className="flex p-8">
+            <motion.div
+              className="flex p-8"
+              initial={{ y: 0, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0.75 }}
+            >
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.25 }}
@@ -148,8 +156,13 @@ export default function HomePage() {
                   <LinkedinIcon className="ml-4 mr-4 h-8 w-8" />
                 </Link>
               </motion.div>
-            </div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
+            </motion.div>
+            <motion.div
+              className="absolute bottom-0 transform"
+              initial={{ y: 0, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0.75 }}
+            >
               <motion.div
                 animate={{
                   y: [0, 0, 10, 10, 0],
@@ -169,7 +182,7 @@ export default function HomePage() {
                   className="mb-16 ml-4 mr-4"
                 />
               </motion.div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div
