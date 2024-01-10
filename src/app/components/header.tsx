@@ -21,6 +21,7 @@ import AutodeskLogo from "./logos/sponsors/autodesk";
  */
 export default function Header(props: { selectedPage: number, className: string, style: React.CSSProperties }) {
 		// console.log(props.selectedPage)
+		const selectedTextColor = 'white'
     return (
         <nav className={props.className} style={props.style}>
             <div className='mx-4 w-full flex justify-between items-center mt-3 mb-3'>
@@ -31,17 +32,17 @@ export default function Header(props: { selectedPage: number, className: string,
 								</Link>
 								</div>
 								<div className="place-self-center">
-									<h1 className="font-bold text-4xl">GAUCHO RACING</h1>	
+									<h1 className="text-white font-bold text-4xl">GAUCHO RACING</h1>	
 								</div>
 							</div>
 							<div>
               <Link href='/'>
 								{/*<button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-3xl font-bold rounded-lg group hover:bg-gradient-to-br from-gr-purple to-gr-pink ${props.selectedPage == 1 ? 'text-white' : 'text-gray-400'}`}>
 								*/}
-                <button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-3xl font-bold rounded-lg group ${props.selectedPage == 1 ? 'text-gr-dark-purple' : 'text-black'}`}>
+                <button className={`relative inline-flex items-center justify-center mt-2 p-0.5 mb-2 me-2 overflow-hidden text-3xl font-bold rounded-lg group ${props.selectedPage == 1 ? `text-${selectedTextColor}` : 'text-black'}`}>
                   <span className="relative px-5 py-2.5 transition ease-in-out duration-300">
                     HOME
-										<span className={`block h-1 ${props.selectedPage == 1 ? 'max-w-full bg-gr-dark-purple' : 'max-w-0 group-hover:max-w-full transition-all duration-500 bg-black'}`}></span>
+										<span className={`block h-1 ${props.selectedPage == 1 ? `max-w-full bg-${selectedTextColor}` : 'max-w-0 group-hover:max-w-full transition-all duration-500 bg-black'}`}></span>
                   </span>
                 </button>
               </Link>
