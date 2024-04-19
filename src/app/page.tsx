@@ -294,11 +294,6 @@ export default function HomePage() {
             <OutlineButton>
               <Link href="/join">JOIN US</Link>
             </OutlineButton>
-            <button className="group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden bg-gradient-to-br from-gr-pink to-gr-purple p-0.5 text-lg font-bold text-white">
-              <span className="relative h-11 bg-black px-8 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0">
-                MORE ABOUT US
-              </span>
-            </button>
           </div>
         </div>
         <Footer />
