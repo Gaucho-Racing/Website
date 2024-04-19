@@ -294,6 +294,9 @@ export default function HomePage() {
             <OutlineButton>
               <Link href="/join">JOIN US</Link>
             </OutlineButton>
+            <OutlineButton>
+              <Link href="/contact">CONTACT US</Link>
+            </OutlineButton>
           </div>
         </div>
         <Footer />
