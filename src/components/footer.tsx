@@ -2,13 +2,13 @@ import Link from "next/link";
 import InstagramIcon from "./icons/instagram";
 import LinkedinIcon from "./icons/linkedin";
 import TwitterIcon from "./icons/twitter";
-import { SOCIAL_LINKS } from "../utils/consts";
+import { SOCIAL_LINKS } from "../lib/consts";
 import Image from "next/image";
-import AutodeskLogo from "./logos/sponsors/autodesk";
+import { OutlineButton } from "./ui/outline-button";
 
 export default function Footer() {
   return (
-    <footer className="bg-gr-purple bg-opacity-0 p-8 text-white lg:ml-32 lg:mr-32">
+    <footer className="bg-gr-purple bg-opacity-0 p-8 text-white lg:pl-32 lg:pr-32">
       <div className="flex items-end justify-between">
         <div className="">
           <div className="ml-2 flex items-center justify-start">
@@ -18,24 +18,20 @@ export default function Footer() {
               height={50}
               alt="Logo"
             />
-            <h3 className="ml-4 mr-4 text-3xl font-bold">Gaucho Racing</h3>
+            <h1 className="ml-4 mr-4 text-4xl">Gaucho Racing</h1>
           </div>
-          <h2 className="ml-4 mr-4 mt-4 text-xl text-gray-400">
+          {/* <h2 className="ml-4 mr-4 mt-4 text-xl text-gray-400">
             UCSB's Formula SAE Team
-          </h2>
+          </h2> */}
         </div>
         {/* <div className="bg-sky-200">
                     <AutodeskLogo className="text-white h-20 w-100"/>
                 </div> */}
         <div className="">
-          <button className="text-md group relative mr-2 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 font-light text-white">
-            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0">
-              Donate
-            </span>
-          </button>
+          <OutlineButton>DONATE</OutlineButton>
         </div>
       </div>
-      <div className="my-4 h-0.5 w-full bg-gradient-to-r from-gr-purple to-gr-pink"></div>
+      <div className="my-4 h-0.5 w-full bg-gradient-to-r from-gr-pink to-gr-purple"></div>
       <div className="flex w-full items-center justify-between">
         <p className="text-md ml-4 mr-4 text-gray-400">
           © 2020 - {new Date().getFullYear()} Gaucho Racing

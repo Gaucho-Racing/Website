@@ -6,15 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "npx prettier --write .",
+    "check": "npx prettier --check ."
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "framer-motion": "^10.16.16",
+    "lucide-react": "^0.323.0",
     "next": "14.0.3",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
     "react-hydration-provider": "^2.1.0",
-    "react-player": "^2.13.0"
+    "react-player": "^2.13.0",
+    "sonner": "^1.4.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

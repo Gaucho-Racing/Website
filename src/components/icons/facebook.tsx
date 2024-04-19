@@ -3,7 +3,7 @@ export default function FacebookIcon({ className }: { className: string }) {
     <div className={className}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className=""
         fill="currentColor"
         viewBox="0 0 24 24"
       >

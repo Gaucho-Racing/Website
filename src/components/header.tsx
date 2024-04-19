@@ -2,9 +2,8 @@ import Link from "next/link";
 import InstagramIcon from "./icons/instagram";
 import LinkedinIcon from "./icons/linkedin";
 import TwitterIcon from "./icons/twitter";
-import { SOCIAL_LINKS } from "../utils/consts";
+import { SOCIAL_LINKS } from "../lib/consts";
 import Image from "next/image";
-import AutodeskLogo from "./logos/sponsors/autodesk";
 
 interface HeaderProps {
   selectedPage: number;
@@ -18,10 +17,10 @@ const Header = (props: HeaderProps) => {
       className={`fixed top-0 flex h-32 w-full items-center justify-center bg-black ${props.className}`}
       style={props.style}
     >
-      <div className="mb-3 mt-3 flex items-center">
+      <div className="mb-3 mt-3 flex items-center text-lg font-semibold">
         <Link href="/">
           <button
-            className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 1 ? "text-white" : "text-gray-400"
             }`}
           >
@@ -32,7 +31,7 @@ const Header = (props: HeaderProps) => {
         </Link>
         <Link href="/team">
           <button
-            className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 2 ? "text-white" : "text-gray-400"
             }`}
           >
@@ -43,7 +42,7 @@ const Header = (props: HeaderProps) => {
         </Link>
         <Link href="/cars">
           <button
-            className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 3 ? "text-white" : "text-gray-400"
             }`}
           >
@@ -63,7 +62,7 @@ const Header = (props: HeaderProps) => {
         </Link>
         <Link href="/sponsors">
           <button
-            className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 4 ? "text-white" : "text-gray-400"
             }`}
           >
@@ -74,7 +73,7 @@ const Header = (props: HeaderProps) => {
         </Link>
         <Link href="/news">
           <button
-            className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 5 ? "text-white" : "text-gray-400"
             }`}
           >
@@ -85,7 +84,7 @@ const Header = (props: HeaderProps) => {
         </Link>
         <Link href="/contact">
           <button
-            className={`text-md group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 font-light hover:bg-gradient-to-br ${
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 6 ? "text-white" : "text-gray-400"
             }`}
           >

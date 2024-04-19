@@ -1,17 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import InstagramIcon from "./components/icons/instagram";
-import LinkedinIcon from "./components/icons/linkedin";
-import TwitterIcon from "./components/icons/twitter";
-import { SOCIAL_LINKS } from "./utils/consts";
+import InstagramIcon from "../components/icons/instagram";
+import LinkedinIcon from "../components/icons/linkedin";
+import TwitterIcon from "../components/icons/twitter";
+import { SOCIAL_LINKS } from "../lib/consts";
 import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Footer from "./components/footer";
+import Footer from "../components/footer";
 import Image from "next/image";
-import Header from "./components/header";
+import Header from "../components/header";
 import { Client, HydrationProvider } from "react-hydration-provider";
+import { Button } from "@/components/ui/button";
+import { OutlineButton } from "@/components/ui/outline-button";
 
 export default function HomePage() {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -56,7 +58,7 @@ export default function HomePage() {
   return (
     <HydrationProvider>
       <main className="">
-        <motion.div initial={{ opacity: 0 }}>
+        <motion.div>
           <Header
             selectedPage={1}
             className="z-10"
@@ -108,29 +110,30 @@ export default function HomePage() {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeOut", duration: 0.25 }}
+              style={{
+                position: "absolute",
+                top: `${windowHeight / 2 - 220}px`,
+              }}
             >
               <Image
                 src="/logo/mechanic-logo.png"
                 alt="Logo"
                 height={48}
                 width={460}
-                className="mb-8"
               />
             </motion.div>
             <motion.div
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              initial={{ y: 60, opacity: 0 }}
+              animate={{ y: 50, opacity: 1 }}
               transition={{ ease: "easeOut", duration: 0.25, delay: 0.15 }}
             >
-              <h2 className="text-2xl font-medium">
-                University of California, Santa Barbara
-              </h2>
+              <h2 className="">University of California, Santa Barbara</h2>
             </motion.div>
             <motion.div
               className="flex p-8"
-              initial={{ y: 0, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 0.5, delay: 0.75 }}
+              initial={{ y: 60, opacity: 0 }}
+              animate={{ y: 50, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
             >
               <motion.div
                 whileHover={{ scale: 1.2 }}
@@ -161,7 +164,7 @@ export default function HomePage() {
               className="absolute bottom-0 transform"
               initial={{ y: 0, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 0.5, delay: 0.75 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
             >
               <motion.div
                 animate={{
@@ -196,8 +199,8 @@ export default function HomePage() {
         >
           <div className="bg-black bg-opacity-70 p-16">
             <div className="flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16 text-5xl font-medium">Our Story</h1>
-              <h3 className="text-xl font-thin">
+              <h1 className="p-16">OUR STORY</h1>
+              <p className="text-xl">
                 Gaucho Racing is the continuation of a long history of
                 motorsports in Santa Barbara. Though teams have come and gone,
                 it is our goal to create something that is lasting and will
@@ -205,19 +208,19 @@ export default function HomePage() {
                 business prowess of UC Santa Barbara Students. We put a strong
                 focus on educating new members, providing them with the tools
                 they need to succeed, both in school and outside.
-              </h3>
-              <h3 className="mt-2 text-xl font-thin lg:mt-4">
+              </p>
+              <p className="mt-2 text-xl lg:mt-4">
                 Gaucho Racing strives to build a diverse and multidisciplinary
                 team, able to challenge each other's ideas and assumptions, as
                 we believe this leads to the best work, innovation and growth.
-              </h3>
+              </p>
             </div>
           </div>
         </div>
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
-            <h1 className="p-16 text-5xl font-medium">Our Mission</h1>
-            <h3 className="text-xl font-thin">
+          <div className="flex flex-col items-center justify-center text-white lg:mb-8 lg:ml-64 lg:mr-64 lg:mt-8">
+            <h1 className="p-16">OUR MISSION</h1>
+            <p className="text-xl">
               Gaucho Racing aims to enable students to gain hands-on experience
               in all phases of the engineering process and propel them forward
               into their careers. As part of UCSB’s official SAE International
@@ -225,15 +228,20 @@ export default function HomePage() {
               Formula SAE Electric Competition. This involves students working
               together as a team to research, design, and manufacture a single
               seater electric race car from the ground up.
-            </h3>
-            <h3 className="mt-2 text-xl font-thin lg:mt-4">
+            </p>
+            <p className="mt-2 text-xl lg:mt-4">
               Our team is also responsible for funding this project each year
               which will connect our students with industry sponsors and build
               crucial relationships for our success. Through this project,
               students will gain essential engineering and networking skills in
               demand in this industry and be prepared to launch their futures in
               engineering.
-            </h3>
+            </p>
+            <div className="flex w-full justify-center pt-8">
+              <OutlineButton>
+                <Link href="/team">MORE ABOUT US</Link>
+              </OutlineButton>
+            </div>
           </div>
         </div>
         <div
@@ -247,17 +255,15 @@ export default function HomePage() {
         >
           <div className="bg-black bg-opacity-70 p-16">
             <div className="flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16 text-5xl font-medium">
-                What is FSAE Electric?
-              </h1>
-              <h3 className="text-xl font-thin">
+              <h1 className="p-16">ABOUT FSAE</h1>
+              <p className="text-xl">
                 FSAE Electric, initiated in 2013, is a cutting-edge addition to
                 the Formula SAE competition. It focuses on the development of
                 vehicles powered exclusively by electric motors, aligning with
                 the global shift towards sustainable and eco-friendly
                 transportation solutions.
-              </h3>
-              <h3 className="mt-2 text-xl font-thin lg:mt-4">
+              </p>
+              <p className="mt-2 text-xl lg:mt-4">
                 Each year, over 400 teams from universities worldwide
                 participate in events hosted globally. Teams go head-to-head,
                 defending their design choices in static events under the
@@ -266,28 +272,31 @@ export default function HomePage() {
                 are put to the ultimate test. Winning top honors requires
                 excelling in multiple categories, showcasing the culmination of
                 our team's hard work and dedication.
-              </h3>
+              </p>
             </div>
           </div>
         </div>
         <div className="bg-black bg-opacity-70 p-16">
           <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
-            <h1 className="p-16 text-5xl font-medium">Join the Ride</h1>
-            <h3 className="text-xl font-thin">
+            <h1 className="p-16">GET INVOLVED</h1>
+            <p className="text-xl">
               Are you passionate about electric vehicles, cutting-edge
               technology, and being part of a dynamic team? Join us on our
               journey as we continue to make strides in the world of Formula SAE
               Electric. Whether you're an engineering enthusiast, a future
               driver, or someone eager to contribute to sustainable innovation,
               there's a place for you at Gaucho Racing.
-            </h3>
-            <h3 className="mt-2 text-xl font-thin lg:mt-4">
+            </p>
+            <p className="mt-2 text-xl font-thin lg:mt-4">
               Explore the future of automotive technology with us - where every
               innovation drives us closer to excellence on and off the track!
-            </h3>
-            <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 font-light text-white">
-              <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0">
-                Join Us
+            </p>
+            <OutlineButton>
+              <Link href="/join">JOIN US</Link>
+            </OutlineButton>
+            <button className="group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden bg-gradient-to-br from-gr-pink to-gr-purple p-0.5 text-lg font-bold text-white">
+              <span className="relative h-11 bg-black px-8 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0">
+                MORE ABOUT US
               </span>
             </button>
           </div>
