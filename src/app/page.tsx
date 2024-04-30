@@ -301,8 +301,8 @@ export default function HomePage() {
               driver, or someone eager to contribute to sustainable innovation,
               there's a place for you at Gaucho Racing.
             </p>
-            <div className="flex items-stretch md:flex-col lg:mt-16 lg:flex-row">
-              <Card className="m-4 flex flex-1 flex-col items-center">
+            <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
+              <Card className="m-4 flex flex-1 flex-col">
                 <CardHeader>
                   <CardTitle className="text-center">
                     <h2>JOIN OUR NEWSLETTER</h2>
@@ -332,7 +332,7 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="m-4 flex flex-1 flex-col items-center">
+              <Card className="m-4 flex flex-1 flex-col">
                 <CardHeader>
                   <CardTitle className="text-center">
                     <h2>COME TO A MEETING</h2>
@@ -351,7 +351,7 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="m-4 flex flex-1 flex-col items-center">
+              <Card className="m-4 flex flex-1 flex-col">
                 <CardHeader>
                   <CardTitle className="text-center">
                     <h2>CONTACT US</h2>

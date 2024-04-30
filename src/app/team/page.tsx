@@ -1,5 +1,14 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
+import { OutlineButton } from "@/components/ui/outline-button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import TeamCard from "@/components/team-card";
 
 export default function TeamPage() {
   return (
@@ -15,47 +24,126 @@ export default function TeamPage() {
           right: "0",
           bottom: "0",
           left: "0",
-          // opacity: scrollY > windowHeight - 132 ? "1" : "0",
-          // transition: "all .3s",
-          // visibility: scrollY > windowHeight - 132 ? "visible" : "hidden",
         }}
       />
       <div
         className=""
         style={{
-          backgroundImage: "url('team/banner.jpeg')",
+          backgroundImage: "url('placeholder.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="bg-black bg-opacity-30 p-16">
+          <div className="mt-16 flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
+            <h1 className="p-16">OUR TEAM</h1>
+          </div>
+        </div>
+      </div>
+      <div className="bg-black bg-opacity-70 p-16">
+        <div className="flex flex-col items-center justify-center text-white lg:ml-64 lg:mr-64 lg:mt-16">
+          <h1 className="">OFFICERS</h1>
+          <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
+            <TeamCard
+              name="Nicholas"
+              title="President"
+              titleColor="text-gr-pink"
+            />
+            <TeamCard
+              name="Raaghav"
+              title="Internal VP"
+              titleColor="text-gr-pink"
+            />
+            <TeamCard
+              name="Aran"
+              title="External VP"
+              titleColor="text-gr-pink"
+            />
+            <TeamCard
+              name="Anirudh"
+              title="Mechanical Chief Engineer"
+              titleColor="text-gr-pink"
+            />
+            <TeamCard
+              name="Jason"
+              title="Electrical Chief Engineer"
+              titleColor="text-gr-pink"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-black bg-opacity-70 p-16">
+        <div className="flex flex-col items-center justify-center text-white lg:ml-64 lg:mr-64 lg:mt-16">
+          <h1 className="">TEAM LEADS</h1>
+          <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
+            <TeamCard
+              name="Amitha"
+              title="Business Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Stephen"
+              title="Aero Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Roger"
+              title="Aero Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Dylan"
+              title="Chassis Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Thomas"
+              title="Chassis Lead"
+              titleColor="text-gr-purple"
+            />
+          </div>
+          <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
+            <TeamCard
+              name="Tien"
+              title="Controls Hardware Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Josh"
+              title="Controls Software Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Jason"
+              title="Powertrain Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Anirudh"
+              title="Suspension Lead"
+              titleColor="text-gr-purple"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className=""
+        style={{
+          backgroundImage: "url('placeholder.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-            <h1 className="p-16 text-5xl font-medium">Our Team</h1>
-            <h3 className="text-xl font-thin">
-              We have over 100 members across 6 subteams working together to
-              design, build, and test our cars.
-            </h3>
+          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+            <h1 className="p-16">Alumni</h1>
+            <p className="">
+              [Something about how awesome our alumni are here]
+            </p>
+            <OutlineButton>MEET OUR ALUMNI</OutlineButton>
           </div>
-        </div>
-      </div>
-      <div className="bg-black bg-opacity-70 p-16">
-        <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
-          <h1 className="p-16 text-5xl font-medium">Our Officers</h1>
-          <h3 className="text-xl font-thin"></h3>
-        </div>
-      </div>
-      <div className="bg-black bg-opacity-70 p-16">
-        <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
-          <h1 className="p-16 text-5xl font-medium">Alumni</h1>
-          <h3 className="text-xl font-thin">
-            [Something about how awesome our alumni are here]
-          </h3>
-          <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 font-light text-white">
-            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0">
-              Meet our Alumni
-            </span>
-          </button>
         </div>
       </div>
       <Footer />

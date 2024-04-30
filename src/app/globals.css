@@ -85,4 +85,7 @@
   h4 {
     @apply text-xl font-semibold tracking-tight;
   }
+  p {
+    @apply text-xl;
+  }
 }
