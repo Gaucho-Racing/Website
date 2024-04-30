@@ -2,7 +2,7 @@ import Link from "next/link";
 import InstagramIcon from "./icons/instagram";
 import LinkedinIcon from "./icons/linkedin";
 import TwitterIcon from "./icons/twitter";
-import { SOCIAL_LINKS } from "../lib/consts";
+import { DONATION_LINKS, SOCIAL_LINKS } from "../lib/consts";
 import Image from "next/image";
 import { OutlineButton } from "./ui/outline-button";
 
@@ -28,7 +28,9 @@ export default function Footer() {
                     <AutodeskLogo className="text-white h-20 w-100"/>
                 </div> */}
         <div className="">
-          <OutlineButton>DONATE</OutlineButton>
+          <OutlineButton>
+            <Link href={DONATION_LINKS.paypal}>DONATE</Link>
+          </OutlineButton>
         </div>
       </div>
       <div className="my-4 h-0.5 w-full bg-gradient-to-r from-gr-pink to-gr-purple"></div>

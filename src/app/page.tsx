@@ -4,7 +4,7 @@ import Link from "next/link";
 import InstagramIcon from "../components/icons/instagram";
 import LinkedinIcon from "../components/icons/linkedin";
 import TwitterIcon from "../components/icons/twitter";
-import { SOCIAL_LINKS } from "../lib/consts";
+import { FSAE_LINKS, SOCIAL_LINKS } from "../lib/consts";
 import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -14,6 +14,15 @@ import Header from "../components/header";
 import { Client, HydrationProvider } from "react-hydration-provider";
 import { Button } from "@/components/ui/button";
 import { OutlineButton } from "@/components/ui/outline-button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomePage() {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -273,6 +282,11 @@ export default function HomePage() {
                 excelling in multiple categories, showcasing the culmination of
                 our team's hard work and dedication.
               </p>
+              <div className="flex w-full justify-center pt-8">
+                <OutlineButton>
+                  <Link href={FSAE_LINKS.ev}>MORE ABOUT FSAE</Link>
+                </OutlineButton>
+              </div>
             </div>
           </div>
         </div>
@@ -287,16 +301,81 @@ export default function HomePage() {
               driver, or someone eager to contribute to sustainable innovation,
               there's a place for you at Gaucho Racing.
             </p>
-            <p className="mt-2 text-xl font-thin lg:mt-4">
-              Explore the future of automotive technology with us - where every
-              innovation drives us closer to excellence on and off the track!
-            </p>
-            <OutlineButton>
-              <Link href="/join">JOIN US</Link>
-            </OutlineButton>
-            <OutlineButton>
-              <Link href="/contact">CONTACT US</Link>
-            </OutlineButton>
+            <div className="flex items-stretch md:flex-col lg:mt-16 lg:flex-row">
+              <Card className="m-4 flex flex-1 flex-col items-center">
+                <CardHeader>
+                  <CardTitle className="text-center">
+                    <h2>JOIN OUR NEWSLETTER</h2>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Stay up to date with the latest Gaucho Racing news! We'll
+                    send you updates about all the cool things we've been
+                    working on.
+                  </p>
+                  <div className="mt-6 flex">
+                    <div className="relative mb-6 flex-grow">
+                      <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                      </div>
+                      <input
+                        type="email"
+                        id="email-input"
+                        className="block w-full rounded-lg border border-slate-700 bg-transparent p-2.5 ps-10 text-sm text-white focus:border-gr-pink focus:ring-gr-pink"
+                        placeholder="name@gauchoracing.com"
+                      ></input>
+                    </div>
+                    <div className="ml-2">
+                      <Button>Subscribe</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="m-4 flex flex-1 flex-col items-center">
+                <CardHeader>
+                  <CardTitle className="text-center">
+                    <h2>COME TO A MEETING</h2>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    <b>When:</b> Mondays 7:30-8:30
+                  </p>
+                  <p className="mt-2">
+                    <b>Where:</b> Engineering II Room 1519
+                  </p>
+                  <p className="mt-2">
+                    Come see what we're all about! We'd love to meet you and
+                    answer any questions about our organization.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="m-4 flex flex-1 flex-col items-center">
+                <CardHeader>
+                  <CardTitle className="text-center">
+                    <h2>CONTACT US</h2>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    <b>Email:</b> ucsantabarbarasae@gmail.com
+                  </p>
+                  <p className="mt-2">
+                    <b>Address:</b>
+                    <br />
+                    CoE Machine shop,
+                    <br />
+                    Arts Building 524, Room 0249
+                    <br />
+                    Santa Barbara, CA 93106
+                  </p>
+                  <p className="mt-2">
+                    Feel free to send us an email or even some physical mail!
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
         <Footer />
