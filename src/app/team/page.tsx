@@ -51,7 +51,7 @@ export default function TeamPage() {
           <h3 className="text-xl font-thin">
             [Something about how awesome our alumni are here]
           </h3>
-          <button className="text-md from-gr-purple to-gr-pink group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br p-0.5 font-light text-white">
+          <button className="text-md group relative mb-2 me-2 mt-8 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-gr-purple to-gr-pink p-0.5 font-light text-white">
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0">
               Meet our Alumni
             </span>
