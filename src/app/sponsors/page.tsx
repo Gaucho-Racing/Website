@@ -1,18 +1,8 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import { OutlineButton } from "@/components/ui/outline-button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import TeamCard from "@/components/team-card";
 import Image from "next/image";
 import Link from "next/link";
-import AutodeskIcon from "@/components/sponsors/autodesk";
-import TeslaIcon from "@/components/sponsors/tesla";
 
 export default function SponsorsPage() {
   return (

@@ -6,7 +6,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const TeamCard = ({ name, title, titleColor }) => {
+const TeamCard = ({
+  name,
+  title,
+  titleColor,
+}: {
+  name: string;
+  title: string;
+  titleColor: string;
+}) => {
   return (
     <Card className="m-4 flex flex-1 flex-col items-center">
       <CardHeader className="ml-8 mr-8 items-center">
