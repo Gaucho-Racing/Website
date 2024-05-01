@@ -56,7 +56,7 @@ export default function SponsorsPage() {
       >
         <div className="bg-black bg-opacity-70 p-16">
           <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
-            <h1 className="p-16 text-center">TITLE SPONSORS</h1>
+            {/* <h1 className="p-16 text-center">TITLE SPONSORS</h1> */}
             <div className="flex flex-col items-center lg:mt-16 lg:flex-row">
               <Image
                 className="m-4 lg:m-8 lg:ml-16"
@@ -98,7 +98,7 @@ export default function SponsorsPage() {
                 height={200}
               />
             </div>
-            <h1 className="p-16 text-center lg:mt-16">GOLD SPONSORS</h1>
+            {/* <h1 className="p-16 text-center lg:mt-16">GOLD SPONSORS</h1> */}
             <div className="flex flex-col items-center lg:mt-16 lg:flex-row">
               <Image
                 className="m-4 lg:m-8"
@@ -122,7 +122,7 @@ export default function SponsorsPage() {
                 height={100}
               />
             </div>
-            <h1 className="p-16 text-center lg:mt-16">SILVER SPONSORS</h1>
+            {/* <h1 className="p-16 text-center lg:mt-16">SILVER SPONSORS</h1> */}
             <div className="flex flex-col items-center lg:mt-16 lg:flex-row">
               <Image
                 className="m-4 lg:m-8"
@@ -158,33 +158,73 @@ export default function SponsorsPage() {
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/hakko-wordmark-white.png"
                 alt="Hakko"
-                width={300}
+                width={250}
                 height={100}
               />
               <Image
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/solidworks-wordmark-white.png"
                 alt="Solidworks"
-                width={300}
+                width={290}
+                height={100}
+              />
+            </div>
+            {/* <h1 className="p-16 text-center lg:mt-16">BRONZE SPONSORS</h1> */}
+            <div className="flex flex-col items-center lg:mt-16 lg:flex-row">
+              <Image
+                className="m-4 lg:m-8"
+                src="/logo/sponsor/2024/redbull-logo-white.png"
+                alt="Red Bull"
+                width={130}
+                height={100}
+              />
+              <Image
+                className="m-4 lg:m-8"
+                src="/logo/sponsor/2024/drivetowardcure-logo-white.png"
+                alt="Drive Toward A Cure"
+                width={100}
+                height={100}
+              />
+              <Image
+                className="m-4 lg:m-8"
+                src="/logo/sponsor/2024/celsius-logo-white.png"
+                alt="Celsius"
+                width={100}
+                height={100}
+              />
+              <Image
+                className="m-4 lg:m-8"
+                src="/logo/sponsor/2024/digitalocean-logo-white.png"
+                alt="DigitalOcean"
+                width={140}
+                height={100}
+              />
+            </div>
+            <div className="flex flex-col items-center lg:flex-row">
+              <Image
+                className="m-4 lg:m-8"
+                src="/logo/sponsor/2024/formlabs-wordmark-white.png"
+                alt="Formlabs"
+                width={200}
                 height={100}
               />
             </div>
           </div>
         </div>
       </div>
-      <div
-        className=""
-        style={{
-          backgroundImage: "url('placeholder.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
-            <h1 className="p-16">Tier 3</h1>
-          </div>
+      <div className="bg-black bg-opacity-70 p-16">
+        <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+          <h1 className="p-16">SPONSOR US</h1>
+          <p className="text-xl">
+            We'd love to have you as a sponsor! Whether it is fueling us with
+            pizza, supplying us with materials, or just throwing some cash our
+            way, your donations are crucial to making this all possible! If you
+            want to learn more about some of the benefits in sponsoring our
+            team, please check out our sponsorship packet below.
+          </p>
+          <Link href="/sponsorship.pdf">
+            <OutlineButton>SPONSORSHIP PACKET</OutlineButton>
+          </Link>
         </div>
       </div>
       <Footer />

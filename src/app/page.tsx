@@ -247,9 +247,9 @@ export default function HomePage() {
               engineering.
             </p>
             <div className="flex w-full justify-center pt-8">
-              <OutlineButton>
-                <Link href="/team">MORE ABOUT US</Link>
-              </OutlineButton>
+              <Link href="/team">
+                <OutlineButton>MORE ABOUT US</OutlineButton>
+              </Link>
             </div>
           </div>
         </div>
@@ -283,9 +283,9 @@ export default function HomePage() {
                 our team's hard work and dedication.
               </p>
               <div className="flex w-full justify-center pt-8">
-                <OutlineButton>
-                  <Link href={FSAE_LINKS.ev}>MORE ABOUT FSAE</Link>
-                </OutlineButton>
+                <Link href={FSAE_LINKS.ev}>
+                  <OutlineButton>MORE ABOUT FSAE</OutlineButton>
+                </Link>
               </div>
             </div>
           </div>

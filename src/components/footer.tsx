@@ -28,9 +28,9 @@ export default function Footer() {
                     <AutodeskLogo className="text-white h-20 w-100"/>
                 </div> */}
         <div className="">
-          <OutlineButton>
-            <Link href={DONATION_LINKS.paypal}>DONATE</Link>
-          </OutlineButton>
+          <Link href={DONATION_LINKS.paypal}>
+            <OutlineButton>DONATE</OutlineButton>
+          </Link>
         </div>
       </div>
       <div className="my-4 h-0.5 w-full bg-gradient-to-r from-gr-pink to-gr-purple"></div>
