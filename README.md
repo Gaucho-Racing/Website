@@ -48,6 +48,9 @@ npm run lint
 npm run check
 ```
 
+> [!TIP]
+> You can use `npm run format` to fix any prettier lint errors you have.
+
 ## Learn More
 
 To learn more about React, Next, or Tailwind, take a look at the following resources:
