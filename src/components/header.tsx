@@ -21,7 +21,9 @@ const Header = (props: HeaderProps) => {
         <Link href="/">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 1 ? "text-white" : "text-gray-400"
+              props.selectedPage == 1
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -32,7 +34,9 @@ const Header = (props: HeaderProps) => {
         <Link href="/team">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 2 ? "text-white" : "text-gray-400"
+              props.selectedPage == 2
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -43,7 +47,9 @@ const Header = (props: HeaderProps) => {
         <Link href="/cars">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 3 ? "text-white" : "text-gray-400"
+              props.selectedPage == 3
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -63,7 +69,9 @@ const Header = (props: HeaderProps) => {
         <Link href="/sponsors">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 4 ? "text-white" : "text-gray-400"
+              props.selectedPage == 4
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -74,7 +82,9 @@ const Header = (props: HeaderProps) => {
         <Link href="/news">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 5 ? "text-white" : "text-gray-400"
+              props.selectedPage == 5
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
@@ -85,7 +95,9 @@ const Header = (props: HeaderProps) => {
         <Link href="/contact">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 6 ? "text-white" : "text-gray-400"
+              props.selectedPage == 6
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
