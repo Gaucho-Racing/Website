@@ -73,25 +73,25 @@ export default function SponsorsPage() {
               />
               <Image
                 className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/firefly-wordmark-white.png"
-                alt="FireFly Aerospace"
-                width={500}
+                src="/logo/sponsor/2024/ansys-wordmark-white.png"
+                alt="Ansys"
+                width={325}
                 height={200}
               />
             </div>
             <div className="flex flex-col items-center lg:mt-16 lg:flex-row">
               <Image
                 className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/ansys-wordmark-white.png"
-                alt="Ansys"
-                width={350}
+                src="/logo/sponsor/2024/cadence-wordmark-white.png"
+                alt="Cadence"
+                width={400}
                 height={200}
               />
               <Image
                 className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/cadence-wordmark-white.png"
-                alt="Cadence"
-                width={400}
+                src="/logo/sponsor/2024/firefly-wordmark-white.png"
+                alt="FireFly Aerospace"
+                width={500}
                 height={200}
               />
             </div>
@@ -101,21 +101,21 @@ export default function SponsorsPage() {
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/tesla-wordmark-white.png"
                 alt="Tesla"
-                width={300}
+                width={290}
                 height={100}
               />
               <Image
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/hesse-logo-white.png"
                 alt="Hesse Mechatronics"
-                width={300}
+                width={250}
                 height={100}
               />
               <Image
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/bambu-wordmark-white.png"
                 alt="Bambu Lab"
-                width={300}
+                width={275}
                 height={100}
               />
             </div>
@@ -172,28 +172,28 @@ export default function SponsorsPage() {
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/redbull-logo-white.png"
                 alt="Red Bull"
-                width={130}
+                width={115}
                 height={100}
               />
               <Image
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/drivetowardcure-logo-white.png"
                 alt="Drive Toward A Cure"
-                width={100}
+                width={90}
                 height={100}
               />
               <Image
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/celsius-logo-white.png"
                 alt="Celsius"
-                width={100}
+                width={80}
                 height={100}
               />
               <Image
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/digitalocean-logo-white.png"
                 alt="DigitalOcean"
-                width={140}
+                width={120}
                 height={100}
               />
             </div>
