@@ -8,7 +8,7 @@ export default function SponsorsPage() {
   return (
     <main className="">
       <Header
-        selectedPage={2}
+        selectedPage={4}
         className=""
         style={{
           background: "rgba(0,0,0)",
@@ -80,6 +80,13 @@ export default function SponsorsPage() {
               />
             </div>
             <div className="flex flex-col items-center lg:mt-16 lg:flex-row">
+              <Image
+                className="m-4 lg:m-8"
+                src="/logo/sponsor/2024/ansys-wordmark-white.png"
+                alt="Ansys"
+                width={350}
+                height={200}
+              />
               <Image
                 className="m-4 lg:m-8"
                 src="/logo/sponsor/2024/cadence-wordmark-white.png"
