@@ -1,6 +1,8 @@
 # Gaucho Racing Website
 
+[![Tests](https://github.com/Gaucho-Racing/Website/actions/workflows/tests.yml/badge.svg)](https://github.com/Gaucho-Racing/Website/actions/workflows/tests.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4f328742-ea5a-4937-9b8c-4944523152da/deploy-status)](https://app.netlify.com/sites/gauchoracing/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This website is built with React using Next.js and Tailwind CSS.
 
