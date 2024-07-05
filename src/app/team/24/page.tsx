@@ -49,27 +49,31 @@ export default function TeamPage() {
               name="Nicholas"
               title="President"
               titleColor="text-gr-pink"
-              
+              image="lead-images\24\Nicholas24.png"
             />
             <TeamCard
               name="Raaghav"
               title="Internal VP"
               titleColor="text-gr-pink"
+              image="lead-images\24\Raaghav24.jpg"
             />
             <TeamCard
               name="Aran"
               title="External VP"
               titleColor="text-gr-pink"
+              image="lead-images\24\Aran24.jpg"
             />
             <TeamCard
               name="Anirudh"
               title="Mechanical Chief Engineer"
               titleColor="text-gr-pink"
+              image="lead-images\24\Anirudh24.png"
             />
             <TeamCard
               name="Jason"
               title="Electrical Chief Engineer"
               titleColor="text-gr-pink"
+              image="lead-images\24\Jason24.png"
             />
           </div>
         </div>
@@ -82,26 +86,31 @@ export default function TeamPage() {
               name="Amitha"
               title="Business Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Amitha24.jpg"
             />
             <TeamCard
               name="Stephen"
               title="Aero Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Stephen24.png"
             />
             <TeamCard
               name="Roger"
               title="Aero Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Roger24.png"
             />
             <TeamCard
               name="Dylan"
               title="Chassis Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Dylan24.png"
             />
             <TeamCard
               name="Thomas"
               title="Chassis Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Thomas24.png"
             />
           </div>
           <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
@@ -109,21 +118,25 @@ export default function TeamPage() {
               name="Tien"
               title="Controls Hardware Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Tien24.jpg"
             />
             <TeamCard
               name="Josh"
               title="Controls Software Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Josh24.png"
             />
             <TeamCard
               name="Jason"
               title="Powertrain Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Jason24.png"
             />
             <TeamCard
               name="Anirudh"
               title="Suspension Lead"
               titleColor="text-gr-purple"
+              image="lead-images\24\Anirudh24.png"
             />
           </div>
         </div>

@@ -1,5 +1,5 @@
-import Footer from "../../components/footer";
-import Header from "../../components/header";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import { OutlineButton } from "@/components/ui/outline-button";
 import {
   Card,
