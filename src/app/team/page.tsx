@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import TeamCard from "@/components/team-card";
-import placeholderImage from 'src/assets/images/placeholder-profile.png';
+import placeholderImage from "src/assets/images/placeholder-profile.png";
 
 export default function TeamPage() {
   return (
@@ -44,7 +44,7 @@ export default function TeamPage() {
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="lg:ml-64 lg:mr-64 mt-16 mb-16">OFFICERS</h1>
+          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">OFFICERS</h1>
           <div className="flex flex-wrap justify-center">
             <TeamCard
               name="Thomas Yu"
@@ -86,8 +86,8 @@ export default function TeamPage() {
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="lg:ml-64 lg:mr-64 mt-16 mb-16">TEAM LEADS</h1>
-          <div className="flex flex-wrap justify-center items-stretch">
+          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">TEAM LEADS</h1>
+          <div className="flex flex-wrap items-stretch justify-center">
             <TeamCard
               name="Jeff Duong"
               title="Business Lead"
@@ -156,20 +156,24 @@ export default function TeamPage() {
         }}
       >
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white 
-                          lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+          <div
+            className="flex flex-col items-center justify-center text-white 
+                          lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16"
+          >
             <h1 className="p-16">Alumni</h1>
             <p className="text-center">
-            At Gaucho Racing, we are proud of the legacy built by our alumni. 
-            Over the years, countless students have contributed their passion, 
-            skills, and dedication to our team, driving innovation and achieving 
-            remarkable milestones. Our alumni have gone on to excel in various 
-            fields, from automotive engineering to business leadership. 
-            </p><br/>
+              At Gaucho Racing, we are proud of the legacy built by our alumni.
+              Over the years, countless students have contributed their passion,
+              skills, and dedication to our team, driving innovation and
+              achieving remarkable milestones. Our alumni have gone on to excel
+              in various fields, from automotive engineering to business
+              leadership.
+            </p>
+            <br />
             <p className="text-center">
-            Stay connected, share your journey, and continue to be a part of the 
-            Gaucho Racing family. Your experiences and success stories inspire 
-            the next generation of Gaucho Racing members.
+              Stay connected, share your journey, and continue to be a part of
+              the Gaucho Racing family. Your experiences and success stories
+              inspire the next generation of Gaucho Racing members.
             </p>
             <OutlineButton>MEET OUR ALUMNI</OutlineButton>
           </div>

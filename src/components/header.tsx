@@ -58,7 +58,7 @@ const Header = (props: HeaderProps) => {
           </button>
         </Link>
         <Link href="/">
-          <Image 
+          <Image
             src="/logo/mechanic-logo.png"
             alt="Logo"
             height={24}
@@ -92,9 +92,11 @@ const Header = (props: HeaderProps) => {
             </span>
           </button>
         </Link>
-        
-        <Link href="https://www.gofundme.com/f/spark-the-future-with-ucsbs-gaucho-racing-ev?attribution_id=sl:5321f10f-c331-44dd-9f72-a903f545a580&utm_campaign=man_sharesheet_ft&utm_medium=customer&utm_source=copy_link"
-              target="_blank">
+
+        <Link
+          href="https://www.gofundme.com/f/spark-the-future-with-ucsbs-gaucho-racing-ev?attribution_id=sl:5321f10f-c331-44dd-9f72-a903f545a580&utm_campaign=man_sharesheet_ft&utm_medium=customer&utm_source=copy_link"
+          target="_blank"
+        >
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 6
