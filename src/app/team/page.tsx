@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import TeamCard from "@/components/team-card";
+import placeholderImage from 'src/assets/images/placeholder-profile.png';
 
 export default function TeamPage() {
   return (
@@ -41,86 +42,104 @@ export default function TeamPage() {
           </div>
         </div>
       </div>
-      <div className="bg-black bg-opacity-70 p-16">
-        <div className="flex flex-col items-center justify-center text-white lg:ml-64 lg:mr-64 lg:mt-16">
-          <h1 className="">OFFICERS</h1>
-          <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
+      <div className="bg-black bg-opacity-70 p-8">
+        <div className="flex flex-col items-center text-white">
+          <h1 className="lg:ml-64 lg:mr-64 mt-16 mb-16">OFFICERS</h1>
+          <div className="flex flex-wrap justify-center">
             <TeamCard
-              name="Nicholas"
+              name="Thomas Yu"
               title="President"
               titleColor="text-gr-pink"
             />
             <TeamCard
-              name="Raaghav"
+              name="Diego Vasquez"
               title="Internal VP"
               titleColor="text-gr-pink"
             />
             <TeamCard
-              name="Aran"
+              name="Alex Fu"
               title="External VP"
               titleColor="text-gr-pink"
             />
             <TeamCard
-              name="Anirudh"
+              name="Anirudh Kumar"
               title="Mechanical Chief Engineer"
               titleColor="text-gr-pink"
             />
             <TeamCard
-              name="Jason"
+              name="Jason Wei"
               title="Electrical Chief Engineer"
+              titleColor="text-gr-pink"
+            />
+            <TeamCard
+              name="Yakov Shur"
+              title="Secretary"
+              titleColor="text-gr-pink"
+            />
+            <TeamCard
+              name="Jeff Duong"
+              title="Treasurer"
               titleColor="text-gr-pink"
             />
           </div>
         </div>
       </div>
-      <div className="bg-black bg-opacity-70 p-16">
-        <div className="flex flex-col items-center justify-center text-white lg:ml-64 lg:mr-64 lg:mt-16">
-          <h1 className="">TEAM LEADS</h1>
-          <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
+      <div className="bg-black bg-opacity-70 p-8">
+        <div className="flex flex-col items-center text-white">
+          <h1 className="lg:ml-64 lg:mr-64 mt-16 mb-16">TEAM LEADS</h1>
+          <div className="flex flex-wrap justify-center items-stretch">
             <TeamCard
-              name="Amitha"
+              name="Jeff Duong"
               title="Business Lead"
               titleColor="text-gr-purple"
             />
             <TeamCard
-              name="Stephen"
+              name="Alex Fu"
               title="Aero Lead"
               titleColor="text-gr-purple"
             />
             <TeamCard
-              name="Roger"
+              name="Curren Somers"
               title="Aero Lead"
               titleColor="text-gr-purple"
             />
             <TeamCard
-              name="Dylan"
+              name="Matthew Lin"
               title="Chassis Lead"
               titleColor="text-gr-purple"
             />
             <TeamCard
-              name="Thomas"
+              name="Ava Tran"
               title="Chassis Lead"
               titleColor="text-gr-purple"
             />
-          </div>
-          <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
             <TeamCard
-              name="Tien"
+              name="Tien Nguyen"
               title="Controls Hardware Lead"
               titleColor="text-gr-purple"
             />
             <TeamCard
-              name="Josh"
+              name="Nikunj Parasar"
               title="Controls Software Lead"
               titleColor="text-gr-purple"
             />
             <TeamCard
-              name="Jason"
+              name="Colin Kwok"
               title="Powertrain Lead"
               titleColor="text-gr-purple"
             />
             <TeamCard
-              name="Anirudh"
+              name="Ryan Nguyen"
+              title="Powertrain Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Anirudh Kumar"
+              title="Suspension Lead"
+              titleColor="text-gr-purple"
+            />
+            <TeamCard
+              name="Camron Hosseini"
               title="Suspension Lead"
               titleColor="text-gr-purple"
             />
@@ -137,10 +156,20 @@ export default function TeamPage() {
         }}
       >
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+          <div className="flex flex-col items-center justify-center text-white 
+                          lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
             <h1 className="p-16">Alumni</h1>
-            <p className="">
-              [Something about how awesome our alumni are here]
+            <p className="text-center">
+            At Gaucho Racing, we are proud of the legacy built by our alumni. 
+            Over the years, countless students have contributed their passion, 
+            skills, and dedication to our team, driving innovation and achieving 
+            remarkable milestones. Our alumni have gone on to excel in various 
+            fields, from automotive engineering to business leadership. 
+            </p><br/>
+            <p className="text-center">
+            Stay connected, share your journey, and continue to be a part of the 
+            Gaucho Racing family. Your experiences and success stories inspire 
+            the next generation of Gaucho Racing members.
             </p>
             <OutlineButton>MEET OUR ALUMNI</OutlineButton>
           </div>

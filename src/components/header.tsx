@@ -44,6 +44,28 @@ const Header = (props: HeaderProps) => {
             </span>
           </button>
         </Link>
+        <Link href="/media">
+          <button
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
+              props.selectedPage == 5
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
+            }`}
+          >
+            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
+              MEDIA
+            </span>
+          </button>
+        </Link>
+        <Link href="/">
+          <Image 
+            src="/logo/mechanic-logo.png"
+            alt="Logo"
+            height={24}
+            width={230}
+            className="ml-4 mr-4 h-24"
+          />
+        </Link>
         <Link href="/cars">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
@@ -56,15 +78,6 @@ const Header = (props: HeaderProps) => {
               CARS
             </span>
           </button>
-        </Link>
-        <Link href="/">
-          <Image
-            src="/logo/mechanic-logo.png"
-            alt="Logo"
-            height={24}
-            width={230}
-            className="ml-4 mr-4 h-24"
-          />
         </Link>
         <Link href="/sponsors">
           <button
@@ -79,20 +92,9 @@ const Header = (props: HeaderProps) => {
             </span>
           </button>
         </Link>
-        <Link href="/news">
-          <button
-            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 5
-                ? "bg-gradient-to-br text-white"
-                : "text-gray-400"
-            }`}
-          >
-            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
-              NEWS
-            </span>
-          </button>
-        </Link>
-        <Link href="/contact">
+        
+        <Link href="https://www.gofundme.com/f/spark-the-future-with-ucsbs-gaucho-racing-ev?attribution_id=sl:5321f10f-c331-44dd-9f72-a903f545a580&utm_campaign=man_sharesheet_ft&utm_medium=customer&utm_source=copy_link"
+              target="_blank">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 6
@@ -101,7 +103,7 @@ const Header = (props: HeaderProps) => {
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
-              CONTACT
+              DONATE
             </span>
           </button>
         </Link>
