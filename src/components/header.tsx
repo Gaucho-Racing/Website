@@ -47,7 +47,7 @@ const Header = (props: HeaderProps) => {
         <Link href="/media">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 5
+              props.selectedPage == 3
                 ? "bg-gradient-to-br text-white"
                 : "text-gray-400"
             }`}
@@ -69,7 +69,7 @@ const Header = (props: HeaderProps) => {
         <Link href="/cars">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 3
+              props.selectedPage == 4
                 ? "bg-gradient-to-br text-white"
                 : "text-gray-400"
             }`}
@@ -82,7 +82,7 @@ const Header = (props: HeaderProps) => {
         <Link href="/sponsors">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 4
+              props.selectedPage == 5
                 ? "bg-gradient-to-br text-white"
                 : "text-gray-400"
             }`}

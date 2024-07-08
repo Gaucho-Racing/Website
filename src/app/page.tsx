@@ -148,7 +148,7 @@ export default function HomePage() {
                 whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.25 }}
               >
-                <Link href={SOCIAL_LINKS.instagram}>
+                <Link href={SOCIAL_LINKS.instagram} target="blank">
                   <InstagramIcon className="ml-4 mr-4 h-8 w-8" />
                 </Link>
               </motion.div>
@@ -156,7 +156,7 @@ export default function HomePage() {
                 whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.25 }}
               >
-                <Link href={SOCIAL_LINKS.twitter}>
+                <Link href={SOCIAL_LINKS.twitter} target="blank">
                   <TwitterIcon className="ml-4 mr-4 h-8 w-8" />
                 </Link>
               </motion.div>
@@ -164,7 +164,7 @@ export default function HomePage() {
                 whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.25 }}
               >
-                <Link href={SOCIAL_LINKS.linkedin}>
+                <Link href={SOCIAL_LINKS.linkedin} target="blank">
                   <LinkedinIcon className="ml-4 mr-4 h-8 w-8" />
                 </Link>
               </motion.div>
@@ -200,7 +200,7 @@ export default function HomePage() {
         <div
           className=""
           style={{
-            backgroundImage: "url('home/about.jpeg')",
+            backgroundImage: "url('home/about25.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -291,9 +291,9 @@ export default function HomePage() {
           </div>
         </div>
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16">
+          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-16 lg:mr-16 lg:mt-16">
             <h1 className="p-16">GET INVOLVED</h1>
-            <p className="text-xl">
+            <p className="text-xl lg:ml-48 lg:mr-48">
               Are you passionate about electric vehicles, cutting-edge
               technology, and being part of a dynamic team? Join us on our
               journey as we continue to make strides in the world of Formula SAE
@@ -301,7 +301,7 @@ export default function HomePage() {
               driver, or someone eager to contribute to sustainable innovation,
               there's a place for you at Gaucho Racing.
             </p>
-            <div className="flex flex-col items-stretch lg:mt-16 lg:flex-row">
+            <div className="flex flex-col items-stretch lg:mt-32 lg:flex-row">
               <Card className="m-4 flex flex-1 flex-col">
                 <CardHeader>
                   <CardTitle className="text-center">

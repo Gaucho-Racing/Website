@@ -8,7 +8,7 @@ export default function SponsorsPage() {
   return (
     <main className="overflow-hidden">
       <Header
-        selectedPage={4}
+        selectedPage={5}
         className=""
         style={{
           background: "rgba(0,0,0)",
