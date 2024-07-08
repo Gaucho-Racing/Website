@@ -1,7 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ImageCard from "@/components/image-card";
-import Gallery from "react-photo-gallery";
 import { motion } from "framer-motion";
 
 const images = [
