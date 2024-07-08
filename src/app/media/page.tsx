@@ -65,13 +65,13 @@ export default function MediaPage() {
       >
         <div className="bg-black bg-opacity-30 p-16">
           <div className="mt-16 flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
-            <h1 className="p-16">Media</h1>
+            <h1 className="p-16">MEDIA</h1>
           </div>
         </div>
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">Photo Gallery</h1>
+          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">PHOTO GALLERY</h1>
           <div className="flex flex-col items-center text-white">
             <h2 className="mb-16 mt-8 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               2023-2024 Season
