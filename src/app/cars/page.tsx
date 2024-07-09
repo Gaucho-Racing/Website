@@ -37,16 +37,16 @@ export default function MediaPage() {
         <h1 className="mb-16 mt-16 text-center lg:ml-64 lg:mr-64">OUR CARS</h1>
         <div className="flex flex-col items-center text-white">
           <Car
-            name="GR 24"
-            year="2 0 2 3 - 2 0 2 4"
+            name="GR24"
+            year="2023 - 2024"
             description={`Nickname: Do You Have an SOP for That? \n 
               A marker of many significant milestones: it was the first student formula car to drive on UCSB campus and the first to pass mechanical tech inspection at competition.`}
             imageUrl="/cars/24.jpg"
             imageOnLeft={false}
           />
           <Car
-            name="GR 23"
-            year="2 0 2 2 - 2 0 2 3"
+            name="GR23"
+            year="2022 - 2023"
             description={`Our first car and our team's first ever exposure to competition. While it never drove, it provided our team with invaluable experience for future builds.`}
             imageUrl="/cars/23.jpeg"
             imageOnLeft={true}

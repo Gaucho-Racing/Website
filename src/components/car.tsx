@@ -23,7 +23,7 @@ const Car: React.FC<CarProps> = ({
         <img
           src={imageUrl}
           alt={`${name} car`}
-          className="h-auto w-full shadow-md"
+          className="h-auto w-full rounded-lg shadow-md"
           loading="lazy"
         />
       </div>
@@ -31,8 +31,8 @@ const Car: React.FC<CarProps> = ({
         className={`w-full p-4 md:w-1/2 ${imageOnLeft ? "text-right" : "text-left"}`}
       >
         <h2 className="font mb-4 text-5xl">{name}</h2>
-        <p className="mb-4 text-2xl text-white">{year}</p>
-        <p className="whitespace-pre-line text-sm text-gray-400">
+        <p className="mb-4 text-2xl font-semibold text-gr-pink">{year}</p>
+        <p className="text-md whitespace-pre-line text-gray-400">
           {description}
         </p>
       </div>
