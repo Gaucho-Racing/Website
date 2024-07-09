@@ -28,7 +28,7 @@ export default function Footer() {
                     <AutodeskLogo className="text-white h-20 w-100"/>
                 </div> */}
         <div className="">
-          <Link href={DONATION_LINKS.paypal}>
+          <Link href={DONATION_LINKS.gofundme} target="blank">
             <OutlineButton>DONATE</OutlineButton>
           </Link>
         </div>
@@ -39,13 +39,13 @@ export default function Footer() {
           © 2020 - {new Date().getFullYear()} Gaucho Racing
         </p>
         <div className="flex">
-          <Link href={SOCIAL_LINKS.instagram}>
+          <Link href={SOCIAL_LINKS.instagram} target="blank">
             <InstagramIcon className="ml-4 mr-4 h-6 w-6 text-gray-400 hover:text-white" />
           </Link>
-          <Link href={SOCIAL_LINKS.twitter}>
+          <Link href={SOCIAL_LINKS.twitter} target="blank">
             <TwitterIcon className="ml-4 mr-4 h-6 w-6 text-gray-400 hover:text-white" />
           </Link>
-          <Link href={SOCIAL_LINKS.linkedin}>
+          <Link href={SOCIAL_LINKS.linkedin} target="blank">
             <LinkedinIcon className="ml-4 mr-4 h-6 w-6 text-gray-400 hover:text-white" />
           </Link>
         </div>

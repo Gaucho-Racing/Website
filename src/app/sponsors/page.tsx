@@ -8,7 +8,7 @@ export default function SponsorsPage() {
   return (
     <main className="overflow-hidden">
       <Header
-        selectedPage={4}
+        selectedPage={5}
         className=""
         style={{
           background: "rgba(0,0,0)",
@@ -45,8 +45,8 @@ export default function SponsorsPage() {
         }}
       >
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="mx-8 flex flex-col items-center justify-center text-white lg:mx-16 lg:mb-32 lg:mt-16">
-            <h2 className="m-8 text-center">PLATINUM &nbsp;SPONSORS</h2>
+          <div className="mx-8 flex flex-col items-center justify-center text-white lg:mx-16 lg:mb-32">
+            <h2 className="m-16 text-center">PLATINUM &nbsp;SPONSORS</h2>
             {/* 1st row of platinum sponsors */}
             <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">

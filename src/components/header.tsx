@@ -2,7 +2,7 @@ import Link from "next/link";
 import InstagramIcon from "./icons/instagram";
 import LinkedinIcon from "./icons/linkedin";
 import TwitterIcon from "./icons/twitter";
-import { SOCIAL_LINKS } from "../lib/consts";
+import { SOCIAL_LINKS, DONATION_LINKS } from "../lib/consts";
 import Image from "next/image";
 
 interface HeaderProps {
@@ -44,7 +44,7 @@ const Header = (props: HeaderProps) => {
             </span>
           </button>
         </Link>
-        <Link href="/cars">
+        <Link href="/media">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 3
@@ -53,7 +53,7 @@ const Header = (props: HeaderProps) => {
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
-              CARS
+              MEDIA
             </span>
           </button>
         </Link>
@@ -66,10 +66,23 @@ const Header = (props: HeaderProps) => {
             className="ml-4 mr-4 h-24"
           />
         </Link>
-        <Link href="/sponsors">
+        <Link href="/cars">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 4
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
+            }`}
+          >
+            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
+              CARS
+            </span>
+          </button>
+        </Link>
+        <Link href="/sponsors">
+          <button
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
+              props.selectedPage == 5
                 ? "bg-gradient-to-br text-white"
                 : "text-gray-400"
             }`}
@@ -79,20 +92,8 @@ const Header = (props: HeaderProps) => {
             </span>
           </button>
         </Link>
-        <Link href="/news">
-          <button
-            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 5
-                ? "bg-gradient-to-br text-white"
-                : "text-gray-400"
-            }`}
-          >
-            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
-              NEWS
-            </span>
-          </button>
-        </Link>
-        <Link href="/contact">
+
+        <Link href={DONATION_LINKS.gofundme} target="_blank">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 6
@@ -101,7 +102,7 @@ const Header = (props: HeaderProps) => {
             }`}
           >
             <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
-              CONTACT
+              DONATE
             </span>
           </button>
         </Link>
