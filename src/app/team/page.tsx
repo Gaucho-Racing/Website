@@ -128,13 +128,13 @@ export default function TeamPage() {
             />
             <TeamCard
               name="Tien Nguyen"
-              title="Controls Hardware Lead"
+              title="Electronics Lead"
               titleColor="text-gr-purple"
               image="lead-images\25\tien_nguyen.jpg"
             />
             <TeamCard
               name="Nikunj Parasar"
-              title="Controls Software Lead"
+              title="Firmware Lead"
               titleColor="text-gr-purple"
               image="lead-images\25\nikunj_parasar.jpg"
             />
