@@ -77,16 +77,9 @@ export default function TeamPage() {
               image="lead-images\25\jeff_duong.jpg"
             />
             <TeamCard
-              name="Bharat Kathi"
-              title="Team Administrator"
-              titleColor="text-gr-pink"
-              image="lead-images\25\bharat_kathi.jpg"
-            />
-            <TeamCard
               name="Anirudh Kumar"
               title="Mechanical Chief Engineer"
               titleColor="text-gr-pink"
-              // image="lead-images\24\anirudh24.png"
               image="lead-images\25\anirudh_kumar.jpg"
             />
             <TeamCard
