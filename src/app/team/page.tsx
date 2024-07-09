@@ -115,16 +115,28 @@ export default function TeamPage() {
               image="lead-images\25\curren_somers.png"
             />
             <TeamCard
-              name="Matthew Lin"
-              title="Chassis Lead"
+              name="Jeff Duong"
+              title="Business Lead"
               titleColor="text-gr-purple"
-              image="lead-images\25\matthew_lin.png"
+              image="lead-images\25\jeff_duong.jpg"
             />
             <TeamCard
               name="Ava Tran"
               title="Chassis Lead"
               titleColor="text-gr-purple"
               image="lead-images\25\ava_tran.jpg"
+            />
+            <TeamCard
+              name="Matthew Lin"
+              title="Chassis Lead"
+              titleColor="text-gr-purple"
+              image="lead-images\25\matthew_lin.png"
+            />
+            <TeamCard
+              name="Bharat Kathi"
+              title="Data Lead"
+              titleColor="text-gr-purple"
+              image="lead-images\25\bharat_kathi.jpg"
             />
             <TeamCard
               name="Tien Nguyen"
@@ -157,12 +169,6 @@ export default function TeamPage() {
               image="lead-images\25\anirudh_kumar.jpg"
             />
             <TeamCard
-              name="Bharat Kathi"
-              title="Data Lead"
-              titleColor="text-gr-purple"
-              image="lead-images\25\bharat_kathi.jpg"
-            />
-            <TeamCard
               name="Camron Hosseini"
               title="Suspension Lead"
               titleColor="text-gr-purple"
@@ -173,12 +179,6 @@ export default function TeamPage() {
               title="Social Media Manager"
               titleColor="text-gr-purple"
               image="lead-images\25\amitha_bhat.jpg"
-            />
-            <TeamCard
-              name="Jeff Duong"
-              title="Business Lead"
-              titleColor="text-gr-purple"
-              image="lead-images\25\jeff_duong.jpg"
             />
           </div>
         </div>
