@@ -32,7 +32,7 @@ const Car: React.FC<CarProps> = ({
       >
         <h2 className="font mb-4 text-5xl">{name}</h2>
         <p className="mb-4 text-2xl font-semibold text-gr-pink">{year}</p>
-        <p className="text-md whitespace-pre-line text-gray-400">
+        <p className="text-md whitespace-pre-line text-gray-300">
           {description}
         </p>
       </div>
