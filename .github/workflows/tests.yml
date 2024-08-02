@@ -1,4 +1,4 @@
-name: Tests
+name: tests
 run-name: Triggered by ${{ github.event_name }} to ${{ github.ref }} by @${{ github.actor }}
 
 on: [push]
@@ -6,7 +6,7 @@ on: [push]
 jobs:
   next_build_job:
     runs-on: ubuntu-latest
-    name: Next Build
+    name: build
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,7 +24,7 @@ jobs:
 
   next_lint_job:
     runs-on: ubuntu-latest
-    name: Next Lint
+    name: lint
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,7 +42,7 @@ jobs:
 
   next_check_job:
     runs-on: ubuntu-latest
-    name: Prettier Check
+    name: prettier
     steps:
       - uses: actions/checkout@v4
         with:
