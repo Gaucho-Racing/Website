@@ -4,7 +4,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4f328742-ea5a-4937-9b8c-4944523152da/deploy-status)](https://app.netlify.com/sites/gauchoracing/deploys)
 [![license: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This website is built with React using Next.js and Tailwind CSS.
+This website is built with Next.js using React and Tailwind CSS.
 
 ## Getting started
 
