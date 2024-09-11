@@ -31,8 +31,8 @@ export default function TeamPage() {
   const handleResize = () => {
     const newWindowDimensions = {
       width: window.innerWidth,
-      height: window.innerHeight
-    }
+      height: window.innerHeight,
+    };
 
     setWindowHeight(newWindowDimensions.height);
     setWindowWidth(newWindowDimensions.width);
@@ -53,7 +53,7 @@ export default function TeamPage() {
             top: "0",
             right: "0",
             bottom: "0",
-            left: "0"
+            left: "0",
           }}
         />
       )}
@@ -69,13 +69,20 @@ export default function TeamPage() {
       >
         <div className="bg-black bg-opacity-30 p-16">
           <div className="mt-16 flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
-            <h1 className="p-16" style={{textAlign: "center"}}>OUR TEAM</h1>
+            <h1 className="p-16" style={{ textAlign: "center" }}>
+              OUR TEAM
+            </h1>
           </div>
         </div>
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64" style={{textAlign: "center"}}>OFFICERS</h1>
+          <h1
+            className="mb-16 mt-16 lg:ml-64 lg:mr-64"
+            style={{ textAlign: "center" }}
+          >
+            OFFICERS
+          </h1>
           <div className="flex flex-wrap justify-center lg:ml-16 lg:mr-16">
             <TeamCard
               name="Thomas Yu"
@@ -124,7 +131,12 @@ export default function TeamPage() {
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64" style={{textAlign: "center"}}>TEAM LEADS</h1>
+          <h1
+            className="mb-16 mt-16 lg:ml-64 lg:mr-64"
+            style={{ textAlign: "center" }}
+          >
+            TEAM LEADS
+          </h1>
           <div className="flex flex-wrap items-stretch justify-center lg:ml-16 lg:mr-16">
             <TeamCard
               name="Alex Fu"
@@ -222,7 +234,7 @@ export default function TeamPage() {
                           lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16"
           >
             <h1 className="p-16">ALUMNI</h1>
-            <p className="" style={{textAlign: "center"}}>
+            <p className="" style={{ textAlign: "center" }}>
               At Gaucho Racing, we are proud of the legacy built by our alumni.
               Over the years, countless students have contributed their passion,
               skills, and dedication to our team, driving innovation and
@@ -231,7 +243,7 @@ export default function TeamPage() {
               leadership.
             </p>
             <br />
-            <p className="" style={{textAlign: "center"}}>
+            <p className="" style={{ textAlign: "center" }}>
               Stay connected, share your journey, and continue to be a part of
               the Gaucho Racing family. Your experiences and success stories
               inspire the next generation of Gaucho Racing members.
