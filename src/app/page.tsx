@@ -30,9 +30,11 @@ export default function HomePage() {
   const [windowWidth, setWindowWidth] = useState(0);
   const [calcWidth, setCalcWidth] = useState(0);
   const [scrollY, setScrollY] = useState(0);
-  const breakpoint = 950;
+  const breakpoint = 1024;
 
   useEffect(() => {
+    handleScroll();
+    handleResize();
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
     return () => {

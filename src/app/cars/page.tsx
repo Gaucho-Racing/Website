@@ -1,23 +1,54 @@
+"use client";
+
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Car from "@/components/car";
+import SideMenu from "@/components/sidebar";
+import { useEffect, useState } from "react";
 
-export default function MediaPage() {
+export default function CarsPage() {
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const breakpoint = 1024;
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleResize = () => {
+    const newWindowDimensions = {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+
+    setWindowHeight(newWindowDimensions.height);
+    setWindowWidth(newWindowDimensions.width);
+  };
+
   return (
     <main className="">
-      <Header
-        selectedPage={4}
-        className=""
-        style={{
-          background: "rgba(0,0,0)",
-          position: "fixed",
-          zIndex: 1,
-          top: "0",
-          right: "0",
-          bottom: "0",
-          left: "0",
-        }}
-      />
+      {windowWidth < breakpoint ? (
+        <SideMenu className="" />
+      ) : (
+        <Header
+          selectedPage={4}
+          className=""
+          style={{
+            background: "rgba(0,0,0)",
+            position: "fixed",
+            zIndex: 1,
+            top: "0",
+            right: "0",
+            bottom: "0",
+            left: "0",
+          }}
+        />
+      )}
+
       <div
         className=""
         style={{
