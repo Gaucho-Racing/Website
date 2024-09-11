@@ -317,13 +317,13 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="bg-black bg-opacity-70 p-16">
+        <div className="bg-black bg-opacity-70 p-8">
           <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-16 lg:mr-16 lg:mt-16">
-            <h1 className="p-16" style={{ textAlign: "center" }}>
+            <h1 className="p-8" style={{ textAlign: "center" }}>
               GET INVOLVED
             </h1>
             <p
-              className="text-xl lg:ml-48 lg:mr-48"
+              className="mb-8 text-xl lg:ml-32 lg:mr-32"
               style={{ textAlign: "center" }}
             >
               Are you passionate about electric vehicles, cutting-edge
