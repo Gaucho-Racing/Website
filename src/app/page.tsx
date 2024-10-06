@@ -92,9 +92,7 @@ export default function HomePage() {
           )}
         </motion.div>
         <Client>
-          <div
-            className="absolute w-full h-full overflow-hidden"
-          >
+          <div className="absolute h-full w-full overflow-hidden">
             <ReactPlayer
               playing
               loop
@@ -214,9 +212,7 @@ export default function HomePage() {
         >
           <div className="bg-black bg-opacity-70 p-16">
             <div className="flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16">
-                OUR STORY
-              </h1>
+              <h1 className="p-16">OUR STORY</h1>
               <p className="text-xl">
                 Gaucho Racing is the continuation of a long history of
                 motorsports in Santa Barbara. Though teams have come and gone,
@@ -226,9 +222,7 @@ export default function HomePage() {
                 focus on educating new members, providing them with the tools
                 they need to succeed, both in school and outside.
               </p>
-              <p
-                className="mt-2 text-xl lg:mt-4"
-              >
+              <p className="mt-2 text-xl lg:mt-4">
                 Gaucho Racing strives to build a diverse and multidisciplinary
                 team, able to challenge each other's ideas and assumptions, as
                 we believe this leads to the best work, innovation and growth.
@@ -239,9 +233,7 @@ export default function HomePage() {
 
         <div className="bg-black bg-opacity-70 p-16">
           <div className="flex flex-col items-center justify-center text-center text-white lg:mb-8 lg:ml-64 lg:mr-64 lg:mt-8">
-            <h1 className="p-16">
-              OUR MISSION
-            </h1>
+            <h1 className="p-16">OUR MISSION</h1>
             <p className="text-xl">
               Gaucho Racing aims to enable students to gain hands-on experience
               in all phases of the engineering process and propel them forward
@@ -278,9 +270,7 @@ export default function HomePage() {
         >
           <div className="bg-black bg-opacity-70 p-16">
             <div className="flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16">
-                ABOUT FSAE
-              </h1>
+              <h1 className="p-16">ABOUT FSAE</h1>
               <p className="text-xl">
                 FSAE Electric, initiated in 2013, is a cutting-edge addition to
                 the Formula SAE competition. It focuses on the development of
@@ -288,9 +278,7 @@ export default function HomePage() {
                 the global shift towards sustainable and eco-friendly
                 transportation solutions.
               </p>
-              <p
-                className="mt-2 text-xl lg:mt-4"
-              >
+              <p className="mt-2 text-xl lg:mt-4">
                 Each year, over 400 teams from universities worldwide
                 participate in events hosted globally. Teams go head-to-head,
                 defending their design choices in static events under the
@@ -311,12 +299,8 @@ export default function HomePage() {
 
         <div className="bg-black bg-opacity-70 p-8">
           <div className="flex flex-col items-center justify-center text-center text-white lg:mb-32 lg:ml-16 lg:mr-16 lg:mt-16">
-            <h1 className="p-8">
-              GET INVOLVED
-            </h1>
-            <p
-              className="mb-8 text-xl lg:ml-32 lg:mr-32"
-            >
+            <h1 className="p-8">GET INVOLVED</h1>
+            <p className="mb-8 text-xl lg:ml-32 lg:mr-32">
               Are you passionate about electric vehicles, cutting-edge
               technology, and being part of a dynamic team? Join us on our
               journey as we continue to make strides in the world of Formula SAE
