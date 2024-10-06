@@ -17,8 +17,7 @@ const OutlineButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
           )}
         >
           <span
-            className="relative h-11 rounded-md bg-black px-8 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0"
-            style={{ width: "fit-content", height: "fit-content" }}
+            className="relative w-fit h-fit rounded-md bg-black px-8 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0"
           >
             {props.children}
           </span>

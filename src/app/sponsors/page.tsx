@@ -34,7 +34,7 @@ export default function SponsorsPage() {
   return (
     <main className="overflow-hidden">
       {windowWidth < breakpoint ? (
-        <SideMenu className="" />
+        <SideMenu selectedPage={5} className="" />
       ) : (
         <Header
           selectedPage={5}
@@ -62,7 +62,7 @@ export default function SponsorsPage() {
       >
         <div className="bg-black bg-opacity-30 p-8">
           <div className="mt-16 flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
-            <h1 className="p-16" style={{ textAlign: "center" }}>
+            <h1 className="p-16 text-center">
               OUR SPONSORS
             </h1>
           </div>
@@ -84,8 +84,7 @@ export default function SponsorsPage() {
             <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div
-                  className="flex h-48 flex-col items-center justify-center"
-                  style={{ paddingBottom: "2vh" }}
+                  className="flex h-48 flex-col items-center justify-center p-[2vh]"
                 >
                   <Image
                     className="m-2 lg:m-4"
@@ -410,12 +409,11 @@ export default function SponsorsPage() {
           </div>
         </div>
       </div>
-      <div className="bg-black bg-opacity-70">
+      <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center justify-center text-center text-white lg:mb-32 lg:ml-32 lg:mr-32 lg:mt-16">
           <h1 className="p-8">SPONSOR US</h1>
           <p
             className="text-xl"
-            style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
           >
             We'd love to have you as a sponsor! Whether it is fueling us with
             pizza, supplying us with materials, or just throwing some cash our

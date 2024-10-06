@@ -32,7 +32,7 @@ export default function CarsPage() {
   return (
     <main className="">
       {windowWidth < breakpoint ? (
-        <SideMenu className="" />
+        <SideMenu selectedPage={4} className="" />
       ) : (
         <Header
           selectedPage={4}
