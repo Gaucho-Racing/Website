@@ -71,7 +71,7 @@ export default function HomePage() {
       <main className="">
         <motion.div>
           {windowWidth < breakpoint ? (
-            <SideMenu className="z-10" />
+            <SideMenu selectedPage={1} className="z-10" />
           ) : (
             <Header
               selectedPage={1}
@@ -93,13 +93,7 @@ export default function HomePage() {
         </motion.div>
         <Client>
           <div
-            className=""
-            style={{
-              position: "absolute",
-              width: "100vw",
-              height: "100vh",
-              overflow: "hidden",
-            }}
+            className="absolute w-full h-full overflow-hidden"
           >
             <ReactPlayer
               playing
@@ -146,7 +140,7 @@ export default function HomePage() {
               animate={{ y: 50, opacity: 1 }}
               transition={{ ease: "easeOut", duration: 0.25, delay: 0.15 }}
             >
-              <h2 className="" style={{ textAlign: "center" }}>
+              <h2 className="text-center">
                 University of California, Santa Barbara
               </h2>
             </motion.div>
@@ -219,11 +213,11 @@ export default function HomePage() {
           }}
         >
           <div className="bg-black bg-opacity-70 p-16">
-            <div className="flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16" style={{ textAlign: "center" }}>
+            <div className="flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
+              <h1 className="p-16">
                 OUR STORY
               </h1>
-              <p className="text-xl" style={{ textAlign: "center" }}>
+              <p className="text-xl">
                 Gaucho Racing is the continuation of a long history of
                 motorsports in Santa Barbara. Though teams have come and gone,
                 it is our goal to create something that is lasting and will
@@ -234,7 +228,6 @@ export default function HomePage() {
               </p>
               <p
                 className="mt-2 text-xl lg:mt-4"
-                style={{ textAlign: "center" }}
               >
                 Gaucho Racing strives to build a diverse and multidisciplinary
                 team, able to challenge each other's ideas and assumptions, as
@@ -245,11 +238,11 @@ export default function HomePage() {
         </div>
 
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-8 lg:ml-64 lg:mr-64 lg:mt-8">
-            <h1 className="p-16" style={{ textAlign: "center" }}>
+          <div className="flex flex-col items-center justify-center text-center text-white lg:mb-8 lg:ml-64 lg:mr-64 lg:mt-8">
+            <h1 className="p-16">
               OUR MISSION
             </h1>
-            <p className="text-xl" style={{ textAlign: "center" }}>
+            <p className="text-xl">
               Gaucho Racing aims to enable students to gain hands-on experience
               in all phases of the engineering process and propel them forward
               into their careers. As part of UCSB’s official SAE International
@@ -258,7 +251,7 @@ export default function HomePage() {
               together as a team to research, design, and manufacture a single
               seater electric race car from the ground up.
             </p>
-            <p className="mt-2 text-xl lg:mt-4" style={{ textAlign: "center" }}>
+            <p className="mt-2 text-xl lg:mt-4">
               Our team is also responsible for funding this project each year
               which will connect our students with industry sponsors and build
               crucial relationships for our success. Through this project,
@@ -284,11 +277,11 @@ export default function HomePage() {
           }}
         >
           <div className="bg-black bg-opacity-70 p-16">
-            <div className="flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
-              <h1 className="p-16" style={{ textAlign: "center" }}>
+            <div className="flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
+              <h1 className="p-16">
                 ABOUT FSAE
               </h1>
-              <p className="text-xl" style={{ textAlign: "center" }}>
+              <p className="text-xl">
                 FSAE Electric, initiated in 2013, is a cutting-edge addition to
                 the Formula SAE competition. It focuses on the development of
                 vehicles powered exclusively by electric motors, aligning with
@@ -297,7 +290,6 @@ export default function HomePage() {
               </p>
               <p
                 className="mt-2 text-xl lg:mt-4"
-                style={{ textAlign: "center" }}
               >
                 Each year, over 400 teams from universities worldwide
                 participate in events hosted globally. Teams go head-to-head,
@@ -318,13 +310,12 @@ export default function HomePage() {
         </div>
 
         <div className="bg-black bg-opacity-70 p-8">
-          <div className="flex flex-col items-center justify-center text-white lg:mb-32 lg:ml-16 lg:mr-16 lg:mt-16">
-            <h1 className="p-8" style={{ textAlign: "center" }}>
+          <div className="flex flex-col items-center justify-center text-center text-white lg:mb-32 lg:ml-16 lg:mr-16 lg:mt-16">
+            <h1 className="p-8">
               GET INVOLVED
             </h1>
             <p
               className="mb-8 text-xl lg:ml-32 lg:mr-32"
-              style={{ textAlign: "center" }}
             >
               Are you passionate about electric vehicles, cutting-edge
               technology, and being part of a dynamic team? Join us on our
@@ -341,7 +332,7 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p style={{ textAlign: "center" }}>
+                  <p className="text-center">
                     Stay up to date with the latest Gaucho Racing news! We'll
                     send you updates about all the cool things we've been
                     working on.

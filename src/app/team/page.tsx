@@ -41,7 +41,7 @@ export default function TeamPage() {
   return (
     <main className="">
       {windowWidth < breakpoint ? (
-        <SideMenu className="" />
+        <SideMenu selectedPage={2} className="" />
       ) : (
         <Header
           selectedPage={2}
@@ -69,7 +69,7 @@ export default function TeamPage() {
       >
         <div className="bg-black bg-opacity-30 p-16">
           <div className="mt-16 flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
-            <h1 className="p-16" style={{ textAlign: "center" }}>
+            <h1 className="p-16 text-center">
               OUR TEAM
             </h1>
           </div>
@@ -78,8 +78,7 @@ export default function TeamPage() {
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
           <h1
-            className="mb-16 mt-16 lg:ml-64 lg:mr-64"
-            style={{ textAlign: "center" }}
+            className="mb-16 mt-16 lg:ml-64 lg:mr-64 text-center"
           >
             OFFICERS
           </h1>
@@ -132,8 +131,7 @@ export default function TeamPage() {
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
           <h1
-            className="mb-16 mt-16 lg:ml-64 lg:mr-64"
-            style={{ textAlign: "center" }}
+            className="mb-16 mt-16 lg:ml-64 lg:mr-64 text-center"
           >
             TEAM LEADS
           </h1>
@@ -234,7 +232,7 @@ export default function TeamPage() {
                           lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16"
           >
             <h1 className="p-16">ALUMNI</h1>
-            <p className="" style={{ textAlign: "center" }}>
+            <p className="text-center">
               At Gaucho Racing, we are proud of the legacy built by our alumni.
               Over the years, countless students have contributed their passion,
               skills, and dedication to our team, driving innovation and
@@ -243,7 +241,7 @@ export default function TeamPage() {
               leadership.
             </p>
             <br />
-            <p className="" style={{ textAlign: "center" }}>
+            <p className="text-center">
               Stay connected, share your journey, and continue to be a part of
               the Gaucho Racing family. Your experiences and success stories
               inspire the next generation of Gaucho Racing members.

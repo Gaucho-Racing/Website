@@ -68,7 +68,7 @@ export default function MediaPage() {
   return (
     <main className="">
       {windowWidth < breakpoint ? (
-        <SideMenu className="" />
+        <SideMenu selectedPage={3} className="" />
       ) : (
         <Header
           selectedPage={3}
