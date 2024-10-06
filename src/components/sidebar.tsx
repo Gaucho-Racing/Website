@@ -28,13 +28,13 @@ const SideMenu = (props: SideMenuProps) => {
       <div className="menuButton">
         <button onClick={toggleMenu}>
           {menuState ? (
-            <div className="absolute w-[10vh] h-[10vh]">
+            <div className="absolute h-[10vh] w-[10vh]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="70px"
                 height="70px"
                 viewBox="0 0 50 50"
-                className="absolute top-[1.5vh] left-[3vh]"
+                className="absolute left-[3vh] top-[1.5vh]"
               >
                 <path
                   fill="white"
@@ -56,60 +56,60 @@ const SideMenu = (props: SideMenuProps) => {
 
       <nav className={menuState ? "menu-open" : "menu-closed"}>
         {menuState && (
-          <div className="flex justify-center items-center text-center text-[5vh] h-[90vh] w-full">
+          <div className="flex h-[90vh] w-full items-center justify-center text-center text-[5vh]">
             <ul className="menu-list">
-              <li> 
-                <Link href="/" onClick={toggleMenu} className={
-                `menu-item ${
-                  props.selectedPage == 1
-                  ? "text-white"
-                  : "text-gray-500"
-                }`
-              }>
+              <li>
+                <Link
+                  href="/"
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 1 ? "text-white" : "text-gray-500"
+                  }`}
+                >
                   ABOUT
                 </Link>
               </li>
               <li className="menu-item p-3">
-                <Link href="/team" onClick={toggleMenu} className={
-                `menu-item ${
-                  props.selectedPage == 2
-                  ? "text-white"
-                  : "text-gray-500"
-                }`
-              }>
+                <Link
+                  href="/team"
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 2 ? "text-white" : "text-gray-500"
+                  }`}
+                >
                   TEAM
                 </Link>
               </li>
               <li className="menu-item p-3">
-                <Link href="/media" onClick={toggleMenu} className={
-                `menu-item ${
-                  props.selectedPage == 3
-                  ? "text-white"
-                  : "text-gray-500"
-                }`
-              }>
+                <Link
+                  href="/media"
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 3 ? "text-white" : "text-gray-500"
+                  }`}
+                >
                   MEDIA
                 </Link>
               </li>
               <li className="menu-item p-3">
-                <Link href="/cars" onClick={toggleMenu} className={
-                `menu-item ${
-                  props.selectedPage == 4
-                  ? "text-white"
-                  : "text-gray-500"
-                }`
-              }>
+                <Link
+                  href="/cars"
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 4 ? "text-white" : "text-gray-500"
+                  }`}
+                >
                   CARS
                 </Link>
               </li>
               <li className="menu-item p-3">
-                <Link href="/sponsors" onClick={toggleMenu} className={
-                `menu-item ${
-                  props.selectedPage == 5
-                  ? "text-white"
-                  : "text-gray-500"
-                }`
-              }>
+                <Link
+                  href="/sponsors"
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 5 ? "text-white" : "text-gray-500"
+                  }`}
+                >
                   SPONSORS
                 </Link>
               </li>
@@ -117,13 +117,10 @@ const SideMenu = (props: SideMenuProps) => {
                 <Link
                   href={DONATION_LINKS.gofundme}
                   target="_blank"
-                  onClick={toggleMenu} className={
-                  `menu-item ${
-                    props.selectedPage == 6
-                    ? "text-white"
-                    : "text-gray-500"
-                  }`
-              }
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 6 ? "text-white" : "text-gray-500"
+                  }`}
                 >
                   DONATE
                 </Link>
