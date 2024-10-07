@@ -1,5 +1,8 @@
+"use client";
+
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import SideMenu from "@/components/sidebar";
 import { OutlineButton } from "@/components/ui/outline-button";
 import {
   Card,
@@ -9,24 +12,52 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import TeamCard from "@/components/team-card";
+import { useEffect, useState } from "react";
 import placeholderImage from "src/assets/images/placeholder-profile.png";
 
 export default function TeamPage() {
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const breakpoint = 1024;
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleResize = () => {
+    const newWindowDimensions = {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+
+    setWindowHeight(newWindowDimensions.height);
+    setWindowWidth(newWindowDimensions.width);
+  };
+
   return (
     <main className="">
-      <Header
-        selectedPage={2}
-        className=""
-        style={{
-          background: "rgba(0,0,0)",
-          position: "fixed",
-          zIndex: 1,
-          top: "0",
-          right: "0",
-          bottom: "0",
-          left: "0",
-        }}
-      />
+      {windowWidth < breakpoint ? (
+        <SideMenu selectedPage={2} className="" />
+      ) : (
+        <Header
+          selectedPage={2}
+          className=""
+          style={{
+            background: "rgba(0,0,0)",
+            position: "fixed",
+            zIndex: 1,
+            top: "0",
+            right: "0",
+            bottom: "0",
+            left: "0",
+          }}
+        />
+      )}
+
       <div
         className=""
         style={{
@@ -38,13 +69,15 @@ export default function TeamPage() {
       >
         <div className="bg-black bg-opacity-30 p-16">
           <div className="mt-16 flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
-            <h1 className="p-16">OUR TEAM</h1>
+            <h1 className="p-16 text-center">OUR TEAM</h1>
           </div>
         </div>
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">OFFICERS</h1>
+          <h1 className="mb-16 mt-16 text-center lg:ml-64 lg:mr-64">
+            OFFICERS
+          </h1>
           <div className="flex flex-wrap justify-center lg:ml-16 lg:mr-16">
             <TeamCard
               name="Thomas Yu"
@@ -93,7 +126,9 @@ export default function TeamPage() {
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">TEAM LEADS</h1>
+          <h1 className="mb-16 mt-16 text-center lg:ml-64 lg:mr-64">
+            TEAM LEADS
+          </h1>
           <div className="flex flex-wrap items-stretch justify-center lg:ml-16 lg:mr-16">
             <TeamCard
               name="Alex Fu"
@@ -190,8 +225,8 @@ export default function TeamPage() {
             className="flex flex-col items-center justify-center text-white 
                           lg:mb-32 lg:ml-64 lg:mr-64 lg:mt-16"
           >
-            <h1 className="p-16">Alumni</h1>
-            <p className="">
+            <h1 className="p-16">ALUMNI</h1>
+            <p className="text-center">
               At Gaucho Racing, we are proud of the legacy built by our alumni.
               Over the years, countless students have contributed their passion,
               skills, and dedication to our team, driving innovation and
@@ -200,7 +235,7 @@ export default function TeamPage() {
               leadership.
             </p>
             <br />
-            <p className="">
+            <p className="text-center">
               Stay connected, share your journey, and continue to be a part of
               the Gaucho Racing family. Your experiences and success stories
               inspire the next generation of Gaucho Racing members.

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import InstagramIcon from "./icons/instagram";
 import LinkedinIcon from "./icons/linkedin";
@@ -5,20 +7,39 @@ import TwitterIcon from "./icons/twitter";
 import { DONATION_LINKS, SOCIAL_LINKS } from "../lib/consts";
 import Image from "next/image";
 import { OutlineButton } from "./ui/outline-button";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+  const [windowWidth, setWindowWidth] = useState(0);
+  const breakpoint = 1024;
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleResize = () => {
+    const newWindowWidth = window.innerWidth;
+    setWindowWidth(newWindowWidth);
+  };
+
   return (
-    <footer className="bg-gr-purple bg-opacity-0 p-8 text-white lg:pl-32 lg:pr-32">
+    <footer className="mb-16 mt-8 bg-gr-purple bg-opacity-0 text-white lg:pl-32 lg:pr-32">
       <div className="flex items-end justify-between">
         <div className="">
-          <div className="ml-2 flex items-center justify-start">
+          <div className="mb-1 ml-5 flex items-center justify-start">
             <Image
               src="/logo/gr-logo-blank.png"
-              width={50}
-              height={50}
+              width={65}
+              height={65}
               alt="Logo"
             />
-            <h1 className="ml-4 mr-4 text-4xl">Gaucho Racing</h1>
+            {windowWidth > breakpoint && (
+              <h1 className="ml-4 mr-4 text-4xl">Gaucho Racing</h1>
+            )}
           </div>
           {/* <h2 className="ml-4 mr-4 mt-4 text-xl text-gray-400">
             UCSB's Formula SAE Team
@@ -27,7 +48,7 @@ export default function Footer() {
         {/* <div className="bg-sky-200">
                     <AutodeskLogo className="text-white h-20 w-100"/>
                 </div> */}
-        <div className="">
+        <div className="mr-5">
           <Link href={DONATION_LINKS.gofundme} target="blank">
             <OutlineButton>DONATE</OutlineButton>
           </Link>
