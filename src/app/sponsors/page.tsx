@@ -76,7 +76,7 @@ export default function SponsorsPage() {
         }}
       >
         <div className="bg-black bg-opacity-70 p-16">
-          <div className="flex flex-col items-center justify-center text-center text-white lg:mx-16 lg:mb-32">
+          <div className="flex flex-col items-center justify-center text-center text-white lg:mx-16">
             <h2 className="m-16 text-center">PLATINUM &nbsp;SPONSORS</h2>
             {/* 1st row of platinum sponsors */}
             <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
@@ -160,9 +160,9 @@ export default function SponsorsPage() {
                   />
                 </div>
                 <p className="text-sm">
-                  Tesla, is at the forefront of electric vehicle and clean
-                  energy solutions. Renowned for advancing sustainable energy,
-                  Tesla produces electric vehicles, battery storage, and solar
+                  Tesla is at the forefront of electric vehicle and clean energy
+                  solutions. Renowned for advancing sustainable energy, Tesla
+                  produces electric vehicles, battery storage, and solar
                   products aimed at reducing global dependence on fossil fuels.
                   Tesla has significantly boosted our Formula SAE team's efforts
                   by providing state-of-the-art battery cells for our car. These
@@ -223,7 +223,7 @@ export default function SponsorsPage() {
               </div>
             </div>
             {/* 4th row of platinum sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <Image
@@ -248,14 +248,19 @@ export default function SponsorsPage() {
                   competitive racing environments.
                 </p>
               </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center text-center text-white lg:mx-16 lg:mb-32">
+            <h2 className="mt-16 text-center lg:mt-32">GOLD &nbsp;SPONSORS</h2>
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <Image
                     className="mt-4 lg:mt-8"
                     src="/logo/sponsor/2024/ansys-wordmark-white.png"
                     alt="Ansys"
-                    width={300}
-                    height={200}
+                    width={200}
+                    height={100}
                   />
                 </div>
                 <p className="text-sm">
@@ -271,10 +276,6 @@ export default function SponsorsPage() {
                   our team members.
                 </p>
               </div>
-            </div>
-
-            <h2 className="mt-16 text-center lg:mt-32">GOLD &nbsp;SPONSORS</h2>
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <Image
@@ -287,16 +288,68 @@ export default function SponsorsPage() {
                 </div>
                 <p className="text-sm">
                   ITT Inc. is a global manufacturer known for its diversified
-                  high-technology engineering solutions. This season, ITT has
-                  enhanced our Formula SAE team's capabilities by granting us
-                  access to their industrial-grade oven. This equipment has been
-                  invaluable for curing composite materials used in constructing
-                  our race car, ensuring optimal strength and lightweight
-                  properties. Access to ITT's oven has enabled precise control
-                  over our fabrication processes, improving the quality and
-                  durability of our vehicle components.
+                  high-technology engineering solutions in the aerospace,
+                  automotive, rail, energy, and industrial sectors. Last season,
+                  ITT enhanced Gaucho Racings capabilities by granting us access
+                  to their industrial-grade oven, allowing us to cure our
+                  composite components. For GR25, ITT has become a leading
+                  partner in our program, providing resources that will support
+                  both our mechanical and electrical teams. ITT has also
+                  recognized the talent within Gaucho Racing and is actively
+                  recruiting directly from our team, offering team members
+                  direct pathways into their professional careers.
                 </p>
               </div>
+            </div>
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
+                  <Image
+                    className="mt-4 lg:mt-8"
+                    src="/logo/sponsor/2025/Corporate Logos/Gold/Altium/Altium_white.png"
+                    alt="Altium"
+                    width={200}
+                    height={100}
+                  />
+                </div>
+                <p className="text-sm">
+                  Altium is a world-renowned software company specializing in
+                  electronic design automation and PCB-focused programs. Since
+                  2023, they have generously supported our team by providing
+                  access to their cutting-edge software, empowering our
+                  engineers to design and optimize complex electronic systems.
+                  Our Powertrain, Electronics, and Data team have extensively
+                  utilized Altium’s applications to develop custom circuitry for
+                  critical components such as our Battery Management system,
+                  sensor integration, and motor controller. This partnership has
+                  been essential in advancing our abilities to meet industry
+                  standards.
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
+                  <Image
+                    className="mt-4 lg:mt-8"
+                    src="/logo/sponsor/2025/Corporate Logos/Gold/AWS/AWS_white.png"
+                    alt="AWS"
+                    width={125}
+                    height={100}
+                  />
+                </div>
+                <p className="text-sm">
+                  Amazon Web Services (AWS) is the largest provider of cloud
+                  computing and cloud solution services in the world. Since
+                  partnering with us, AWS has provided our team with free
+                  credits to utilize their cloud services, which we have
+                  leverage to store our car data, host our website, and manage
+                  our internal IT infrastructure. This support has allowed us to
+                  efficiently streamline our team processes, better benchmark
+                  our car performance, and train our members to use the same
+                  advanced tools relied upon by top professionals in the field.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <Image
@@ -318,91 +371,160 @@ export default function SponsorsPage() {
                   the dynamic environment of collegiate racing.
                 </p>
               </div>
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
+                  <Image
+                    className="mt-4 lg:mt-8"
+                    src="/logo/sponsor/2025/Corporate Logos/Gold/Hexagon/Hexagon.png"
+                    alt="Hexagon"
+                    width={275}
+                    height={100}
+                  />
+                </div>
+                <p className="text-sm">
+                  Hexagon is an international, multidisciplinary powerhouse
+                  focused in various sectors including surveying, manufacturing,
+                  aerospace, agriculture, and healthcare. Our team utilizes
+                  their simulation software including Adams, a industry standard
+                  vehicle dynamics simulation platform. With this software, our
+                  team is able to efficiently map our suspension geometry,
+                  simulate and visualize lap times, and gain a better
+                  understanding of our car, giving us a competitive edge in
+                  FSAE.
+                </p>
+              </div>
             </div>
-            <h2 className="mt-16 text-center lg:mt-32">
-              SILVER &nbsp;SPONSORS
-            </h2>
-            <div className="flex flex-col items-center justify-center lg:mt-16 lg:flex-row">
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/formlabs-wordmark-white.png"
-                alt="Formlabs"
-                width={250}
-                height={100}
-              />
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/nf-logo-white.png"
-                alt="Neal Feay"
-                width={130}
-                height={100}
-              />
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/haasfoundation-logo-white.png"
-                alt="Gene Haas Founation"
-                width={140}
-                height={100}
-              />
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/milpasmotors-logo-white.png"
-                alt="Milpas Motors"
-                width={150}
-                height={100}
-              />
+            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
+                  <Image
+                    className="mt-4 lg:mt-8"
+                    src="/logo/sponsor/2025/Corporate Logos/Gold/Solidworks/Solidworks_white.png"
+                    alt="Solidworks"
+                    width={300}
+                    height={100}
+                  />
+                </div>
+                <p className="text-sm">
+                  Solidworks is a leading provider of computer-aided design and
+                  simulation software. At Gaucho Racing, we rely heavily on
+                  Solidworks to model and integrate all major components,
+                  ensuring seamless design and development of our projects. Its
+                  advanced tools enable our team to optimize performance,
+                  streamline workflows, and bring innovative engineering
+                  solutions to life. Solidworks plays a crucial role in helping
+                  us maintain precision and efficiency throughout our design
+                  process.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col items-center lg:flex-row">
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/hakko-wordmark-white.png"
-                alt="Hakko"
-                width={250}
-                height={100}
-              />
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/solidworks-wordmark-white.png"
-                alt="Solidworks"
-                width={290}
-                height={100}
-              />
-            </div>
-            <h2 className="mt-16 whitespace-pre text-center lg:mt-32">
-              BRONZE &nbsp;SPONSORS
-            </h2>
-            <div className="flex flex-col items-center justify-center lg:mt-16 lg:flex-row">
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/redbull-logo-white.png"
-                alt="Red Bull"
-                width={115}
-                height={100}
-              />
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/drivetowardcure-logo-white.png"
-                alt="Drive Toward A Cure"
-                width={90}
-                height={100}
-              />
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/celsius-logo-white.png"
-                alt="Celsius"
-                width={80}
-                height={100}
-              />
-              <Image
-                className="m-4 lg:m-8"
-                src="/logo/sponsor/2024/digitalocean-logo-white.png"
-                alt="DigitalOcean"
-                width={120}
-                height={100}
-              />
-            </div>
-            <div className="flex flex-col items-center lg:flex-row"></div>
           </div>
+          <h2 className="mb-8 mt-16 text-center lg:mt-32">
+            SILVER &nbsp;SPONSORS
+          </h2>
+          <div className="flex flex-col items-center justify-center lg:mt-8 lg:flex-row">
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2025/Corporate Logos/Silver/Airtech/Airtech_white.png"
+              alt="Airtech"
+              width={200}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2025/Corporate Logos/Silver/SKF/SKF_white.png"
+              alt="SKF"
+              width={200}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2025/Corporate Logos/Silver/Vi-Grade/vi-grade_white.png"
+              alt="Vi-Grade"
+              width={200}
+              height={100}
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2025/Corporate Logos/Silver/Santa Barbara Car Show Channel/SantaBarbaraCarShow_Transparent.png"
+              alt="Santa Barbara Car Show Channel"
+              width={215}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2024/haasfoundation-logo-white.png"
+              alt="Gene Haas Founation"
+              width={140}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2024/formlabs-wordmark-white.png"
+              alt="Formlabs"
+              width={200}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2024/hakko-wordmark-white.png"
+              alt="Hakko"
+              width={200}
+              height={100}
+            />
+          </div>
+          <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
+            BRONZE &nbsp;SPONSORS
+          </h2>
+          <div className="flex flex-col items-center justify-center lg:mt-8 lg:flex-row">
+            <Image
+              className="m-4 lg:m-6"
+              src="/logo/sponsor/2025/Corporate Logos/Bronze/SendCutSend/SendCutSend_white.png"
+              alt="SendCutSend"
+              width={175}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:mr-0"
+              src="/logo/sponsor/2025/Corporate Logos/Bronze/Confluent/Confluent_white.png"
+              alt="Confluent"
+              width={200}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:ml-0"
+              src="/logo/sponsor/2025/Corporate Logos/Bronze/Coroflex/Coorflex_white.png"
+              alt="Coroflex"
+              width={200}
+              height={100}
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+            <Image
+              className="m-4 lg:m-10"
+              src="/logo/sponsor/2024/celsius-logo-white.png"
+              alt="Celsius"
+              width={80}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:m-10"
+              src="/logo/sponsor/2024/redbull-logo-white.png"
+              alt="Red Bull"
+              width={115}
+              height={100}
+            />
+            <Image
+              className="m-4 lg:m-10"
+              src="/logo/sponsor/2024/drivetowardcure-logo-white.png"
+              alt="Drive Toward A Cure"
+              width={90}
+              height={100}
+            />
+          </div>
+          <div className="flex flex-col items-center lg:flex-row"></div>
         </div>
       </div>
       <div className="bg-black bg-opacity-70 p-8">
