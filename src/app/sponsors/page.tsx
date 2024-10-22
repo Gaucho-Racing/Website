@@ -495,7 +495,7 @@ export default function SponsorsPage() {
             />
             <Image
               className="m-4 lg:ml-0"
-              src="/logo/sponsor/2025/Corporate Logos/Bronze/Coroflex/Coorflex_white.png"
+              src="/logo/sponsor/2025/Corporate Logos/Bronze/Coroflex/Coroflex_white.png"
               alt="Coroflex"
               width={200}
               height={100}
