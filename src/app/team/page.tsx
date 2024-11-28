@@ -137,10 +137,10 @@ export default function TeamPage() {
               image="lead-images\25\alex_fu.jpg"
             />
             <TeamCard
-              name="Curren Somers"
+              name="Stephen Wong"
               title="Aero Lead"
               titleColor="text-gr-purple"
-              image="lead-images\25\curren_somers.png"
+              image="lead-images\25\stephen_wong.jpg"
             />
             <TeamCard
               name="Jeff Duong"
