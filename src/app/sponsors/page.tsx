@@ -636,7 +636,7 @@ export default function SponsorsPage() {
             <a href="https://vantage-dc.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2025/Corporate Logos/Bronze/Vantage Data Center/vantagedatacenter.png"
+                src="/logo/sponsor/2025/Corporate Logos/Bronze/Vantage Data Centers/vantagedatacenters.png"
                 alt="Vantage Data Centers"
                 width={100}
                 height={100}
