@@ -595,8 +595,6 @@ export default function SponsorsPage() {
                 height={100}
               />
             </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
             <a href="https://www.celsius.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
@@ -606,6 +604,8 @@ export default function SponsorsPage() {
                 height={100}
               />
             </a>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
             <a href="https://www.redbull.com/us-en" target="_blank">
               <Image
                 className="m-4 lg:m-10"
@@ -631,6 +631,15 @@ export default function SponsorsPage() {
                 alt="SemiQ"
                 width={200}
                 height={125}
+              />
+            </a>
+            <a href="https://vantage-dc.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/logo/sponsor/2025/Corporate Logos/Bronze/Vantage Data Centers/vantagedatacenters.png"
+                alt="Vantage Data Centers"
+                width={100}
+                height={100}
               />
             </a>
           </div>
