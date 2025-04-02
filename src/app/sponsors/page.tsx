@@ -599,19 +599,10 @@ export default function SponsorsPage() {
             BRONZE &nbsp;SPONSORS
           </h2>
           <div className="flex flex-col items-center justify-center lg:mt-8 lg:flex-row">
-            <a href="https://sendcutsend.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/logo/sponsor/2025/Corporate Logos/Bronze/SendCutSend/SendCutSend_white.png"
-                alt="SendCutSend"
-                width={175}
-                height={100}
-              />
-            </a>
             <a href="https://www.confluent.io/" target="_blank">
               <Image
                 className="m-4 lg:mr-0"
-                src="/logo/sponsor/2025/Corporate Logos/Bronze/Confluent/Confluent_white.png"
+                src="/logo/sponsor/2025/bronze/confluent-white.png"
                 alt="Confluent"
                 width={200}
                 height={100}
@@ -620,7 +611,7 @@ export default function SponsorsPage() {
             <a href="https://www.coroflex-cable.com/en/" target="_blank">
               <Image
                 className="m-4 lg:ml-0"
-                src="/logo/sponsor/2025/Corporate Logos/Bronze/Coroflex/Coroflex_white.png"
+                src="/logo/sponsor/2025/bronze/coroflex-white.png"
                 alt="Coroflex"
                 width={200}
                 height={100}
@@ -629,37 +620,64 @@ export default function SponsorsPage() {
             <a href="https://www.celsius.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2024/celsius-logo-white.png"
+                src="/logo/sponsor/2025/bronze/celsius-logo-white.png"
                 alt="Celsius"
                 width={80}
                 height={100}
               />
             </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
             <a href="https://www.redbull.com/us-en" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2024/redbull-logo-white.png"
+                src="/logo/sponsor/2025/bronze/redbull-logo-white.png"
                 alt="Red Bull"
                 width={115}
-                height={100}
-              />
-            </a>
-            <a href="https://www.drivetowardacure.org/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/logo/sponsor/2024/drivetowardcure-logo-white.png"
-                alt="Drive Toward A Cure"
-                width={90}
                 height={100}
               />
             </a>
             <a href="https://semiq.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2025/Corporate Logos/Bronze/SemiQ/semiq-white.png"
+                src="/logo/sponsor/2025/bronze/semiq-white.png"
                 alt="SemiQ"
+                width={200}
+                height={125}
+              />
+            </a>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+            <a href="https://www.digikey.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/logo/sponsor/2025/bronze/digikey-white.png"
+                alt="Digikey"
+                width={150}
+                height={125}
+              />
+            </a>
+            <a href="https://inertialsense.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/logo/sponsor/2025/bronze/inertialsense-white.png"
+                alt="Inertial Sense"
+                width={200}
+                height={125}
+              />
+            </a>
+            <a href="https://www.tapplastics.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/logo/sponsor/2025/bronze/tapplastics-white.png"
+                alt="Tap Plastics"
+                width={200}
+                height={125}
+              />
+            </a>
+            <a href="https://storkecentr.al/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/logo/sponsor/2025/bronze/storkecentral-white.png"
+                alt="StorkeCentral"
                 width={200}
                 height={125}
               />
@@ -667,7 +685,7 @@ export default function SponsorsPage() {
             <a href="https://vantage-dc.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2025/Corporate Logos/Bronze/Vantage Data Centers/vantagedatacenters.png"
+                src="/logo/sponsor/2025/bronze/vantage-white.png"
                 alt="Vantage Data Centers"
                 width={100}
                 height={100}
