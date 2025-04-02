@@ -133,10 +133,31 @@ export default function SponsorsPage() {
             <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
+                  <a href=" https://www.arts.ucsb.edu/" target="_blank">
+                    <Image
+                      className="mt-4 lg:mt-8"
+                      src="/logo/sponsor/2025/platinum/ucsb-art/ucsb-art-white.png"
+                      alt="UCSB Art Department"
+                      width={400}
+                      height={200}
+                    />
+                  </a>
+                </div>
+                <p className="text-sm">
+                The UC Santa Barbara Art Department has generously supported Gaucho Racing by granting us access to their manufacturing spaces and capabilities.
+                This collaboration has enabled us to fabricate key components such as our chassis right on campus.
+                Their support has played a vital role in advancing our engineering efforts and strengthening our educational mission.
+                We’re excited to continue working together to push the boundaries of student-driven innovation.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.singlestore.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2024/singlestore-wordmark-white.png"
+                      src="/logo/sponsor/2025/platinum/singlestore/singlestore-wordmark-white.png"
                       alt="SingleStore"
                       width={400}
                       height={200}
