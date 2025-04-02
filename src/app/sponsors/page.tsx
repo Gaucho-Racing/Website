@@ -641,7 +641,7 @@ export default function SponsorsPage() {
             </a>
           </div>
           <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
-          <a href="https://semiq.com/" target="_blank">
+            <a href="https://semiq.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
                 src="/logo/sponsor/2025/bronze/semiq-white.png"
