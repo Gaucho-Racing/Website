@@ -144,10 +144,14 @@ export default function SponsorsPage() {
                   </a>
                 </div>
                 <p className="text-sm">
-                The UC Santa Barbara Art Department has generously supported Gaucho Racing by granting us access to their manufacturing spaces and capabilities.
-                This collaboration has enabled us to fabricate key components such as our chassis right on campus.
-                Their support has played a vital role in advancing our engineering efforts and strengthening our educational mission.
-                We’re excited to continue working together to push the boundaries of student-driven innovation.
+                  The UC Santa Barbara Art Department has generously supported
+                  Gaucho Racing by granting us access to their manufacturing
+                  spaces and capabilities. This collaboration has enabled us to
+                  fabricate key components such as our chassis right on campus.
+                  Their support has played a vital role in advancing our
+                  engineering efforts and strengthening our educational mission.
+                  We’re excited to continue working together to push the
+                  boundaries of student-driven innovation.
                 </p>
               </div>
               <div className="flex flex-col items-center">
