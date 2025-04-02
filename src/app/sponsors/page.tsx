@@ -639,7 +639,9 @@ export default function SponsorsPage() {
                 height={100}
               />
             </a>
-            <a href="https://semiq.com/" target="_blank">
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+          <a href="https://semiq.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
                 src="/logo/sponsor/2025/bronze/semiq-white.png"
@@ -648,8 +650,6 @@ export default function SponsorsPage() {
                 height={125}
               />
             </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
             <a href="https://www.digikey.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
@@ -677,12 +677,23 @@ export default function SponsorsPage() {
                 height={125}
               />
             </a>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+            <a href="https://www.tglobaltechnology.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/logo/sponsor/2025/bronze/tglobal-white.png"
+                alt="T-Global Technology"
+                width={180}
+                height={125}
+              />
+            </a>
             <a href="https://storkecentr.al/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
                 src="/logo/sponsor/2025/bronze/storkecentral-white.png"
                 alt="StorkeCentral"
-                width={200}
+                width={250}
                 height={125}
               />
             </a>
@@ -696,7 +707,6 @@ export default function SponsorsPage() {
               />
             </a>
           </div>
-          <div className="flex flex-col items-center lg:flex-row"></div>
         </div>
       </div>
       <div className="bg-black bg-opacity-70 p-8">
