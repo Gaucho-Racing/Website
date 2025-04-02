@@ -85,7 +85,7 @@ export default function SponsorsPage() {
                   <a href="https://asfb.as.ucsb.edu/" target="_blank">
                     <Image
                       className="m-2 lg:m-4"
-                      src="/logo/sponsor/2024/asfinance-logo-white.png"
+                      src="/logo/sponsor/2025/platinum/asfinance-logo-white.png"
                       alt="UCSB AS Finance Board"
                       width={160}
                       height={150}
@@ -108,7 +108,7 @@ export default function SponsorsPage() {
                   <a href="https://urca.ucsb.edu/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2024/urca-wordmark-white.png"
+                      src="/logo/sponsor/2025/platinum/urca-wordmark-white.png"
                       alt="UCSB URCA"
                       width={400}
                       height={100}
@@ -136,10 +136,10 @@ export default function SponsorsPage() {
                   <a href=" https://www.arts.ucsb.edu/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2025/platinum/ucsb-art/ucsb-art-white.png"
+                      src="/logo/sponsor/2025/platinum/ucsb-art-white.png"
                       alt="UCSB Art Department"
-                      width={400}
-                      height={200}
+                      width={300}
+                      height={100}
                     />
                   </a>
                 </div>
@@ -150,14 +150,12 @@ export default function SponsorsPage() {
                 We’re excited to continue working together to push the boundaries of student-driven innovation.
                 </p>
               </div>
-            </div>
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.singlestore.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2025/platinum/singlestore/singlestore-wordmark-white.png"
+                      src="/logo/sponsor/2025/platinum/singlestore-wordmark-white.png"
                       alt="SingleStore"
                       width={400}
                       height={200}
@@ -176,12 +174,15 @@ export default function SponsorsPage() {
                   environment.
                 </p>
               </div>
+            </div>
+            {/* 3rd row of platinum sponsors */}
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.tesla.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2024/tesla-wordmark-white.png"
+                      src="/logo/sponsor/2025/platinum/tesla-wordmark-white.png"
                       alt="Tesla"
                       width={300}
                       height={80}
@@ -200,9 +201,6 @@ export default function SponsorsPage() {
                   effectively.
                 </p>
               </div>
-            </div>
-            {/* 3rd row of platinum sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a
@@ -211,7 +209,7 @@ export default function SponsorsPage() {
                   >
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2024/cadence-wordmark-white.png"
+                      src="/logo/sponsor/2025/platinum/cadence-wordmark-white.png"
                       alt="Cadence"
                       width={350}
                       height={200}
@@ -231,12 +229,15 @@ export default function SponsorsPage() {
                   collegiate racing.
                 </p>
               </div>
+            </div>
+            {/* 4th row of platinum sponsors */}
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://fireflyspace.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2024/firefly-wordmark-white.png"
+                      src="/logo/sponsor/2025/platinum/firefly-wordmark-white.png"
                       alt="FireFly Aerospace"
                       width={475}
                       height={200}
@@ -257,9 +258,6 @@ export default function SponsorsPage() {
                   used in the aerospace industry.
                 </p>
               </div>
-            </div>
-            {/* 4th row of platinum sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a
@@ -268,9 +266,9 @@ export default function SponsorsPage() {
                   >
                     <Image
                       className="m-4 lg:m-8"
-                      src="/logo/sponsor/2024/hesse-logo-white.png"
+                      src="/logo/sponsor/2025/platinum/hesse-logo-white.png"
                       alt="Hesse Mechatronics"
-                      width={275}
+                      width={250}
                       height={100}
                     />
                   </a>
@@ -289,12 +287,15 @@ export default function SponsorsPage() {
                   competitive racing environments.
                 </p>
               </div>
+            </div>
+            {/* 5th row of platinum sponsors */}
+            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.amk-motion.com/en/" target="_blank">
                     <Image
                       className="m-4 lg:m-8"
-                      src="/logo/sponsor/2025/Corporate Logos/Platinum/AMK Motion/amk-motion-white.png"
+                      src="/logo/sponsor/2025/platinum/amk-motion-white.png"
                       alt="AMK Motion"
                       width={350}
                       height={200}
