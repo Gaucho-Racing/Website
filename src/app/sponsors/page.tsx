@@ -336,16 +336,16 @@ export default function SponsorsPage() {
                 <p className="text-sm">
                   Kenesto is a powerful provider of cloud-based product
                   management and collaboration solutions, created specifically
-                  for engineers and designers. Kenesto has generously given our 
-                  team access to their flexible platform for easy collaboration 
-                  on design work, critically improving our CAD file management, 
-                  version control processes, and overall organization. The highly 
-                  robust services that Kenesto provides are critical to Gaucho 
-                  Racing's growth, enabling our organization to design more 
-                  cleanly and efficiently.
+                  for engineers and designers. Kenesto has generously given our
+                  team access to their flexible platform for easy collaboration
+                  on design work, critically improving our CAD file management,
+                  version control processes, and overall organization. The
+                  highly robust services that Kenesto provides are critical to
+                  Gaucho Racing's growth, enabling our organization to design
+                  more cleanly and efficiently.
                 </p>
               </div>
-            </div> 
+            </div>
           </div>
           {/* gold sponsors */}
           <div className="flex flex-col items-center justify-center text-center text-white lg:mx-16 lg:mb-32">
