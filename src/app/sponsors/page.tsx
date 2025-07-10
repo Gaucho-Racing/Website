@@ -292,8 +292,9 @@ export default function SponsorsPage() {
                 </p>
               </div>
             </div>
-            {/* 5th row of platinum sponsors */}
-            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
+
+            {/* 5th row of platinum sponsors*/}
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.amk-motion.com/en/" target="_blank">
@@ -318,6 +319,30 @@ export default function SponsorsPage() {
                   a competitive edge, shaving crucial seconds off our times
                   during dynamic events and pushing our car’s capabilities to
                   new heights.
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
+                  <a href="https://www.kenesto.com/" target="_blank">
+                    <Image
+                      className="m-4 lg:m-8"
+                      src="/logo/sponsor/2025/platinum/kenesto-logo-white.png"
+                      alt="Kenesto"
+                      width={300}
+                      height={100}
+                    />
+                  </a>
+                </div>
+                <p className="text-sm">
+                  Kenesto is a powerful provider of cloud-based product
+                  management and collaboration solutions, created specifically
+                  for engineers and designers. Kenesto has generously given our
+                  team access to their flexible platform for easy collaboration
+                  on design work, critically improving our CAD file management,
+                  version control processes, and overall organization. The
+                  highly robust services that Kenesto provides are critical to
+                  Gaucho Racing's growth, enabling our organization to design
+                  more cleanly and efficiently.
                 </p>
               </div>
             </div>
