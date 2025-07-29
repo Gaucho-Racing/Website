@@ -362,12 +362,12 @@ export default function SponsorsPage() {
                   </a>
                 </div>
                 <p className="text-sm">
-                  Elijah Langworthy, AKA Nocturnal Welding, is a local machinist 
-                  and welder in the Camarillo Area. He has been instrumental in 
-                  our team since our formation and has helped our team 
-                  manufacture components, including welding our accumulator 
-                  container for GR24 and our decoupled suspension modules for 
-                  GR25. His crucial work has helped ensure that our critical 
+                  Elijah Langworthy, AKA Nocturnal Welding, is a local machinist
+                  and welder in the Camarillo Area. He has been instrumental in
+                  our team since our formation and has helped our team
+                  manufacture components, including welding our accumulator
+                  container for GR24 and our decoupled suspension modules for
+                  GR25. His crucial work has helped ensure that our critical
                   components are completed with high quality and accuracy.
                 </p>
               </div>
