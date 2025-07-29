@@ -385,7 +385,7 @@ export default function SponsorsPage() {
             want to learn more about some of the benefits in sponsoring our
             team, please check out our sponsorship packet below.
           </p>
-          <a href="/sponsorship.pdf" target="_blank">
+          <a href="/Sponsorship Package GR24.pdf" target="_blank">
             <OutlineButton>SPONSORSHIP PACKET</OutlineButton>
           </a>
         </div>
