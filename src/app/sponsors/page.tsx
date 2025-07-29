@@ -346,7 +346,34 @@ export default function SponsorsPage() {
                 </p>
               </div>
             </div>
+
+            {/* 6th row of platinum sponsors*/}
+            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
+                  <a href="https://www.nocturnalwelding.com/" target="_blank">
+                    <Image
+                      className="m-4 lg:m-8"
+                      src="/logo/sponsor/2025/platinum/nocturnal-welding-logo-white.png"
+                      alt="Nocturnal Welding"
+                      width={190}
+                      height={200}
+                    />
+                  </a>
+                </div>
+                <p className="text-sm">
+                  Elijah Langworthy, AKA Nocturnal Welding, is a local machinist 
+                  and welder in the Camarillo Area. He has been instrumental in 
+                  our team since our formation and has helped our team 
+                  manufacture components, including welding our accumulator 
+                  container for GR24 and our decoupled suspension modules for 
+                  GR25. His crucial work has helped ensure that our critical 
+                  components are completed with high quality and accuracy.
+                </p>
+              </div>
+            </div>
           </div>
+
           {/* gold sponsors */}
           <div className="flex flex-col items-center justify-center text-center text-white lg:mx-16 lg:mb-32">
             <h2 className="mt-16 text-center lg:mt-32">GOLD &nbsp;SPONSORS</h2>
@@ -744,7 +771,7 @@ export default function SponsorsPage() {
             want to learn more about some of the benefits in sponsoring our
             team, please check out our sponsorship packet below.
           </p>
-          <a href="/sponsorship.pdf" target="_blank">
+          <a href="/Sponsorship Package GR25.pdf" target="_blank">
             <OutlineButton>SPONSORSHIP PACKET</OutlineButton>
           </a>
         </div>
