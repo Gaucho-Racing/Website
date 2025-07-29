@@ -80,46 +80,46 @@ export default function TeamPage() {
           </h1>
           <div className="flex flex-wrap justify-center lg:ml-16 lg:mr-16">
             <TeamCard
-              name="Thomas Yu"
+              name="Alex Fu"
               title="President"
               titleColor="text-gr-pink"
-              image="lead-images\25\thomas_yu.jpg"
+              image="lead-images/26/alex-fu-26.jpg"
             />
             <TeamCard
-              name="Diego Vasquez"
+              name="Manas Bhargavan"
               title="Internal VP"
               titleColor="text-gr-pink"
-              image="lead-images\25\diego_vasquez.jpg"
+              image="lead-images/26/manas-bhargavan-26.jpg"
             />
             <TeamCard
-              name="Alex Fu"
+              name="Jackson Tiengtum"
               title="External VP"
               titleColor="text-gr-pink"
-              image="lead-images\25\alex_fu.jpg"
+              image="lead-images/26/jackson-tiengtum-26.jpg"
             />
             <TeamCard
-              name="Yakov Shur"
+              name="Jeremy Sevilla"
               title="Secretary"
               titleColor="text-gr-pink"
-              image="lead-images\25\yakov_shur.jpg"
+              image="lead-images/26/jeremy-sevilla-26.jpg"
             />
             <TeamCard
-              name="Jeff Duong"
+              name="Zachary Rogers"
               title="Treasurer"
               titleColor="text-gr-pink"
-              image="lead-images\25\jeff_duong.jpg"
+              image="lead-images/26/zachary-rogers-26.jpg"
             />
             <TeamCard
-              name="Anirudh Kumar"
-              title="Mechanical Chief Engineer"
+              name="Colin Kwok"
+              title="Mechanical TD"
               titleColor="text-gr-pink"
-              image="lead-images\25\anirudh_kumar.jpg"
+              image="lead-images/26/colin_kwok.jpg"
             />
             <TeamCard
-              name="Jason Wei"
-              title="Electrical Chief Engineer"
+              name="Ryan Nguyen"
+              title="Electrical TD"
               titleColor="text-gr-pink"
-              image="lead-images\25\jason_wei.jpg"
+              image="lead-images/26/ryan_nguyen.jpg"
             />
           </div>
         </div>
@@ -131,82 +131,100 @@ export default function TeamPage() {
           </h1>
           <div className="flex flex-wrap items-stretch justify-center lg:ml-16 lg:mr-16">
             <TeamCard
-              name="Alex Fu"
-              title="Aero Lead"
+              name="Satvik Subbaraman"
+              title="Drivetrain"
               titleColor="text-gr-purple"
-              image="lead-images\25\alex_fu.jpg"
+              image="lead-images/26/satvik-subbaraman-26.jpg"
             />
             <TeamCard
-              name="Stephen Wong"
-              title="Aero Lead"
+              name="Brian Tham"
+              title="Drivetrain"
               titleColor="text-gr-purple"
-              image="lead-images\25\stephen_wong.jpg"
+              image="lead-images/26/brian-tham-26.jpg"
             />
             <TeamCard
-              name="Jeff Duong"
-              title="Business Lead"
+              name="Koa Shen"
+              title="Chassis"
               titleColor="text-gr-purple"
-              image="lead-images\25\jeff_duong.jpg"
+              image="lead-images/26/koa-shen-26.jpg"
             />
             <TeamCard
               name="Ava Tran"
-              title="Chassis Lead"
+              title="Chassis"
               titleColor="text-gr-purple"
-              image="lead-images\25\ava_tran.jpg"
+              image="lead-images/26/ava-tran-26.jpg"
             />
             <TeamCard
-              name="Matthew Lin"
-              title="Chassis Lead"
+              name="Stefan Karwasiecki"
+              title="Suspension"
               titleColor="text-gr-purple"
-              image="lead-images\25\matthew_lin.png"
+              image="lead-images/26/stefan-karwasiecki-26.jpg"
             />
             <TeamCard
-              name="Bharat Kathi"
-              title="Data Lead"
+              name="Curtis Butsko"
+              title="Suspension"
               titleColor="text-gr-purple"
-              image="lead-images\25\bharat_kathi.jpg"
+              image="lead-images/26/curtis-butsko-26.jpg"
             />
             <TeamCard
-              name="Tien Nguyen"
-              title="Electronics Lead"
+              name="Forrest Drury"
+              title="Aero"
               titleColor="text-gr-purple"
-              image="lead-images\25\tien_nguyen.jpg"
+              image="lead-images/26/forrest-drury-26.jpg"
             />
             <TeamCard
-              name="Nikunj Parasar"
-              title="Firmware Lead"
+              name="Kelvin Quach"
+              title="Aero"
               titleColor="text-gr-purple"
-              image="lead-images\25\nikunj_parasar.jpg"
+              image="lead-images/26/kelvin-quach-26.jpg"
             />
             <TeamCard
-              name="Colin Kwok"
-              title="Powertrain Lead"
+              name="Owen Liu"
+              title="High Voltage"
               titleColor="text-gr-purple"
-              image="lead-images\25\colin_kwok.jpg"
+              image="lead-images/26/owen-liu-26.jpg"
             />
             <TeamCard
-              name="Ryan Nguyen"
-              title="Powertrain Lead"
+              name="Vamsi Vempati"
+              title="High Voltage"
               titleColor="text-gr-purple"
-              image="lead-images\25\ryan_nguyen.png"
+              image="lead-images/26/vamsi-vempati-26.jpg"
             />
             <TeamCard
-              name="Anirudh Kumar"
-              title="Suspension Lead"
+              name="Vin Shin"
+              title="Low Voltage"
               titleColor="text-gr-purple"
-              image="lead-images\25\anirudh_kumar.jpg"
+              image="lead-images/26/vin-shin-26.jpg"
             />
             <TeamCard
-              name="Camron Hosseini"
-              title="Suspension Lead"
+              name="Andrey Otvagin"
+              title="Low Voltage"
               titleColor="text-gr-purple"
-              image="lead-images\25\camron_hosseini.jpg"
+              image="lead-images/26/andrey-otvagin-26.jpg"
             />
             <TeamCard
-              name="Amitha Bhat"
-              title="Social Media Manager"
+              name="Daniel Hansen"
+              title="Firmware"
               titleColor="text-gr-purple"
-              image="lead-images\25\amitha_bhat.jpg"
+              image="lead-images/26/daniel-hansen-26.jpg"
+            />
+            <TeamCard
+              name="Jake Jurek"
+              title="Data"
+              titleColor="text-gr-purple"
+              image="lead-images/26/jake-jurek-26.jpg"
+            />
+            <TeamCard
+              name="Austin Chan"
+              title="DevOps"
+              titleColor="text-gr-purple"
+              image="lead-images/26/austin-chan-26.jpg"
+            />
+            <TeamCard
+              name="Alyssa Story"
+              title="Business"
+              titleColor="text-gr-purple"
+              image="lead-images/26/alyssa-story-26.jpg"
             />
           </div>
         </div>
