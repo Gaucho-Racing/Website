@@ -68,6 +68,14 @@ export default function CarsPage() {
         <h1 className="mb-16 mt-16 text-center lg:ml-64 lg:mr-64">OUR CARS</h1>
         <div className="flex flex-col items-center text-white">
           <Car
+            name="GR25"
+            year="2024 - 2025"
+            description={`Nickname: DARK TECH \n 
+              Gaucho Racing's third competing car, breaking our record for scoring the most total points in the team's history!`}
+            imageUrl="/cars/25.jpg"
+            imageOnLeft={true}
+          />
+          <Car
             name="GR24"
             year="2023 - 2024"
             description={`Nickname: Do You Have an SOP for That? \n 

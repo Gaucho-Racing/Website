@@ -7,37 +7,115 @@ import ImageCard from "@/components/image-card";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const images = [
+const images25 = [
   {
-    src: "/media/comp.jpg",
+    src: "/media/25/team.jpg",
+    alt: "25",
+  },
+  {
+    src: "/media/25/comp.jpg",
+    alt: "25",
+  },
+  {
+    src: "/media/25/closeup1.jpg",
+    alt: "25",
+  },
+  {
+    src: "/media/25/comp2.jpg",
+    alt: "25",
+  },
+  {
+    src: "/media/25/comp3.jpg",
+    alt: "25",
+  },
+  {
+    src: "/media/25/comp4.jpg",
+    alt: "25",
+  },
+  {
+    src: "/media/25/comp5.jpg",
+    alt: "25",
+  },
+  {
+    src: "/media/25/closeup4.jpg",
+    alt: "25",
+  },
+];
+
+const imagesSoCalShootout24 = [
+  {
+    src: "/media/SoCalShootoutNov2024/1.jpg",
     alt: "24",
   },
   {
-    src: "/media/comp2.jpg",
+    src: "/media/SoCalShootoutNov2024/2.jpg",
     alt: "24",
   },
   {
-    src: "/media/team_photo.jpg",
+    src: "/media/SoCalShootoutNov2024/3.jpg",
     alt: "24",
   },
   {
-    src: "/media/team_photo2.jpg",
+    src: "/media/SoCalShootoutNov2024/4.jpg",
     alt: "24",
   },
   {
-    src: "/media/close_up.png",
+    src: "/media/SoCalShootoutNov2024/5.jpg",
     alt: "24",
   },
   {
-    src: "/media/close_up2.jpg",
+    src: "/media/SoCalShootoutNov2024/6.jpg",
     alt: "24",
   },
   {
-    src: "/media/car.jpg",
+    src: "/media/SoCalShootoutNov2024/7.jpg",
     alt: "24",
   },
   {
-    src: "/media/car2.jpg",
+    src: "/media/SoCalShootoutNov2024/8.jpg",
+    alt: "24",
+  },
+];
+
+const images24 = [
+  {
+    src: "/media/24/comp.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/comp2.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/comp3.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/comp4.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/team_photo.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/team_photo2.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/close_up.png",
+    alt: "24",
+  },
+  {
+    src: "/media/24/close_up2.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/car.jpg",
+    alt: "24",
+  },
+  {
+    src: "/media/24/car2.jpg",
     alt: "24",
   },
 ];
@@ -105,10 +183,26 @@ export default function MediaPage() {
           <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">PHOTO GALLERY</h1>
           <div className="flex flex-col items-center text-white">
             <h2 className="mb-16 mt-8 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
+              2024-2025 Season
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {images25.map((image, index) => (
+                <ImageCard key={index} src={image.src} alt={image.alt} />
+              ))}
+            </div>
+            <h2 className="mb-16 mt-8 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
+              SoCal Shootout
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {imagesSoCalShootout24.map((image, index) => (
+                <ImageCard key={index} src={image.src} alt={image.alt} />
+              ))}
+            </div>
+            <h2 className="mb-16 mt-8 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               2023-2024 Season
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2">
-              {images.map((image, index) => (
+              {images24.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}
             </div>
