@@ -70,7 +70,7 @@ export default function CarsPage() {
           <Car
             name="GR25"
             year="2024 - 2025"
-            description={`Nickname: DARK TECH \n 
+            description={`Rear Wing Tag: DARK TECH \n 
               Gaucho Racing's third competing car, breaking our record for scoring the most total points in the team's history!`}
             imageUrl="/cars/25.jpg"
             imageOnLeft={true}
@@ -78,7 +78,7 @@ export default function CarsPage() {
           <Car
             name="GR24"
             year="2023 - 2024"
-            description={`Nickname: Do You Have an SOP for That? \n 
+            description={`Rear Wing Tag: Do You Have an SOP for That? \n 
               A marker of many significant milestones: it was the first student formula car to drive on UCSB campus and the first to pass mechanical tech inspection at competition.`}
             imageUrl="/cars/24.jpg"
             imageOnLeft={false}
