@@ -54,13 +54,13 @@ export default function SponsorsPage() {
       <div
         className=""
         style={{
-          backgroundImage: "url('placeholder.png')",
+          backgroundImage: "url('/media/25/comp5.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "bottom",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="bg-black bg-opacity-30 p-8">
+        <div className="bg-black bg-opacity-70 p-8">
           <div className="mt-16 flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
             <h1 className="p-16 text-center">OUR SPONSORS</h1>
           </div>
@@ -752,10 +752,19 @@ export default function SponsorsPage() {
             <a href="https://vantage-dc.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/vantage-white.png"
+                src="/logo/sponsor/2026/bronze/vantage-dc-logo.png"
                 alt="Vantage Data Centers"
-                width={100}
-                height={100}
+                width={140}
+                height={140}
+              />
+            </a>
+            <a href="https://californiafilament.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/logo/sponsor/2026/bronze/CaliforniaFilament-white.png"
+                alt="California Filament"
+                width={165}
+                height={165}
               />
             </a>
           </div>
