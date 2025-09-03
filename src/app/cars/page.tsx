@@ -52,13 +52,13 @@ export default function CarsPage() {
       <div
         className=""
         style={{
-          backgroundImage: "url('placeholder.png')",
+          backgroundImage: "url('/media/SoCalShootoutNov2024/7.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="bg-black bg-opacity-30 p-16">
+        <div className="bg-black bg-opacity-60 p-16">
           <div className="mt-16 flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
             <h1 className="p-16">CARS</h1>
           </div>
@@ -70,23 +70,21 @@ export default function CarsPage() {
           <Car
             name="GR25"
             year="2024 - 2025"
-            description={`Rear Wing Tag: DARK TECH \n 
-              Gaucho Racing's third competing car, breaking our record for scoring the most total points in the team's history!`}
+            description={`Gaucho Racing's third competing car, breaking our record for scoring the most total points in the team's history! Made with significantly improved manufacturing skills, GR25 would set a new standard for Gaucho Racing going forward.`}
             imageUrl="/cars/25.jpg"
             imageOnLeft={true}
           />
           <Car
             name="GR24"
             year="2023 - 2024"
-            description={`Rear Wing Tag: Do You Have an SOP for That? \n 
-              A marker of many significant milestones: it was the first student formula car to drive on UCSB campus and the first to pass mechanical tech inspection at competition.`}
+            description={`A marker of many significant milestones. GR24 would become UCSB's first student formula car to drive on campus and Gaucho Racing's first car to pass mechanical tech inspection at competition.`}
             imageUrl="/cars/24.jpg"
             imageOnLeft={false}
           />
           <Car
             name="GR23"
             year="2022 - 2023"
-            description={`Our first car and our team's first ever exposure to competition. While it never drove, it provided our team with invaluable experience for future builds.`}
+            description={`Our first car and our team's first ever exposure to competition. While it never drove, it provided our team with invaluable experience for future builds as we improve our engineering. Its Emrax 228 motors would become a staple in future cars.`}
             imageUrl="/cars/23.jpeg"
             imageOnLeft={true}
           />

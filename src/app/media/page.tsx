@@ -166,13 +166,13 @@ export default function MediaPage() {
       <div
         className=""
         style={{
-          backgroundImage: "url('placeholder.png')",
+          backgroundImage: "url('/media/25/closeup1.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="bg-black bg-opacity-30 p-16">
+        <div className="bg-black bg-opacity-60 p-16">
           <div className="mt-16 flex flex-col items-center justify-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
             <h1 className="p-16">MEDIA</h1>
           </div>
