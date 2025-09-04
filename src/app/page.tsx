@@ -4,7 +4,8 @@ import Link from "next/link";
 import InstagramIcon from "../components/icons/instagram";
 import LinkedinIcon from "../components/icons/linkedin";
 import TwitterIcon from "../components/icons/twitter";
-import { FSAE_LINKS, SOCIAL_LINKS } from "../lib/consts";
+import { FSAE_LINKS, SENTINEL_API_URL, SOCIAL_LINKS } from "../lib/consts";
+import axios from "axios";
 import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -15,6 +16,18 @@ import SideMenu from "../components/sidebar";
 import { Client, HydrationProvider } from "react-hydration-provider";
 import { Button } from "@/components/ui/button";
 import { OutlineButton } from "@/components/ui/outline-button";
+import { notify } from "@/lib/notify";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import {
   Card,
   CardContent,
@@ -26,6 +39,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomePage() {
+  const [mailingList, setMailingList] = useState({
+    email: "",
+    first_name: "",
+    last_name: "",
+    organization: "",
+    role: "",
+  });
   const [windowHeight, setWindowHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
   const [calcWidth, setCalcWidth] = useState(0);
@@ -63,6 +83,15 @@ export default function HomePage() {
       setCalcWidth(viewportHeight * aspectRatio);
     } else {
       setCalcWidth(newWindowDimensions.width);
+    }
+  };
+
+  const createMailingList = async () => {
+    try {
+      await axios.post(`${SENTINEL_API_URL}/mailing-list`, mailingList);
+      notify.success("Successfully subscribed to mailing list!");
+    } catch (error) {
+      notify.error("Failed to subscribe.");
     }
   };
 
@@ -321,22 +350,139 @@ export default function HomePage() {
                     send you updates about all the cool things we've been
                     working on.
                   </p>
-                  <div className="mt-6 flex">
-                    <div className="relative mb-6 flex-grow">
-                      <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
-                        <FontAwesomeIcon icon={faEnvelope} />
+                  <Dialog>
+                    <div className="mt-6 flex">
+                      <div className="relative flex-grow">
+                        <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
+                          <FontAwesomeIcon icon={faEnvelope} />
+                        </div>
+                        <input
+                          type="email"
+                          id="email-input"
+                          className="block w-full rounded-lg border border-slate-700 bg-transparent p-2.5 ps-10 text-sm text-white focus:border-gr-pink focus:ring-gr-pink"
+                          placeholder="name@gauchoracing.com"
+                          value={mailingList.email}
+                          onChange={(e) =>
+                            setMailingList({
+                              ...mailingList,
+                              email: e.target.value,
+                            })
+                          }
+                        ></input>
                       </div>
-                      <input
-                        type="email"
-                        id="email-input"
-                        className="block w-full rounded-lg border border-slate-700 bg-transparent p-2.5 ps-10 text-sm text-white focus:border-gr-pink focus:ring-gr-pink"
-                        placeholder="name@gauchoracing.com"
-                      ></input>
+                      <DialogTrigger asChild>
+                        <div className="ml-2">
+                          <Button>Subscribe</Button>
+                        </div>
+                      </DialogTrigger>
                     </div>
-                    <div className="ml-2">
-                      <Button>Subscribe</Button>
-                    </div>
-                  </div>
+                    <DialogContent className="border-slate-700 bg-black">
+                      <DialogHeader>
+                        <DialogTitle className="text-lg font-bold">
+                          Subscribe to our mailing list!
+                        </DialogTitle>
+                      </DialogHeader>
+
+                      <div className="grid gap-4 py-4">
+                        <div className="grid gap-2">
+                          <Label className="font-semibold" htmlFor="email">
+                            Email Address*
+                          </Label>
+                          <Input
+                            type="email"
+                            id="email"
+                            value={mailingList.email}
+                            onChange={(e) =>
+                              setMailingList({
+                                ...mailingList,
+                                email: e.target.value,
+                              })
+                            }
+                          />
+                        </div>
+
+                        <div className="grid gap-2 sm:grid-cols-2">
+                          <div>
+                            <Label
+                              className="font-semibold"
+                              htmlFor="first_name"
+                            >
+                              First Name
+                            </Label>
+                            <Input
+                              id="first_name"
+                              value={mailingList.first_name}
+                              onChange={(e) =>
+                                setMailingList({
+                                  ...mailingList,
+                                  first_name: e.target.value,
+                                })
+                              }
+                            />
+                          </div>
+                          <div>
+                            <Label
+                              className="font-semibold"
+                              htmlFor="last_name"
+                            >
+                              Last Name
+                            </Label>
+                            <Input
+                              id="last_name"
+                              value={mailingList.last_name}
+                              onChange={(e) =>
+                                setMailingList({
+                                  ...mailingList,
+                                  last_name: e.target.value,
+                                })
+                              }
+                            />
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-5 gap-2">
+                          <div className="col-span-3 grid gap-2">
+                            <Label
+                              className="font-semibold"
+                              htmlFor="organization"
+                            >
+                              Organization
+                            </Label>
+                            <Input
+                              id="organization"
+                              value={mailingList.organization}
+                              onChange={(e) =>
+                                setMailingList({
+                                  ...mailingList,
+                                  organization: e.target.value,
+                                })
+                              }
+                            />
+                          </div>
+                          <div className="col-span-2 grid gap-2">
+                            <Label className="font-semibold" htmlFor="role">
+                              Role
+                            </Label>
+                            <Input
+                              id="role"
+                              value={mailingList.role}
+                              onChange={(e) =>
+                                setMailingList({
+                                  ...mailingList,
+                                  role: e.target.value,
+                                })
+                              }
+                            />
+                          </div>
+                        </div>
+                        <OutlineButton
+                          className="!mt-4 w-full"
+                          onClick={() => createMailingList()}
+                        >
+                          Confirm Subscription
+                        </OutlineButton>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </CardContent>
               </Card>
               <Card className="m-4 flex flex-1 flex-col">
