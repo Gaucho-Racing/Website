@@ -93,7 +93,7 @@ export default function HomePage() {
     } catch (error) {
       notify.error("Failed to subscribe.");
     }
-  }
+  };
 
   return (
     <HydrationProvider>
@@ -363,7 +363,10 @@ export default function HomePage() {
                           placeholder="name@gauchoracing.com"
                           value={mailingList.email}
                           onChange={(e) =>
-                            setMailingList({ ...mailingList, email: e.target.value })
+                            setMailingList({
+                              ...mailingList,
+                              email: e.target.value,
+                            })
                           }
                         ></input>
                       </div>
@@ -373,76 +376,111 @@ export default function HomePage() {
                         </div>
                       </DialogTrigger>
                     </div>
-                    <DialogContent className="bg-black border-slate-700">
+                    <DialogContent className="border-slate-700 bg-black">
                       <DialogHeader>
-                        <DialogTitle className="font-bold text-lg">Subscribe to our mailing list!</DialogTitle>
+                        <DialogTitle className="text-lg font-bold">
+                          Subscribe to our mailing list!
+                        </DialogTitle>
                       </DialogHeader>
 
-                        <div className="grid gap-4 py-4">
-                          <div className="grid gap-2">
-                            <Label className="font-semibold" htmlFor="email">Email Address*</Label>
+                      <div className="grid gap-4 py-4">
+                        <div className="grid gap-2">
+                          <Label className="font-semibold" htmlFor="email">
+                            Email Address*
+                          </Label>
+                          <Input
+                            type="email"
+                            id="email"
+                            value={mailingList.email}
+                            onChange={(e) =>
+                              setMailingList({
+                                ...mailingList,
+                                email: e.target.value,
+                              })
+                            }
+                          />
+                        </div>
+
+                        <div className="grid gap-2 sm:grid-cols-2">
+                          <div>
+                            <Label
+                              className="font-semibold"
+                              htmlFor="first_name"
+                            >
+                              First Name
+                            </Label>
                             <Input
-                              type="email"
-                              id="email"
-                              value={mailingList.email}
+                              id="first_name"
+                              value={mailingList.first_name}
                               onChange={(e) =>
-                                setMailingList({ ...mailingList, email: e.target.value })
+                                setMailingList({
+                                  ...mailingList,
+                                  first_name: e.target.value,
+                                })
                               }
                             />
                           </div>
-
-
-                          <div className="grid gap-2 sm:grid-cols-2">
-                            <div>
-                              <Label className="font-semibold" htmlFor="first_name">First Name</Label>
-                              <Input
-                                id="first_name"
-                                value={mailingList.first_name}
-                                onChange={(e) =>
-                                  setMailingList({ ...mailingList, first_name: e.target.value })
-                                }
-                              />
-                            </div>
-                            <div>
-                              <Label className="font-semibold" htmlFor="last_name">Last Name</Label>
-                              <Input
-                                id="last_name"
-                                value={mailingList.last_name}
-                                onChange={(e) =>
-                                  setMailingList({ ...mailingList, last_name: e.target.value })
-                                }
-                              />
-                            </div>
+                          <div>
+                            <Label
+                              className="font-semibold"
+                              htmlFor="last_name"
+                            >
+                              Last Name
+                            </Label>
+                            <Input
+                              id="last_name"
+                              value={mailingList.last_name}
+                              onChange={(e) =>
+                                setMailingList({
+                                  ...mailingList,
+                                  last_name: e.target.value,
+                                })
+                              }
+                            />
                           </div>
-                          <div className="grid gap-2 grid-cols-5">
-                            <div className="col-span-3 grid gap-2">
-                              <Label className="font-semibold" htmlFor="organization">Organization</Label>
-                              <Input
-                                id="organization"
-                                value={mailingList.organization}
-                                onChange={(e) =>
-                                  setMailingList({ ...mailingList, organization: e.target.value })
-                                }
-                              />
-                            </div>
-                            <div className="col-span-2 grid gap-2">
-                              <Label className="font-semibold" htmlFor="role">Role</Label>
-                              <Input
-                                id="role"
-                                value={mailingList.role}
-                                onChange={(e) =>
-                                  setMailingList({ ...mailingList, role: e.target.value })
-                                }
-                              />
-                            </div>
+                        </div>
+                        <div className="grid grid-cols-5 gap-2">
+                          <div className="col-span-3 grid gap-2">
+                            <Label
+                              className="font-semibold"
+                              htmlFor="organization"
+                            >
+                              Organization
+                            </Label>
+                            <Input
+                              id="organization"
+                              value={mailingList.organization}
+                              onChange={(e) =>
+                                setMailingList({
+                                  ...mailingList,
+                                  organization: e.target.value,
+                                })
+                              }
+                            />
                           </div>
-                        <OutlineButton 
+                          <div className="col-span-2 grid gap-2">
+                            <Label className="font-semibold" htmlFor="role">
+                              Role
+                            </Label>
+                            <Input
+                              id="role"
+                              value={mailingList.role}
+                              onChange={(e) =>
+                                setMailingList({
+                                  ...mailingList,
+                                  role: e.target.value,
+                                })
+                              }
+                            />
+                          </div>
+                        </div>
+                        <OutlineButton
                           className="!mt-4 w-full"
                           onClick={() => createMailingList()}
                         >
                           Confirm Subscription
                         </OutlineButton>
-                        </div>
+                      </div>
                     </DialogContent>
                   </Dialog>
                 </CardContent>
