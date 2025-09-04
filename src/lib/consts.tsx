@@ -15,3 +15,5 @@ export const DONATION_LINKS = {
   paypal:
     "https://www.paypal.com/donate/?business=4Y2AQN6EK2AVN&no_recurring=0&item_name=All+Donations+will+directly+support+Gaucho+Racing+and+are+greatly+appreciated%21+&currency_code=USD",
 };
+
+export const SENTINEL_API_URL = "https://sso.gauchoracing.com/api";
