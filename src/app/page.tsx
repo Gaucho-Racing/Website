@@ -512,7 +512,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    <b>Email:</b> ucsantabarbarasae@gmail.com
+                    <b>Email:</b> team@gauchoracing.com
                   </p>
                   <p className="mt-2">
                     <b>Address:</b>
