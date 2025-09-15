@@ -14,6 +14,7 @@ import {
 import TeamCard from "@/components/team-card";
 import { useEffect, useState } from "react";
 import placeholderImage from "src/assets/images/placeholder-profile.png";
+import { notify } from "@/lib/notify";
 
 export default function TeamPage() {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -61,7 +62,7 @@ export default function TeamPage() {
       <div
         className=""
         style={{
-          backgroundImage: "url('/media/25/comp2.jpg')",
+          backgroundImage: "url('team/team-background.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -83,43 +84,43 @@ export default function TeamPage() {
               name="Alex Fu"
               title="President"
               titleColor="text-gr-pink"
-              image="lead-images/26/alex-fu-26.jpg"
+              image="team/lead-images/26/alex-fu-26.jpg"
             />
             <TeamCard
               name="Manas Bhargavan"
               title="Internal VP"
               titleColor="text-gr-pink"
-              image="lead-images/26/manas-bhargavan-26.jpg"
+              image="team/lead-images/26/manas-bhargavan-26.jpg"
             />
             <TeamCard
               name="Jackson Tiengtum"
               title="External VP"
               titleColor="text-gr-pink"
-              image="lead-images/26/jackson-tiengtum-26.jpg"
+              image="team/lead-images/26/jackson-tiengtum-26.jpg"
             />
             <TeamCard
               name="Jeremy Sevilla"
               title="Secretary"
               titleColor="text-gr-pink"
-              image="lead-images/26/jeremy-sevilla-26.jpg"
+              image="team/lead-images/26/jeremy-sevilla-26.jpg"
             />
             <TeamCard
               name="Zachary Rogers"
               title="Treasurer"
               titleColor="text-gr-pink"
-              image="lead-images/26/zachary-rogers-26.jpg"
+              image="team/lead-images/26/zachary-rogers-26.jpg"
             />
             <TeamCard
               name="Colin Kwok"
               title="Mechanical TD"
               titleColor="text-gr-pink"
-              image="lead-images/26/colin_kwok.jpg"
+              image="team/lead-images/26/colin_kwok.jpg"
             />
             <TeamCard
               name="Ryan Nguyen"
               title="Electrical TD"
               titleColor="text-gr-pink"
-              image="lead-images/26/ryan_nguyen.jpg"
+              image="team/lead-images/26/ryan_nguyen.jpg"
             />
           </div>
         </div>
@@ -134,97 +135,97 @@ export default function TeamPage() {
               name="Satvik Subbaraman"
               title="Drivetrain"
               titleColor="text-gr-purple"
-              image="lead-images/26/satvik-subbaraman-26.jpg"
+              image="team/lead-images/26/satvik-subbaraman-26.jpg"
             />
             <TeamCard
               name="Brian Tham"
               title="Drivetrain"
               titleColor="text-gr-purple"
-              image="lead-images/26/brian-tham-26.jpg"
+              image="team/lead-images/26/brian-tham-26.jpg"
             />
             <TeamCard
               name="Koa Shen"
               title="Chassis"
               titleColor="text-gr-purple"
-              image="lead-images/26/koa-shen-26.jpg"
+              image="team/lead-images/26/koa-shen-26.jpg"
             />
             <TeamCard
               name="Ava Tran"
               title="Chassis"
               titleColor="text-gr-purple"
-              image="lead-images/26/ava-tran-26.jpg"
+              image="team/lead-images/26/ava-tran-26.jpg"
             />
             <TeamCard
               name="Stefan Karwasiecki"
               title="Suspension"
               titleColor="text-gr-purple"
-              image="lead-images/26/stefan-karwasiecki-26.jpg"
+              image="team/lead-images/26/stefan-karwasiecki-26.jpg"
             />
             <TeamCard
               name="Curtis Butsko"
               title="Suspension"
               titleColor="text-gr-purple"
-              image="lead-images/26/curtis-butsko-26.jpg"
+              image="team/lead-images/26/curtis-butsko-26.jpg"
             />
             <TeamCard
               name="Forrest Drury"
               title="Aero"
               titleColor="text-gr-purple"
-              image="lead-images/26/forrest-drury-26.jpg"
+              image="team/lead-images/26/forrest-drury-26.jpg"
             />
             <TeamCard
               name="Kelvin Quach"
               title="Aero"
               titleColor="text-gr-purple"
-              image="lead-images/26/kelvin-quach-26.jpg"
+              image="team/lead-images/26/kelvin-quach-26.jpg"
             />
             <TeamCard
               name="Owen Liu"
               title="High Voltage"
               titleColor="text-gr-purple"
-              image="lead-images/26/owen-liu-26.jpg"
+              image="team/lead-images/26/owen-liu-26.jpg"
             />
             <TeamCard
               name="Vamsi Vempati"
               title="High Voltage"
               titleColor="text-gr-purple"
-              image="lead-images/26/vamsi-vempati-26.jpg"
+              image="team/lead-images/26/vamsi-vempati-26.jpg"
             />
             <TeamCard
               name="Vin Shin"
               title="Low Voltage"
               titleColor="text-gr-purple"
-              image="lead-images/26/vin-shin-26.jpg"
+              image="team/lead-images/26/vin-shin-26.jpg"
             />
             <TeamCard
               name="Andrey Otvagin"
               title="Low Voltage"
               titleColor="text-gr-purple"
-              image="lead-images/26/andrey-otvagin-26.jpg"
+              image="team/lead-images/26/andrey-otvagin-26.jpg"
             />
             <TeamCard
               name="Daniel Hansen"
               title="Firmware"
               titleColor="text-gr-purple"
-              image="lead-images/26/daniel-hansen-26.jpg"
+              image="team/lead-images/26/daniel-hansen-26.jpg"
             />
             <TeamCard
               name="Jake Jurek"
               title="Data"
               titleColor="text-gr-purple"
-              image="lead-images/26/jake-jurek-26.jpg"
+              image="team/lead-images/26/jake-jurek-26.jpg"
             />
             <TeamCard
               name="Austin Chan"
               title="DevOps"
               titleColor="text-gr-purple"
-              image="lead-images/26/austin-chan-26.jpg"
+              image="team/lead-images/26/austin-chan-26.jpg"
             />
             <TeamCard
               name="Alyssa Story"
               title="Business"
               titleColor="text-gr-purple"
-              image="lead-images/26/alyssa-story-26.jpg"
+              image="team/lead-images/26/alyssa-story-26.jpg"
             />
           </div>
         </div>
@@ -258,7 +259,12 @@ export default function TeamPage() {
               the Gaucho Racing family. Your experiences and success stories
               inspire the next generation of Gaucho Racing members.
             </p>
-            <OutlineButton className="lg:mt-16">MEET OUR ALUMNI</OutlineButton>
+            <OutlineButton 
+              className="lg:mt-16"
+              onClick={() => notify.info("Work in progress! Come back later.")}
+            >
+              MEET OUR ALUMNI
+            </OutlineButton>
           </div>
         </div>
       </div>

@@ -115,11 +115,22 @@ const SideMenu = (props: SideMenuProps) => {
               </li>
               <li className="menu-item p-3">
                 <Link
+                  href="/join"
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 6 ? "text-white" : "text-gray-500"
+                  }`}
+                >
+                  JOIN
+                </Link>
+              </li>
+              <li className="menu-item p-3">
+                <Link
                   href={DONATION_LINKS.gofundme}
                   target="_blank"
                   onClick={toggleMenu}
                   className={`menu-item ${
-                    props.selectedPage == 6 ? "text-white" : "text-gray-500"
+                    props.selectedPage == 7 ? "text-white" : "text-gray-500"
                   }`}
                 >
                   DONATE
