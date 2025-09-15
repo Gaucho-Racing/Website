@@ -259,7 +259,7 @@ export default function TeamPage() {
               the Gaucho Racing family. Your experiences and success stories
               inspire the next generation of Gaucho Racing members.
             </p>
-            <OutlineButton 
+            <OutlineButton
               className="lg:mt-16"
               onClick={() => notify.info("Work in progress! Come back later.")}
             >

@@ -74,23 +74,28 @@ export default function JoinPage() {
         </div>
       </div>
 
-
       <div className="bg-black bg-opacity-70 p-8">
         <div>
           <div className="flex flex-col items-center justify-center text-center text-white lg:mb-16 lg:ml-64 lg:mr-64 lg:mt-16">
             <h1 className="p-8">HOW CAN I JOIN?</h1>
             <p className="text-xl">
-            Our team is open to all years and majors. You only need to be interested in contributing!
-            Come to a weekly meeting or ask in our Discord server to learn more! </p>
+              Our team is open to all years and majors. You only need to be
+              interested in contributing! Come to a weekly meeting or ask in our
+              Discord server to learn more!{" "}
+            </p>
 
-            <p className="text-xl pt-8">
-            We use Discord, a social messaging app and website, 
-            as our main communication hub. <b>Joining our Discord server is the 
-            first step to getting involved!</b> All announcements and discussions 
-            regarding club activities can be found there. 
-          </p>
+            <p className="pt-8 text-xl">
+              We use Discord, a social messaging app and website, as our main
+              communication hub.{" "}
+              <b>
+                Joining our Discord server is the first step to getting
+                involved!
+              </b>{" "}
+              All announcements and discussions regarding club activities can be
+              found there.
+            </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 mb-16 mx-32 ">
+          <div className="mx-32 mb-16 grid grid-cols-1 gap-8 lg:grid-cols-2 ">
             <Card className="m-4 flex flex-1 flex-col">
               <CardHeader>
                 <CardTitle className="text-center">
@@ -109,9 +114,8 @@ export default function JoinPage() {
                   answer any questions about us.
                 </p>
                 <p className="mt-4">
-                  Any updates to the meeting time or location will be announced 
+                  Any updates to the meeting time or location will be announced
                   via Discord, so be sure to join and check in regularly.
-
                 </p>
               </CardContent>
             </Card>
@@ -124,11 +128,11 @@ export default function JoinPage() {
               <CardContent className="text-center">
                 <p>
                   To create an account and join, scan below or visit{" "}
-                  <a 
-                    href="https://discord.gauchoracing.com" 
-                    target="_blank" 
+                  <a
+                    href="https://discord.gauchoracing.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gr-purple hover:text-gr-pink underline transition-colors"
+                    className="text-gr-purple underline transition-colors hover:text-gr-pink"
                   >
                     discord.gauchoracing.com
                   </a>{" "}
@@ -148,7 +152,6 @@ export default function JoinPage() {
               </CardContent>
             </Card>
           </div>
-
         </div>
       </div>
       <Footer />
