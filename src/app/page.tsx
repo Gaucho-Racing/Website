@@ -126,7 +126,7 @@ export default function HomePage() {
               playing
               loop
               muted={true}
-              url="ucsb-flyover.mp4"
+              url="home/ucsb-flyover.mp4"
               height={(calcWidth / 16) * 9}
               width={calcWidth}
               controls={false}
@@ -233,7 +233,7 @@ export default function HomePage() {
         <div
           className=""
           style={{
-            backgroundImage: "url('home/about25.jpg')",
+            backgroundImage: "url('home/about.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -291,7 +291,7 @@ export default function HomePage() {
         <div
           className=""
           style={{
-            backgroundImage: "url('home/fsae.jpeg')",
+            backgroundImage: "url('home/fsae.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -329,7 +329,7 @@ export default function HomePage() {
         <div className="bg-black bg-opacity-70 p-8">
           <div className="flex flex-col items-center justify-center text-center text-white lg:mb-32 lg:ml-16 lg:mr-16 lg:mt-16">
             <h1 className="p-8">GET INVOLVED</h1>
-            <p className="mb-8 text-xl lg:ml-32 lg:mr-32">
+            <p className="text-xl lg:ml-32 lg:mr-32">
               Are you passionate about electric vehicles, cutting-edge
               technology, and being part of a dynamic team? Join us on our
               journey as we continue to make strides in the world of Formula SAE
@@ -337,6 +337,11 @@ export default function HomePage() {
               driver, or someone eager to contribute to sustainable innovation,
               there's a place for you at Gaucho Racing.
             </p>
+            <div className="flex w-full justify-center pt-8">
+              <Link href="/join">
+                <OutlineButton>JOIN US</OutlineButton>
+              </Link>
+            </div>
             <div className="flex flex-col items-stretch lg:mt-32 lg:flex-row">
               <Card className="m-4 flex flex-1 flex-col">
                 <CardHeader>
@@ -493,12 +498,12 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    <b>When:</b> Mondays 7:30-8:30
+                    <b>When:</b> Mondays 7:30-8:30PM
                   </p>
-                  <p className="mt-2">
+                  <p className="mt-4">
                     <b>Where:</b> Engineering II Room 1519
                   </p>
-                  <p className="mt-2">
+                  <p className="mt-4">
                     Come see what we're all about! We'd love to meet you and
                     answer any questions about our organization.
                   </p>

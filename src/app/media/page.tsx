@@ -166,7 +166,7 @@ export default function MediaPage() {
       <div
         className=""
         style={{
-          backgroundImage: "url('/media/25/closeup1.jpg')",
+          backgroundImage: "url('/media/media-background.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

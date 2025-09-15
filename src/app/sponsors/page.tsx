@@ -54,13 +54,13 @@ export default function SponsorsPage() {
       <div
         className=""
         style={{
-          backgroundImage: "url('/media/25/comp5.jpg')",
+          backgroundImage: "url('/sponsor/sponsors-background.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "bottom",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="bg-black bg-opacity-70 p-8">
+        <div className="bg-black bg-opacity-60 p-16">
           <div className="mt-16 flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-64">
             <h1 className="p-16 text-center">OUR SPONSORS</h1>
           </div>
@@ -85,7 +85,7 @@ export default function SponsorsPage() {
                   <a href="https://asfb.as.ucsb.edu/" target="_blank">
                     <Image
                       className="m-2 lg:m-4"
-                      src="/logo/sponsor/2026/platinum/asfinance-logo-white.png"
+                      src="/sponsor/2026/platinum/asfinance-logo-white.png"
                       alt="UCSB AS Finance Board"
                       width={160}
                       height={150}
@@ -108,7 +108,7 @@ export default function SponsorsPage() {
                   <a href="https://urca.ucsb.edu/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/platinum/urca-wordmark-white.png"
+                      src="/sponsor/2026/platinum/urca-wordmark-white.png"
                       alt="UCSB URCA"
                       width={400}
                       height={100}
@@ -136,7 +136,7 @@ export default function SponsorsPage() {
                   <a href=" https://www.arts.ucsb.edu/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/platinum/ucsb-art-white.png"
+                      src="/sponsor/2026/platinum/ucsb-art-white.png"
                       alt="UCSB Art Department"
                       width={300}
                       height={100}
@@ -159,7 +159,7 @@ export default function SponsorsPage() {
                   <a href="https://www.singlestore.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/platinum/singlestore-wordmark-white.png"
+                      src="/sponsor/2026/platinum/singlestore-wordmark-white.png"
                       alt="SingleStore"
                       width={400}
                       height={200}
@@ -186,7 +186,7 @@ export default function SponsorsPage() {
                   <a href="https://www.tesla.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/platinum/tesla-wordmark-white.png"
+                      src="/sponsor/2026/platinum/tesla-wordmark-white.png"
                       alt="Tesla"
                       width={300}
                       height={80}
@@ -213,7 +213,7 @@ export default function SponsorsPage() {
                   >
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/platinum/cadence-wordmark-white.png"
+                      src="/sponsor/2026/platinum/cadence-wordmark-white.png"
                       alt="Cadence"
                       width={350}
                       height={200}
@@ -241,7 +241,7 @@ export default function SponsorsPage() {
                   <a href="https://fireflyspace.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/platinum/firefly-wordmark-white.png"
+                      src="/sponsor/2026/platinum/firefly-wordmark-white.png"
                       alt="FireFly Aerospace"
                       width={475}
                       height={200}
@@ -270,7 +270,7 @@ export default function SponsorsPage() {
                   >
                     <Image
                       className="m-4 lg:m-8"
-                      src="/logo/sponsor/2026/platinum/hesse-logo-white.png"
+                      src="/sponsor/2026/platinum/hesse-logo-white.png"
                       alt="Hesse Mechatronics"
                       width={250}
                       height={100}
@@ -300,7 +300,7 @@ export default function SponsorsPage() {
                   <a href="https://www.amk-motion.com/en/" target="_blank">
                     <Image
                       className="m-4 lg:m-8"
-                      src="/logo/sponsor/2026/platinum/amk-motion-white.png"
+                      src="/sponsor/2026/platinum/amk-motion-white.png"
                       alt="AMK Motion"
                       width={350}
                       height={200}
@@ -326,7 +326,7 @@ export default function SponsorsPage() {
                   <a href="https://www.kenesto.com/" target="_blank">
                     <Image
                       className="m-4 lg:m-8"
-                      src="/logo/sponsor/2026/platinum/kenesto-logo-white.png"
+                      src="/sponsor/2026/platinum/kenesto-logo-white.png"
                       alt="Kenesto"
                       width={300}
                       height={100}
@@ -354,7 +354,7 @@ export default function SponsorsPage() {
                   <a href="https://www.nocturnalwelding.com/" target="_blank">
                     <Image
                       className="m-4 lg:m-8"
-                      src="/logo/sponsor/2026/platinum/nocturnal-welding-logo-white.png"
+                      src="/sponsor/2026/platinum/nocturnal-welding-logo-white.png"
                       alt="Nocturnal Welding"
                       width={190}
                       height={200}
@@ -384,7 +384,7 @@ export default function SponsorsPage() {
                   <a href="https://www.ansys.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/gold/ansys-wordmark-white.png"
+                      src="/sponsor/2026/gold/ansys-wordmark-white.png"
                       alt="Ansys"
                       width={200}
                       height={100}
@@ -409,7 +409,7 @@ export default function SponsorsPage() {
                   <a href="https://itt.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/gold/itt-logo-white.png"
+                      src="/sponsor/2026/gold/itt-logo-white.png"
                       alt="ITT"
                       width={175}
                       height={100}
@@ -438,7 +438,7 @@ export default function SponsorsPage() {
                   <a href="https://www.altium.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/gold/altium-white.png"
+                      src="/sponsor/2026/gold/altium-white.png"
                       alt="Altium"
                       width={200}
                       height={100}
@@ -464,7 +464,7 @@ export default function SponsorsPage() {
                   <a href="https://aws.amazon.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/gold/aws-white.png"
+                      src="/sponsor/2026/gold/aws-white.png"
                       alt="AWS"
                       width={125}
                       height={100}
@@ -491,7 +491,7 @@ export default function SponsorsPage() {
                   <a href="https://bambulab.com/en" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/gold/bambu-wordmark-white.png"
+                      src="/sponsor/2026/gold/bambu-wordmark-white.png"
                       alt="Bambu Lab"
                       width={250}
                       height={100}
@@ -514,7 +514,7 @@ export default function SponsorsPage() {
                   <a href="https://hexagon.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/gold/hexagon-white.png"
+                      src="/sponsor/2026/gold/hexagon-white.png"
                       alt="Hexagon"
                       width={275}
                       height={100}
@@ -541,7 +541,7 @@ export default function SponsorsPage() {
                   <a href="https://www.solidworks.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/logo/sponsor/2026/gold/solidworks-wordmark-white.png"
+                      src="/sponsor/2026/gold/solidworks-wordmark-white.png"
                       alt="Solidworks"
                       width={300}
                       height={100}
@@ -571,7 +571,7 @@ export default function SponsorsPage() {
             <a href="https://airtech.com/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/airtech-white.png"
+                src="/sponsor/2026/silver/airtech-white.png"
                 alt="Airtech"
                 width={200}
                 height={100}
@@ -580,7 +580,7 @@ export default function SponsorsPage() {
             <a href="https://www.skf.com/us" target="_blank">
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/skf-white.png"
+                src="/sponsor/2026/silver/skf-white.png"
                 alt="SKF"
                 width={200}
                 height={100}
@@ -589,7 +589,7 @@ export default function SponsorsPage() {
             <a href="https://www.vi-grade.com/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/vi-grade-white.png"
+                src="/sponsor/2026/silver/vi-grade-white.png"
                 alt="Vi-Grade"
                 width={200}
                 height={100}
@@ -601,7 +601,7 @@ export default function SponsorsPage() {
             >
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/sb-car-show-white.png"
+                src="/sponsor/2026/silver/sb-car-show-white.png"
                 alt="Santa Barbara Car Show Channel"
                 width={215}
                 height={100}
@@ -616,7 +616,7 @@ export default function SponsorsPage() {
             >
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/haasfoundation-logo-white.png"
+                src="/sponsor/2026/silver/haasfoundation-logo-white.png"
                 alt="Gene Haas Founation"
                 width={140}
                 height={100}
@@ -625,7 +625,7 @@ export default function SponsorsPage() {
             <a href="https://formlabs.com/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/formlabs-wordmark-white.png"
+                src="/sponsor/2026/silver/formlabs-wordmark-white.png"
                 alt="Formlabs"
                 width={215}
                 height={100}
@@ -634,7 +634,7 @@ export default function SponsorsPage() {
             <a href="https://hakkousa.com/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/hakko-wordmark-white.png"
+                src="/sponsor/2026/silver/hakko-wordmark-white.png"
                 alt="Hakko"
                 width={215}
                 height={100}
@@ -643,7 +643,7 @@ export default function SponsorsPage() {
             <a href="https://www.triadmagnetics.com/about-us/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
-                src="/logo/sponsor/2026/silver/triad-magnetics-white.png"
+                src="/sponsor/2026/silver/triad-magnetics-white.png"
                 alt="Triad Magnetics"
                 width={215}
                 height={100}
@@ -658,7 +658,7 @@ export default function SponsorsPage() {
             <a href="https://www.confluent.io/" target="_blank">
               <Image
                 className="m-4 lg:mr-0"
-                src="/logo/sponsor/2026/bronze/confluent-white.png"
+                src="/sponsor/2026/bronze/confluent-white.png"
                 alt="Confluent"
                 width={200}
                 height={100}
@@ -667,7 +667,7 @@ export default function SponsorsPage() {
             <a href="https://www.coroflex-cable.com/en/" target="_blank">
               <Image
                 className="m-4 lg:ml-0"
-                src="/logo/sponsor/2026/bronze/coroflex-white.png"
+                src="/sponsor/2026/bronze/coroflex-white.png"
                 alt="Coroflex"
                 width={200}
                 height={100}
@@ -676,7 +676,7 @@ export default function SponsorsPage() {
             <a href="https://www.celsius.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/celsius-logo-white.png"
+                src="/sponsor/2026/bronze/celsius-logo-white.png"
                 alt="Celsius"
                 width={80}
                 height={100}
@@ -685,7 +685,7 @@ export default function SponsorsPage() {
             <a href="https://www.redbull.com/us-en" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/redbull-logo-white.png"
+                src="/sponsor/2026/bronze/redbull-logo-white.png"
                 alt="Red Bull"
                 width={115}
                 height={100}
@@ -696,7 +696,7 @@ export default function SponsorsPage() {
             <a href="https://semiq.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/semiq-white.png"
+                src="/sponsor/2026/bronze/semiq-white.png"
                 alt="SemiQ"
                 width={200}
                 height={125}
@@ -705,7 +705,7 @@ export default function SponsorsPage() {
             <a href="https://www.digikey.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/digikey-white.png"
+                src="/sponsor/2026/bronze/digikey-white.png"
                 alt="Digikey"
                 width={150}
                 height={125}
@@ -714,7 +714,7 @@ export default function SponsorsPage() {
             <a href="https://inertialsense.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/inertialsense-white.png"
+                src="/sponsor/2026/bronze/inertialsense-white.png"
                 alt="Inertial Sense"
                 width={200}
                 height={125}
@@ -723,7 +723,7 @@ export default function SponsorsPage() {
             <a href="https://www.tapplastics.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/tapplastics-white.png"
+                src="/sponsor/2026/bronze/tapplastics-white.png"
                 alt="Tap Plastics"
                 width={200}
                 height={125}
@@ -734,7 +734,7 @@ export default function SponsorsPage() {
             <a href="https://www.tglobaltechnology.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/tglobal-white.png"
+                src="/sponsor/2026/bronze/tglobal-white.png"
                 alt="T-Global Technology"
                 width={180}
                 height={125}
@@ -743,7 +743,7 @@ export default function SponsorsPage() {
             <a href="https://storkecentr.al/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/storkecentral-white.png"
+                src="/sponsor/2026/bronze/storkecentral-white.png"
                 alt="StorkeCentral"
                 width={250}
                 height={125}
@@ -752,7 +752,7 @@ export default function SponsorsPage() {
             <a href="https://vantage-dc.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/vantage-dc-logo.png"
+                src="/sponsor/2026/bronze/vantage-dc-logo.png"
                 alt="Vantage Data Centers"
                 width={140}
                 height={140}
@@ -761,10 +761,30 @@ export default function SponsorsPage() {
             <a href="https://californiafilament.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/logo/sponsor/2026/bronze/CaliforniaFilament-white.png"
+                src="/sponsor/2026/bronze/CaliforniaFilament-white.png"
                 alt="California Filament"
                 width={165}
                 height={165}
+              />
+            </a>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-0 lg:flex-row">
+            <a href="https://www.sunlu.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/sponsor/2026/bronze/sunlu-white.png"
+                alt="Sunlu"
+                width={150}
+                height={100}
+              />
+            </a>
+            <a href="https://polymaker.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/sponsor/2026/bronze/polymaker-white.png"
+                alt="Polymaker"
+                width={170}
+                height={130}
               />
             </a>
           </div>

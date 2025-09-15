@@ -71,10 +71,21 @@ const SideMenu = (props: SideMenuProps) => {
               </li>
               <li className="menu-item p-3">
                 <Link
-                  href="/team"
+                  href="/join"
                   onClick={toggleMenu}
                   className={`menu-item ${
                     props.selectedPage == 2 ? "text-white" : "text-gray-500"
+                  }`}
+                >
+                  JOIN
+                </Link>
+              </li>
+              <li className="menu-item p-3">
+                <Link
+                  href="/team"
+                  onClick={toggleMenu}
+                  className={`menu-item ${
+                    props.selectedPage == 3 ? "text-white" : "text-gray-500"
                   }`}
                 >
                   TEAM
@@ -85,7 +96,7 @@ const SideMenu = (props: SideMenuProps) => {
                   href="/media"
                   onClick={toggleMenu}
                   className={`menu-item ${
-                    props.selectedPage == 3 ? "text-white" : "text-gray-500"
+                    props.selectedPage == 4 ? "text-white" : "text-gray-500"
                   }`}
                 >
                   MEDIA
@@ -96,7 +107,7 @@ const SideMenu = (props: SideMenuProps) => {
                   href="/cars"
                   onClick={toggleMenu}
                   className={`menu-item ${
-                    props.selectedPage == 4 ? "text-white" : "text-gray-500"
+                    props.selectedPage == 5 ? "text-white" : "text-gray-500"
                   }`}
                 >
                   CARS
@@ -107,19 +118,20 @@ const SideMenu = (props: SideMenuProps) => {
                   href="/sponsors"
                   onClick={toggleMenu}
                   className={`menu-item ${
-                    props.selectedPage == 5 ? "text-white" : "text-gray-500"
+                    props.selectedPage == 6 ? "text-white" : "text-gray-500"
                   }`}
                 >
                   SPONSORS
                 </Link>
               </li>
+
               <li className="menu-item p-3">
                 <Link
                   href={DONATION_LINKS.gofundme}
                   target="_blank"
                   onClick={toggleMenu}
                   className={`menu-item ${
-                    props.selectedPage == 6 ? "text-white" : "text-gray-500"
+                    props.selectedPage == 7 ? "text-white" : "text-gray-500"
                   }`}
                 >
                   DONATE

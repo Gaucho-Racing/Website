@@ -14,7 +14,7 @@ interface HeaderProps {
 const Header = (props: HeaderProps) => {
   return (
     <nav
-      className={`fixed top-0 flex h-32 w-full items-center justify-center bg-black ${props.className}`}
+      className={`fixed top-0 flex h-28 w-full items-center justify-center bg-black ${props.className}`}
       style={props.style}
     >
       <div className="mb-3 mt-3 flex items-center text-lg font-semibold">
@@ -31,6 +31,19 @@ const Header = (props: HeaderProps) => {
             </span>
           </button>
         </Link>
+        <Link href="/join">
+          <button
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
+              props.selectedPage == 6
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
+            }`}
+          >
+            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
+              JOIN
+            </span>
+          </button>
+        </Link>
         <Link href="/team">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
@@ -43,28 +56,6 @@ const Header = (props: HeaderProps) => {
               TEAM
             </span>
           </button>
-        </Link>
-        <Link href="/media">
-          <button
-            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 3
-                ? "bg-gradient-to-br text-white"
-                : "text-gray-400"
-            }`}
-          >
-            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
-              MEDIA
-            </span>
-          </button>
-        </Link>
-        <Link href="/">
-          <Image
-            src="/logo/mechanic-logo.png"
-            alt="Logo"
-            height={24}
-            width={230}
-            className="ml-4 mr-4 h-24"
-          />
         </Link>
         <Link href="/cars">
           <button
@@ -79,6 +70,28 @@ const Header = (props: HeaderProps) => {
             </span>
           </button>
         </Link>
+        <Link href="/">
+          <Image
+            src="/logo/mechanic-logo.png"
+            alt="Logo"
+            height={24}
+            width={230}
+            className="ml-4 mr-4 h-24"
+          />
+        </Link>
+        <Link href="/media">
+          <button
+            className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
+              props.selectedPage == 3
+                ? "bg-gradient-to-br text-white"
+                : "text-gray-400"
+            }`}
+          >
+            <span className="relative rounded-md bg-black px-6 py-2.5 transition-all duration-75 ease-in">
+              MEDIA
+            </span>
+          </button>
+        </Link>
         <Link href="/sponsors">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
@@ -87,7 +100,7 @@ const Header = (props: HeaderProps) => {
                 : "text-gray-400"
             }`}
           >
-            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
+            <span className="relative rounded-md bg-black px-6 py-2.5 transition-all duration-75 ease-in">
               SPONSORS
             </span>
           </button>
@@ -96,12 +109,12 @@ const Header = (props: HeaderProps) => {
         <Link href={DONATION_LINKS.gofundme} target="_blank">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
-              props.selectedPage == 6
+              props.selectedPage == 7
                 ? "bg-gradient-to-br text-white"
                 : "text-gray-400"
             }`}
           >
-            <span className="relative rounded-md bg-black px-5 py-2.5 transition-all duration-75 ease-in">
+            <span className="relative rounded-md bg-black px-6 py-2.5 transition-all duration-75 ease-in">
               DONATE
             </span>
           </button>
