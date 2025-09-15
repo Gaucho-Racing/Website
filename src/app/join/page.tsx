@@ -95,7 +95,7 @@ export default function JoinPage() {
               found there.
             </p>
           </div>
-          <div className="mx-32 mb-16 grid grid-cols-1 gap-8 lg:grid-cols-2 ">
+          <div className="flex flex-col items-stretch lg:mt-32 lg:flex-row">
             <Card className="m-4 flex flex-1 flex-col">
               <CardHeader>
                 <CardTitle className="text-center">
