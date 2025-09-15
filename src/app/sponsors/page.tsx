@@ -768,6 +768,26 @@ export default function SponsorsPage() {
               />
             </a>
           </div>
+          <div className="flex flex-col items-center justify-center lg:mt-0 lg:flex-row">
+            <a href="https://www.sunlu.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/sponsor/2026/bronze/sunlu-white.png"
+                alt="Sunlu"
+                width={150}
+                height={100}
+              />
+            </a>
+            <a href="https://polymaker.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/sponsor/2026/bronze/polymaker-white.png"
+                alt="Polymaker"
+                width={170}
+                height={130}
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div className="bg-black bg-opacity-70 p-8">
