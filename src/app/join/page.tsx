@@ -103,19 +103,33 @@ export default function JoinPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
+                <p className="text-purple-400">
+                  <b>First General Meeting (9/29):</b>
+                </p>
+                <p className="mt-2 text-purple-400">
+                  <b>When:</b> Sept. 29 - 7:00-8:30PM
+                </p>
+                <p className="text-purple-400">
+                  <b>Where:</b> Location TBA!
+                </p>
+
+                <p className="mt-8">
+                  <b>Following Meetings:</b>
+                </p>
+                <p className="mt-2">
+                  <b>When:</b> Mondays - 7:00PM
+                </p>
                 <p>
-                  <b>When:</b> Mondays 7:30-8:30PM
+                  <b>Where:</b> ESB 1001
                 </p>
-                <p className="mt-4">
-                  <b>Where:</b> Engineering II Room 1519
-                </p>
+
                 <p className="mt-4">
                   Come see what we're all about! We'd love to meet you and
                   answer any questions about us.
                 </p>
                 <p className="mt-4">
                   Any updates to the meeting time or location will be announced
-                  via Discord, so be sure to join and check in regularly.
+                  in Discord, so join and check regularly!
                 </p>
               </CardContent>
             </Card>
@@ -143,8 +157,8 @@ export default function JoinPage() {
                     <Image
                       src="/join/discord-qr.png"
                       alt="Discord QR Code"
-                      width={200}
-                      height={200}
+                      width={275}
+                      height={275}
                       className="rounded-lg"
                     />
                   </a>

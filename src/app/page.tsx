@@ -497,15 +497,16 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    <b>When:</b> Mondays 7:30-8:30PM
+                  <p className="text-purple-400">
+                    <b>First General Meeting (9/29):</b> 7:00PM, Location TBA!
                   </p>
                   <p className="mt-4">
-                    <b>Where:</b> Engineering II Room 1519
+                    <b>Following Meetings:</b>
                   </p>
-                  <p className="mt-4">
-                    Come see what we're all about! We'd love to meet you and
-                    answer any questions about our organization.
+                  <p className="mt-2">Mondays 7:00-8:30PM, ESB 1001</p>
+                  <p className="mt-6">
+                    Come check us out! We'd love to meet and answer any
+                    questions!
                   </p>
                 </CardContent>
               </Card>
