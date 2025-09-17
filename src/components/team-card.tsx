@@ -22,7 +22,7 @@ const TeamCard = ({
       <CardHeader className="ml-8 mr-8 items-center">
         <div className="mb-4 h-32 w-32 overflow-hidden rounded-full bg-gray-300 md:h-40 md:w-40 lg:h-44 lg:w-44">
           <img
-            src={image || "/lead-images/placeholder-profile.png"}
+            src={image || "team/lead-images/placeholder-profile.png"}
             alt={`${name}'s picture`}
             className="h-full w-full object-cover"
           />

@@ -156,10 +156,16 @@ export default function TeamPage() {
               image="team/lead-images/26/ava-tran-26.jpg"
             />
             <TeamCard
-              name="Stefan Karwasiecki"
-              title="Suspension"
+              name="Thomas Yu"
+              title="Systems"
               titleColor="text-gr-purple"
-              image="team/lead-images/26/stefan-karwasiecki-26.jpg"
+              image="team/lead-images/26/thomas-yu-26.jpg"
+            />
+            <TeamCard
+              name="Diego Vasquez"
+              title="Fabrication"
+              titleColor="text-gr-purple"
+              image="team/lead-images/26/diego-vasquez-26.jpg"
             />
             <TeamCard
               name="Curtis Butsko"
