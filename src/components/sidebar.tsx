@@ -23,9 +23,10 @@ const SideMenu = (props: SideMenuProps) => {
         height: "100%",
         background: menuState ? "rgba(0,0,0,0.95)" : "rgba(0,0,0,0)",
         transition: "all 0.25s",
+        pointerEvents: menuState ? "auto" : "none",
       }}
     >
-      <div className="menuButton">
+      <div className="menuButton" style={{ pointerEvents: "auto" }}>
         <button onClick={toggleMenu}>
           {menuState ? (
             <div className="absolute h-[10vh] w-[10vh]">
