@@ -498,7 +498,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-purple-400">
-                    <b>First General Meeting (9/29):</b> 7:00PM, Location TBA!
+                    <b>First General Meeting (9/29):</b> 7:00PM, Broida 1610
                   </p>
                   <p className="mt-4">
                     <b>Following Meetings:</b>
