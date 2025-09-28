@@ -199,7 +199,7 @@ export default function MediaPage() {
             <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               Welcome Week 2025
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32 ">
+            <div className="grid grid-cols-2 justify-items-center md:grid-cols-4 lg:mx-32 ">
               {imagesWelcomeWeek25.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}
@@ -207,7 +207,7 @@ export default function MediaPage() {
             <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               2024-2025 Season
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32">
+            <div className="grid grid-cols-2 justify-items-center md:grid-cols-4 lg:mx-32">
               {images25.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}
@@ -215,7 +215,7 @@ export default function MediaPage() {
             <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               SoCal Shootout
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32">
+            <div className="grid grid-cols-2 justify-items-center md:grid-cols-4 lg:mx-32">
               {imagesSoCalShootout24.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}
@@ -223,7 +223,7 @@ export default function MediaPage() {
             <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               2023-2024 Season
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32">
+            <div className="grid grid-cols-2 justify-items-center md:grid-cols-4 lg:mx-32">
               {images24.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}

@@ -291,7 +291,7 @@ export default function HomePage() {
         <div
           className=""
           style={{
-            backgroundImage: "url('media/WelcomeWeek25/welcome-week-25-3.jpg')", 
+            backgroundImage: "url('media/WelcomeWeek25/welcome-week-25-3.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
