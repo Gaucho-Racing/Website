@@ -7,6 +7,20 @@ import ImageCard from "@/components/image-card";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
+const imagesWelcomeWeek25 = [
+  {
+    src: "/media/WelcomeWeek25/welcome-week-25-3.jpg",
+    alt: "Welcome Week 2025",
+  },
+  {
+    src: "/media/WelcomeWeek25/welcome-week-25-2.jpg",
+    alt: "Welcome Week 2025",
+  },
+  {
+    src: "/media/WelcomeWeek25/welcome-week-25-1.jpg",
+    alt: "Welcome Week 2025",
+  },
+];
 const images25 = [
   {
     src: "/media/25/team.jpg",
@@ -45,35 +59,35 @@ const images25 = [
 const imagesSoCalShootout24 = [
   {
     src: "/media/SoCalShootoutNov2024/1.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
   {
     src: "/media/SoCalShootoutNov2024/2.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
   {
     src: "/media/SoCalShootoutNov2024/3.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
   {
     src: "/media/SoCalShootoutNov2024/4.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
   {
     src: "/media/SoCalShootoutNov2024/5.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
   {
     src: "/media/SoCalShootoutNov2024/6.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
   {
     src: "/media/SoCalShootoutNov2024/7.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
   {
     src: "/media/SoCalShootoutNov2024/8.jpg",
-    alt: "24",
+    alt: "SoCalShootout24",
   },
 ];
 
@@ -180,28 +194,36 @@ export default function MediaPage() {
       </div>
       <div className="bg-black bg-opacity-70 p-8">
         <div className="flex flex-col items-center text-white">
-          <h1 className="mb-16 mt-16 lg:ml-64 lg:mr-64">PHOTO GALLERY</h1>
+          <h1 className="mb-4 mt-16 lg:ml-64 lg:mr-64">PHOTO GALLERY</h1>
           <div className="flex flex-col items-center text-white">
-            <h2 className="mb-16 mt-8 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
+            <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
+              Welcome Week 2025
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32 ">
+              {imagesWelcomeWeek25.map((image, index) => (
+                <ImageCard key={index} src={image.src} alt={image.alt} />
+              ))}
+            </div>
+            <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               2024-2025 Season
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32">
               {images25.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}
             </div>
-            <h2 className="mb-16 mt-8 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
+            <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               SoCal Shootout
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32">
               {imagesSoCalShootout24.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}
             </div>
-            <h2 className="mb-16 mt-8 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
+            <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               2023-2024 Season
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center lg:mx-32">
               {images24.map((image, index) => (
                 <ImageCard key={index} src={image.src} alt={image.alt} />
               ))}

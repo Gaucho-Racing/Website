@@ -295,7 +295,7 @@ export default function JoinPage() {
                     <b>When:</b> Sept. 29 - 7:00-8:30PM
                   </p>
                   <p className="text-purple-400">
-                    <b>Where:</b> Location TBA!
+                    <b>Where:</b> Broida 1610
                   </p>
 
                   <p className="mt-8">

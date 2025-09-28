@@ -126,7 +126,7 @@ export default function HomePage() {
               playing
               loop
               muted={true}
-              url="home/ucsb-flyover.mp4"
+              url="home/fastest-lap.mp4"
               height={(calcWidth / 16) * 9}
               width={calcWidth}
               controls={false}
@@ -291,14 +291,14 @@ export default function HomePage() {
         <div
           className=""
           style={{
-            backgroundImage: "url('home/fsae.jpg')",
+            backgroundImage: "url('media/WelcomeWeek25/welcome-week-25-3.jpg')", 
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
           <div className="bg-black bg-opacity-70 p-16">
-            <div className="flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-32">
+            <div className="flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-16">
               <h1 className="p-16">ABOUT FSAE</h1>
               <p className="text-xl">
                 FSAE Electric, initiated in 2013, is a cutting-edge addition to
