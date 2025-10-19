@@ -242,8 +242,13 @@ export default function TeamPage() {
             FACULTY ADVISORS
           </h1>
           <div className="flex flex-wrap items-stretch justify-center lg:ml-16 lg:mr-16">
-            <div 
-              onClick={() => window.open('https://me.ucsb.edu/index.php/people/kirk-fields', '_blank')}
+            <div
+              onClick={() =>
+                window.open(
+                  "https://me.ucsb.edu/index.php/people/kirk-fields",
+                  "_blank",
+                )
+              }
               className="cursor-pointer transition-transform duration-200 hover:scale-105"
             >
               <TeamCard
