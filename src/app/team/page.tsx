@@ -236,6 +236,26 @@ export default function TeamPage() {
           </div>
         </div>
       </div>
+      <div className="bg-black bg-opacity-70 p-8">
+        <div className="flex flex-col items-center text-white">
+          <h1 className="mb-16 mt-16 text-center lg:ml-64 lg:mr-64">
+            FACULTY ADVISORS
+          </h1>
+          <div className="flex flex-wrap items-stretch justify-center lg:ml-16 lg:mr-16">
+            <div 
+              onClick={() => window.open('https://me.ucsb.edu/index.php/people/kirk-fields', '_blank')}
+              className="cursor-pointer transition-transform duration-200 hover:scale-105"
+            >
+              <TeamCard
+                name="Kirk Fields"
+                title="UCSB R&D Engineer"
+                titleColor="text-gr-purple"
+                image="team/lead-images/26/kirk-fields-26.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         className=""
         style={{
