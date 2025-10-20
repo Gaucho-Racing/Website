@@ -497,13 +497,10 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-purple-400">
-                    <b>First General Meeting (9/29):</b> 7:00PM, Broida 1610
-                  </p>
                   <p className="mt-4">
-                    <b>Following Meetings:</b>
+                    <b>Weekly Meetings:</b>
                   </p>
-                  <p className="mt-2">Mondays 7:00-8:30PM, ESB 1001</p>
+                  <p className="mt-2">Mondays 7:00-8:00PM, ESB 1001</p>
                   <p className="mt-6">
                     Come check us out! We'd love to meet and answer any
                     questions!

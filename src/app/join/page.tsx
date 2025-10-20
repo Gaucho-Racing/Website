@@ -288,18 +288,8 @@ export default function JoinPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-purple-400">
-                    <b>First General Meeting (9/29):</b>
-                  </p>
-                  <p className="mt-2 text-purple-400">
-                    <b>When:</b> Sept. 29 - 7:00-8:30PM
-                  </p>
-                  <p className="text-purple-400">
-                    <b>Where:</b> Broida 1610
-                  </p>
-
-                  <p className="mt-8">
-                    <b>Following Meetings:</b>
+                  <p>
+                    <b>Weekly Meetings:</b>
                   </p>
                   <p className="mt-2">
                     <b>When:</b> Mondays - 7:00PM
