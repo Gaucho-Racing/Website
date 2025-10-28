@@ -128,7 +128,7 @@ const SideMenu = (props: SideMenuProps) => {
 
               <li className="menu-item p-3">
                 <Link
-                  href={DONATION_LINKS.gofundme}
+                  href={DONATION_LINKS.ucsbgive}
                   target="_blank"
                   onClick={toggleMenu}
                   className={`menu-item ${

@@ -106,7 +106,7 @@ const Header = (props: HeaderProps) => {
           </button>
         </Link>
 
-        <Link href={DONATION_LINKS.gofundme} target="_blank">
+        <Link href={DONATION_LINKS.ucsbgive} target="_blank">
           <button
             className={`group relative mb-2 me-2 mt-2 inline-flex items-center justify-center overflow-hidden rounded-lg from-gr-purple to-gr-pink p-0.5 hover:bg-gradient-to-br ${
               props.selectedPage == 7
