@@ -216,10 +216,10 @@ export default function TeamPage() {
               image="team/lead-images/26/daniel-hansen-26.jpg"
             />
             <TeamCard
-              name="Jake Jurek"
+              name="Jacob Jurek"
               title="Data"
               titleColor="text-gr-purple"
-              image="team/lead-images/26/jake-jurek-26.jpg"
+              image="team/lead-images/26/jacob-jurek-26.jpg"
             />
             <TeamCard
               name="Austin Chan"
