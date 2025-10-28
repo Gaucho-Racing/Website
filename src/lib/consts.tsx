@@ -10,8 +10,7 @@ export const FSAE_LINKS = {
 };
 
 export const DONATION_LINKS = {
-  ucsbgive:
-    "https://give.ucsb.edu/campaigns/68974/donations/new",
+  ucsbgive: "https://give.ucsb.edu/campaigns/68974/donations/new",
   gofundme:
     "https://www.gofundme.com/f/accelerate-engineering-at-ucsb-support-gaucho-racing-ev",
   paypal:
