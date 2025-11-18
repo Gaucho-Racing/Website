@@ -573,14 +573,14 @@ export default function SponsorsPage() {
                   </a>
                 </div>
                 <p className="text-sm">
-                    RapidHarness is a full lifecycle CAD solution built for 
-                    designing production-ready wire harness schematics. They 
-                    have very generously granted our team licenses to their 
-                    software, making it significantly easier for Gaucho Racing 
-                    to document and develop our drawings and schematics. Support
-                    from RapidHarness lets Gaucho Racing create our wire harness 
-                    intuitively, saving us essential time and resources across 
-                    the whole team.
+                  RapidHarness is a full lifecycle CAD solution built for
+                  designing production-ready wire harness schematics. They have
+                  very generously granted our team licenses to their software,
+                  making it significantly easier for Gaucho Racing to document
+                  and develop our drawings and schematics. Support from
+                  RapidHarness lets Gaucho Racing create our wire harness
+                  intuitively, saving us essential time and resources across the
+                  whole team.
                 </p>
               </div>
             </div>
