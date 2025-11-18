@@ -535,7 +535,7 @@ export default function SponsorsPage() {
               </div>
             </div>
             {/* 4th row of gold sponsors */}
-            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.solidworks.com/" target="_blank">
@@ -558,6 +558,29 @@ export default function SponsorsPage() {
                   solutions to life. Solidworks plays a crucial role in helping
                   us maintain precision and efficiency throughout our design
                   process.
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex h-48 flex-col items-center justify-center">
+                  <a href="https://rapidharness.com/" target="_blank">
+                    <Image
+                      className="mt-4 lg:mt-8"
+                      src="/sponsor/2026/gold/rapidharness-white.png"
+                      alt="RapidHarness"
+                      width={375}
+                      height={150}
+                    />
+                  </a>
+                </div>
+                <p className="text-sm">
+                    RapidHarness is a full lifecycle CAD solution built for 
+                    designing production-ready wire harness schematics. They 
+                    have very generously granted our team licenses to their 
+                    software, making it significantly easier for Gaucho Racing 
+                    to document and develop our drawings and schematics. Support
+                    from RapidHarness lets Gaucho Racing create our wire harness 
+                    intuitively, saving us essential time and resources across 
+                    the whole team.
                 </p>
               </div>
             </div>
