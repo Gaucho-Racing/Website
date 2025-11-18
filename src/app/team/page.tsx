@@ -133,103 +133,103 @@ export default function TeamPage() {
           <div className="flex flex-wrap items-stretch justify-center lg:ml-16 lg:mr-16">
             <TeamCard
               name="Satvik Subbaraman"
-              title="Drivetrain"
+              title="Drivetrain Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/satvik-subbaraman-26.jpg"
             />
             <TeamCard
               name="Brian Tham"
-              title="Drivetrain"
+              title="Drivetrain Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/brian-tham-26.jpg"
             />
             <TeamCard
               name="Koa Shen"
-              title="Chassis"
+              title="Chassis Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/koa-shen-26.jpg"
             />
             <TeamCard
               name="Ava Tran"
-              title="Chassis"
+              title="Chassis Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/ava-tran-26.jpg"
             />
             <TeamCard
               name="Thomas Yu"
-              title="Systems"
+              title="Systems Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/thomas-yu-26.jpg"
             />
             <TeamCard
               name="Diego Vasquez"
-              title="Fabrication"
+              title="Fabrication Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/diego-vasquez-26.jpg"
             />
             <TeamCard
               name="Curtis Butsko"
-              title="Suspension"
+              title="Suspension Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/curtis-butsko-26.jpg"
             />
             <TeamCard
               name="Forrest Drury"
-              title="Aero"
+              title="Aerodynamics Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/forrest-drury-26.jpg"
             />
             <TeamCard
               name="Kelvin Quach"
-              title="Aero"
+              title="Aerodynamics Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/kelvin-quach-26.jpg"
             />
             <TeamCard
               name="Owen Liu"
-              title="High Voltage"
+              title="High Voltage Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/owen-liu-26.jpg"
             />
             <TeamCard
               name="Vamsi Vempati"
-              title="High Voltage"
+              title="High Voltage Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/vamsi-vempati-26.jpg"
             />
             <TeamCard
               name="Vin Shin"
-              title="Low Voltage"
+              title="Low Voltage Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/vin-shin-26.jpg"
             />
             <TeamCard
               name="Andrey Otvagin"
-              title="Low Voltage"
+              title="Low Voltage Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/andrey-otvagin-26.jpg"
             />
             <TeamCard
               name="Daniel Hansen"
-              title="Firmware"
+              title="Firmware Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/daniel-hansen-26.jpg"
             />
             <TeamCard
               name="Jacob Jurek"
-              title="Data"
+              title="Data Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/jacob-jurek-26.jpg"
             />
             <TeamCard
               name="Austin Chan"
-              title="DevOps"
+              title="DevOps Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/austin-chan-26.jpg"
             />
             <TeamCard
               name="Alyssa Story"
-              title="Business"
+              title="Business Lead"
               titleColor="text-gr-purple"
               image="team/lead-images/26/alyssa-story-26.jpg"
             />

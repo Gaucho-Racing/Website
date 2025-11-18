@@ -18,7 +18,7 @@ const TeamCard = ({
   image?: string;
 }) => {
   return (
-    <Card className="m-4 flex w-64 flex-col items-center">
+    <Card className="m-4 flex w-64 flex-col items-center justify-between">
       <CardHeader className="ml-8 mr-8 items-center">
         <div className="mb-4 h-32 w-32 overflow-hidden rounded-full bg-gray-300 md:h-40 md:w-40 lg:h-44 lg:w-44">
           <img
