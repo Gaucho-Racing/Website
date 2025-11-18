@@ -17,11 +17,11 @@ const TeamCard = ({
   title: string;
   titleColor: string;
   image?: string;
-  website: string;
+  website?: string;
 }) => {
   return (
     <a
-      href={website}
+      href={website || ""}
       target="_blank"
       className="cursor-pointer transition-transform duration-200 hover:scale-105"
     >
