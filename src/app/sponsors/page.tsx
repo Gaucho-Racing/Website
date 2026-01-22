@@ -156,26 +156,24 @@ export default function SponsorsPage() {
               </div>
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
-                  <a href="https://www.singlestore.com/" target="_blank">
+                  <a href="https://www.nocturnalwelding.com/" target="_blank">
                     <Image
-                      className="mt-4 lg:mt-8"
-                      src="/sponsor/2026/platinum/singlestore-wordmark-white.png"
-                      alt="SingleStore"
-                      width={400}
+                      className="m-4 pt-2 lg:m-8"
+                      src="/sponsor/2026/platinum/nocturnal-welding-logo-white.png"
+                      alt="Nocturnal Welding"
+                      width={190}
                       height={200}
                     />
                   </a>
                 </div>
                 <p className="text-sm">
-                  SingleStore is a premier provider of scalable, high-speed
-                  database management systems known for their ability to support
-                  real-time analytics and operational intelligence. Our Formula
-                  SAE team has been granted access to SingleStore's software,
-                  allowing us to efficiently process and analyze data collected
-                  from our race car. Singlestore's software has proven essential
-                  in optimizing our vehicle's performance, demonstrating the
-                  power of advanced data management in a competitive engineering
-                  environment.
+                  Elijah Langworthy, AKA Nocturnal Welding, is a local machinist
+                  and welder in the Camarillo Area. He has been instrumental in
+                  our team since our formation and has helped our team
+                  manufacture components, including welding our accumulator
+                  container for GR24 and our decoupled suspension modules for
+                  GR25. His crucial work has helped ensure that our critical
+                  components are completed with high quality and accuracy.
                 </p>
               </div>
             </div>
@@ -348,30 +346,24 @@ export default function SponsorsPage() {
             </div>
 
             {/* 6th row of platinum sponsors*/}
-            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
+            {/* <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
-                  <a href="https://www.nocturnalwelding.com/" target="_blank">
+                  <a href="https://www.XXXXXXXX.com/" target="_blank">
                     <Image
                       className="m-4 lg:m-8"
-                      src="/sponsor/2026/platinum/nocturnal-welding-logo-white.png"
-                      alt="Nocturnal Welding"
+                      src="/sponsor/XXXX/platinum/XXXXXX.png"
+                      alt="XXXXXXX"
                       width={190}
                       height={200}
                     />
                   </a>
                 </div>
                 <p className="text-sm">
-                  Elijah Langworthy, AKA Nocturnal Welding, is a local machinist
-                  and welder in the Camarillo Area. He has been instrumental in
-                  our team since our formation and has helped our team
-                  manufacture components, including welding our accumulator
-                  container for GR24 and our decoupled suspension modules for
-                  GR25. His crucial work has helped ensure that our critical
-                  components are completed with high quality and accuracy.
+                  INSERT BODY TEXT
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* gold sponsors */}
@@ -511,31 +503,30 @@ export default function SponsorsPage() {
               </div>
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
-                  <a href="https://hexagon.com/" target="_blank">
+                  <a href="https://rapidharness.com/" target="_blank">
                     <Image
                       className="mt-4 lg:mt-8"
-                      src="/sponsor/2026/gold/hexagon-white.png"
-                      alt="Hexagon"
-                      width={275}
-                      height={100}
+                      src="/sponsor/2026/gold/rapidharness-white.png"
+                      alt="RapidHarness"
+                      width={375}
+                      height={150}
                     />
                   </a>
                 </div>
                 <p className="text-sm">
-                  Hexagon is an international, multidisciplinary powerhouse
-                  focused in various sectors including surveying, manufacturing,
-                  aerospace, agriculture, and healthcare. Our team utilizes
-                  their simulation software including Adams, a industry standard
-                  vehicle dynamics simulation platform. With this software, our
-                  team is able to efficiently map our suspension geometry,
-                  simulate and visualize lap times, and gain a better
-                  understanding of our car, giving us a competitive edge in
-                  FSAE.
+                  RapidHarness is a full lifecycle CAD solution built for
+                  designing production-ready wire harness schematics. They have
+                  very generously granted our team licenses to their software,
+                  making it significantly easier for Gaucho Racing to document
+                  and develop our drawings and schematics. Support from
+                  RapidHarness lets Gaucho Racing create our wire harness
+                  intuitively, saving us essential time and resources across the
+                  whole team.
                 </p>
               </div>
             </div>
             {/* 4th row of gold sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.solidworks.com/" target="_blank">
@@ -558,29 +549,6 @@ export default function SponsorsPage() {
                   solutions to life. Solidworks plays a crucial role in helping
                   us maintain precision and efficiency throughout our design
                   process.
-                </p>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="flex h-48 flex-col items-center justify-center">
-                  <a href="https://rapidharness.com/" target="_blank">
-                    <Image
-                      className="mt-4 lg:mt-8"
-                      src="/sponsor/2026/gold/rapidharness-white.png"
-                      alt="RapidHarness"
-                      width={375}
-                      height={150}
-                    />
-                  </a>
-                </div>
-                <p className="text-sm">
-                  RapidHarness is a full lifecycle CAD solution built for
-                  designing production-ready wire harness schematics. They have
-                  very generously granted our team licenses to their software,
-                  making it significantly easier for Gaucho Racing to document
-                  and develop our drawings and schematics. Support from
-                  RapidHarness lets Gaucho Racing create our wire harness
-                  intuitively, saving us essential time and resources across the
-                  whole team.
                 </p>
               </div>
             </div>
@@ -673,16 +641,28 @@ export default function SponsorsPage() {
               />
             </a>
           </div>
+          {/* 3rd row of silver sponsors */}
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+            <a href="https://appliedracingdynamics.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-6"
+                src="/sponsor/2026/silver/applied-racing-dynamics-white.png"
+                alt="Applied Racing Dynamics"
+                width={215}
+                height={150}
+              />
+            </a>
+          </div>
           {/* bronze sponsors */}
           <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
             BRONZE &nbsp;SPONSORS
           </h2>
           <div className="flex flex-col items-center justify-center lg:mt-8 lg:flex-row">
-            <a href="https://www.confluent.io/" target="_blank">
+            <a href="https://allindustrial.com" target="_blank">
               <Image
-                className="m-4 lg:mr-0"
-                src="/sponsor/2026/bronze/confluent-white.png"
-                alt="Confluent"
+                className="m-4 pr-8 lg:mr-0"
+                src="/sponsor/2026/bronze/all-industrial-tool-supply-white.png"
+                alt="All Industrial Tool Supply"
                 width={200}
                 height={100}
               />
