@@ -158,7 +158,7 @@ export default function SponsorsPage() {
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.nocturnalwelding.com/" target="_blank">
                     <Image
-                      className="m-4 lg:m-8 pt-2"
+                      className="m-4 pt-2 lg:m-8"
                       src="/sponsor/2026/platinum/nocturnal-welding-logo-white.png"
                       alt="Nocturnal Welding"
                       width={190}
@@ -551,7 +551,6 @@ export default function SponsorsPage() {
                   process.
                 </p>
               </div>
-              
             </div>
           </div>
           {/* silver sponsors */}
@@ -644,10 +643,7 @@ export default function SponsorsPage() {
           </div>
           {/* 3rd row of silver sponsors */}
           <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
-            <a
-              href="https://appliedracingdynamics.com/"
-              target="_blank"
-            >
+            <a href="https://appliedracingdynamics.com/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
                 src="/sponsor/2026/silver/applied-racing-dynamics-white.png"
@@ -656,7 +652,6 @@ export default function SponsorsPage() {
                 height={150}
               />
             </a>
-            
           </div>
           {/* bronze sponsors */}
           <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
