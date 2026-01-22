@@ -673,16 +673,32 @@ export default function SponsorsPage() {
               />
             </a>
           </div>
+          {/* 3rd row of silver sponsors */}
+          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+            <a
+              href="https://appliedracingdynamics.com/"
+              target="_blank"
+            >
+              <Image
+                className="m-4 lg:m-6"
+                src="/sponsor/2026/silver/applied-racing-dynamics-white.png"
+                alt="Applied Racing Dynamics"
+                width={215}
+                height={150}
+              />
+            </a>
+            
+          </div>
           {/* bronze sponsors */}
           <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
             BRONZE &nbsp;SPONSORS
           </h2>
           <div className="flex flex-col items-center justify-center lg:mt-8 lg:flex-row">
-            <a href="https://www.confluent.io/" target="_blank">
+            <a href="https://allindustrial.com" target="_blank">
               <Image
-                className="m-4 lg:mr-0"
-                src="/sponsor/2026/bronze/confluent-white.png"
-                alt="Confluent"
+                className="m-4 pr-8 lg:mr-0"
+                src="/sponsor/2026/bronze/all-industrial-tool-supply-white.png"
+                alt="All Industrial Tool Supply"
                 width={200}
                 height={100}
               />
