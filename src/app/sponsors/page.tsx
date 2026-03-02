@@ -790,13 +790,13 @@ export default function SponsorsPage() {
                 height={130}
               />
             </a>
-            <a href="https://totalboatrepair.com/" target="_blank">
+            <a href="https://www.totalboat.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
                 src="/sponsor/2026/bronze/totalboat-white.png"
                 alt="totalboat"
-                width={170}
-                height={130}
+                width={150}
+                height={110}
               />
             </a>
           </div>
