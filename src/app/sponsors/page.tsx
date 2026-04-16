@@ -642,7 +642,7 @@ export default function SponsorsPage() {
             </a>
           </div>
           {/* 3rd row of silver sponsors */}
-          <div className="flex flex-col items-center justify-center lg:mt-4 gap-10 lg:flex-row">
+          <div className="flex flex-col items-center justify-center gap-10 lg:mt-4 lg:flex-row">
             <a href="https://appliedracingdynamics.com/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
