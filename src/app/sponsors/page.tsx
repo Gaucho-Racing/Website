@@ -642,14 +642,23 @@ export default function SponsorsPage() {
             </a>
           </div>
           {/* 3rd row of silver sponsors */}
-          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+          <div className="flex flex-col items-center justify-center gap-10 lg:mt-4 lg:flex-row">
             <a href="https://appliedracingdynamics.com/" target="_blank">
               <Image
                 className="m-4 lg:m-6"
                 src="/sponsor/2026/silver/applied-racing-dynamics-white.png"
                 alt="Applied Racing Dynamics"
-                width={215}
+                width={205}
                 height={150}
+              />
+            </a>
+            <a href="https://sbifin.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-6"
+                src="/sponsor/2026/silver/santa-barbara-industrial-finishing-logo-white.png"
+                alt="Santa Barbara Industrial Finishing"
+                width={230}
+                height={170}
               />
             </a>
           </div>
