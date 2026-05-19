@@ -37,6 +37,7 @@ import {
 } from "@/components/ui/card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import LogoSlider from "@/components/logo-slider";
 
 export default function HomePage() {
   const [mailingList, setMailingList] = useState({
@@ -287,41 +288,25 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
         <div
           className=""
           style={{
             backgroundImage: "url('media/WelcomeWeek25/welcome-week-25-3.jpg')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "bottom",
             backgroundRepeat: "no-repeat",
           }}
         >
           <div className="bg-black bg-opacity-70 p-16">
-            <div className="flex flex-col items-center justify-center text-center text-white lg:mb-48 lg:ml-64 lg:mr-64 lg:mt-16">
-              <h1 className="p-16">ABOUT FSAE</h1>
-              <p className="text-xl">
-                FSAE Electric, initiated in 2013, is a cutting-edge addition to
-                the Formula SAE competition. It focuses on the development of
-                vehicles powered exclusively by electric motors, aligning with
-                the global shift towards sustainable and eco-friendly
-                transportation solutions.
-              </p>
-              <p className="mt-2 text-xl lg:mt-4">
-                Each year, over 400 teams from universities worldwide
-                participate in events hosted globally. Teams go head-to-head,
-                defending their design choices in static events under the
-                scrutiny of industry judges. The real test comes in dynamic
-                events, where our vehicles' performance and our drivers' skills
-                are put to the ultimate test. Winning top honors requires
-                excelling in multiple categories, showcasing the culmination of
-                our team's hard work and dedication.
-              </p>
-              <div className="flex w-full justify-center pt-8">
-                <Link href={FSAE_LINKS.ev}>
-                  <OutlineButton>MORE ABOUT FSAE</OutlineButton>
+            <div className="flex flex-col items-center justify-center text-center text-white lg:mb-24 lg:ml-16 lg:mr-16 lg:mt-8">
+              <h1 className="p-8">WHERE WE WORK</h1>
+              <p className="mb-8 text-xl lg:ml-32 lg:mr-32"></p>
+              <LogoSlider />
+              {/* <div className="flex w-full justify-center pt-8">
+                <Link href="/where-we-work">
+                  <OutlineButton>READ MORE</OutlineButton>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -534,6 +519,46 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
+        <div
+          className="w-full"
+          style={{
+            backgroundImage: "url('placeholder.png')",
+
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="bg-black bg-opacity-70 p-16">
+            <div className="flex flex-col items-center justify-center text-center text-white lg:mb-8 lg:ml-48 lg:mr-48 lg:mt-8">
+              <h1 className="p-8">ABOUT FSAE</h1>
+              <p className="text-xl">
+                FSAE Electric, initiated in 2013, is a cutting-edge addition to
+                the Formula SAE competition. It focuses on the development of
+                vehicles powered exclusively by electric motors, aligning with
+                the global shift towards sustainable and eco-friendly
+                transportation solutions.
+              </p>
+              <p className="mt-2 text-xl lg:mt-4">
+                Each year, over 400 teams from universities worldwide
+                participate in events hosted globally. Teams go head-to-head,
+                defending their design choices in static events under the
+                scrutiny of industry judges. The real test comes in dynamic
+                events, where our vehicles' performance and our drivers' skills
+                are put to the ultimate test. Winning top honors requires
+                excelling in multiple categories, showcasing the culmination of
+                our team's hard work and dedication.
+              </p>
+              <div className="flex w-full justify-center pt-8">
+                <Link href={FSAE_LINKS.ev}>
+                  <OutlineButton>MORE ABOUT FSAE</OutlineButton>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <Footer />
       </main>
     </HydrationProvider>
