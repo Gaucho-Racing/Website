@@ -661,6 +661,15 @@ export default function SponsorsPage() {
                 height={170}
               />
             </a>
+            <a href="https://www.linkedin.com/in/bk1031/" target="_blank">
+              <Image
+                className="m-4 lg:m-6"
+                src="/sponsor/2026/silver/bk1031_wordmark.svg"
+                alt="BK1031"
+                width={230}
+                height={170}
+              />
+            </a>
           </div>
           {/* bronze sponsors */}
           <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
@@ -749,15 +758,6 @@ export default function SponsorsPage() {
                 src="/sponsor/2026/bronze/tglobal-white.png"
                 alt="T-Global Technology"
                 width={180}
-                height={125}
-              />
-            </a>
-            <a href="https://storkecentr.al/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/storkecentral-white.png"
-                alt="StorkeCentral"
-                width={250}
                 height={125}
               />
             </a>
