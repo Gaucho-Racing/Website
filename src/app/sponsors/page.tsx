@@ -752,11 +752,11 @@ export default function SponsorsPage() {
             </a>
           </div>
           <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
-            <a href="https://www.tglobaltechnology.com/" target="_blank">
+            <a href="https://www.tglobal-usa.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
                 src="/sponsor/2026/bronze/tglobal-white.png"
-                alt="T-Global Technology"
+                alt="T-Global USA"
                 width={180}
                 height={125}
               />
