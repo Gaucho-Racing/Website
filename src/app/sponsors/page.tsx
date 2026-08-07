@@ -808,6 +808,15 @@ export default function SponsorsPage() {
                 height={110}
               />
             </a>
+            <a href="https://www.oshcut.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/sponsor/2027/bronze/OSH-Cut-white.png"
+                alt="OSH Cut"
+                width={150}
+                height={150}
+              />
+            </a>
           </div>
         </div>
       </div>
