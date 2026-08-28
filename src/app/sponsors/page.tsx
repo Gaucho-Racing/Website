@@ -752,6 +752,15 @@ export default function SponsorsPage() {
             </a>
           </div>
           <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
+            <a href="https://www.matterhackers.com/" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/sponsor/2027/bronze/MatterHackers_Logo_White-cropped.png"
+                alt="MatterHackers"
+                width={160}
+                height={160}
+              />
+            </a>
             <a href="https://www.tglobal-usa.com/" target="_blank">
               <Image
                 className="m-4 lg:m-10"
