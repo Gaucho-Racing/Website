@@ -68,6 +68,13 @@ export default function CarsPage() {
         <h1 className="mb-16 mt-16 text-center lg:ml-64 lg:mr-64">OUR CARS</h1>
         <div className="flex flex-col items-center text-white">
           <Car
+            name="GR26"
+            year="2025 - 2026"
+            description={`Gaucho Racing's fourth competing car, once again breaking countless team records! GR26 successfully passed every technical inspection and completed every dynamic event, a first for our team. Climbing 26 places from last year, it became the most tested and successful car in the team's history!`}
+            imageUrl="/placeholder.png"
+            imageOnLeft={false}
+          />
+          <Car
             name="GR25"
             year="2024 - 2025"
             description={`Gaucho Racing's third competing car, breaking our record for scoring the most total points in the team's history! Made with significantly improved manufacturing skills, GR25 would set a new standard for Gaucho Racing going forward.`}

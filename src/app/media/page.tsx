@@ -7,6 +7,41 @@ import ImageCard from "@/components/image-card";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
+const images26 = [
+  {
+    src: "/media/26/gr26-1.jpg",
+    alt: "GR26",
+  },
+  {
+    src: "/media/26/gr26-2.jpg",
+    alt: "GR26",
+  },
+  {
+    src: "/media/26/gr26-3.jpg",
+    alt: "GR26",
+  },
+  {
+    src: "/media/26/gr26-4.jpg",
+    alt: "GR26",
+  },
+  {
+    src: "/media/26/gr26-5.jpg",
+    alt: "GR26",
+  },
+  {
+    src: "/media/26/gr26-6.jpg",
+    alt: "GR26",
+  },
+  {
+    src: "/media/26/gr26-7.jpg",
+    alt: "GR26",
+  },
+  {
+    src: "/media/26/gr26-8.jpg",
+    alt: "GR26",
+  },
+];
+
 const imagesWelcomeWeek25 = [
   {
     src: "/media/WelcomeWeek25/welcome-week-25-3.jpg",
@@ -196,6 +231,14 @@ export default function MediaPage() {
         <div className="flex flex-col items-center text-white">
           <h1 className="mb-4 mt-16 lg:ml-64 lg:mr-64">PHOTO GALLERY</h1>
           <div className="flex flex-col items-center text-white">
+            <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
+              2025-2026 Season
+            </h2>
+            <div className="grid grid-cols-2 justify-items-center md:grid-cols-4 lg:mx-32">
+              {images26.map((image, index) => (
+                <ImageCard key={index} src={image.src} alt={image.alt} />
+              ))}
+            </div>
             <h2 className="mb-8 mt-16 text-2xl font-bold text-white lg:ml-64 lg:mr-64">
               Welcome Week 2025
             </h2>

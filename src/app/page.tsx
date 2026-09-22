@@ -257,6 +257,14 @@ export default function HomePage() {
                 team, able to challenge each other's ideas and assumptions, as
                 we believe this leads to the best work, innovation and growth.
               </p>
+              <div className="flex w-full justify-center pt-8">
+                <Link
+                  href="https://gauchoracing.shorthandstories.com/the-real-story/index.html"
+                  target="_blank"
+                >
+                  <OutlineButton>LEARN MORE</OutlineButton>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -482,10 +490,35 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
+                  <p className="mt-4 text-purple-400">
+                    <b>FIRST GENERAL MEETING</b>
+                  </p>
+                  <p className="mt-2 text-purple-400">
+                    9/28/26, 7:00-9:00PM,{" "}
+                    <a
+                      href="https://classrooms.ucsb.edu/classroom-inventory/chem-1179"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline transition-colors hover:text-gr-pink"
+                    >
+                      Chem 1179
+                    </a>
+                  </p>
                   <p className="mt-4">
                     <b>Weekly Meetings:</b>
                   </p>
-                  <p className="mt-2">Mondays 7:00-8:00PM, ESB 1001</p>
+                  <p className="mt-2">
+                    Location and time TDB! Join our{" "}
+                    <a
+                      href="https://discord.gg/gauchoracing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline transition-colors hover:text-gr-pink"
+                    >
+                      Discord
+                    </a>{" "}
+                    for updates!
+                  </p>
                   <p className="mt-6">
                     Come check us out! We'd love to meet and answer any
                     questions!

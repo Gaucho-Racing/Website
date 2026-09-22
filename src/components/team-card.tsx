@@ -34,8 +34,10 @@ const TeamCard = ({
               className="h-full w-full object-cover"
             />
           </div>
-          <CardTitle className="text-center">
-            <h2 className="text-lg md:text-xl lg:text-2xl">{name}</h2>
+          <CardTitle className="text-center leading-tight">
+            <h2 className="flex min-h-[2lh] items-center justify-center text-lg leading-tight md:text-xl lg:text-2xl">
+              {name}
+            </h2>
           </CardTitle>
         </CardHeader>
         <CardContent>

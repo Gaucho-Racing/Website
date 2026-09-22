@@ -106,27 +106,20 @@ export default function JoinPage() {
                     When are meetings?
                   </AccordionTrigger>
                   <AccordionContent className="text-left text-lg">
-                    Usually, we hold general meetings every Monday at 7PM. Any
-                    updates regarding meeting times and locations will be posted
-                    in our Discord server (
+                    Our first general meeting of the year is on September 28
+                    from 7:00-9:00PM in{" "}
                     <a
-                      href="https://discord.gauchoracing.com"
+                      href="https://classrooms.ucsb.edu/classroom-inventory/chem-1179"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gr-purple underline transition-colors hover:text-gr-pink"
                     >
-                      discord.gauchoracing.com
+                      Chem 1179
                     </a>
-                    ) or on Instagram (
-                    <a
-                      href="https://instagram.com/gauchoracingucsb"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gr-purple underline transition-colors hover:text-gr-pink"
-                    >
-                      @gauchoracingucsb
-                    </a>
-                    ). Different subteams will have their own additional
+                    . After that, we usually hold general meetings every Monday
+                    at 7PM (Location to be determined). Any updates regarding
+                    meeting times and locations will be posted in our Discord
+                    server. Different subteams will have their own additional
                     meetings throughout the week.
                   </AccordionContent>
                 </AccordionItem>
@@ -288,14 +281,29 @@ export default function JoinPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p>
+                  <p className="text-purple-400">
+                    <b>First General Meeting</b>
+                  </p>
+                  <p className="mt-2 text-purple-400">
+                    9/28/26, 7-9:00PM,{" "}
+                    <a
+                      href="https://classrooms.ucsb.edu/classroom-inventory/chem-1179"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline transition-colors hover:text-gr-pink"
+                    >
+                      Chem 1179
+                    </a>
+                  </p>
+
+                  <p className="mt-8">
                     <b>Weekly Meetings:</b>
                   </p>
                   <p className="mt-2">
                     <b>When:</b> Mondays - 7:00PM
                   </p>
                   <p>
-                    <b>Where:</b> ESB 1001
+                    <b>Where:</b> TBD
                   </p>
                 </CardContent>
               </Card>
