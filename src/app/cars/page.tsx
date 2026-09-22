@@ -71,7 +71,7 @@ export default function CarsPage() {
             name="GR26"
             year="2025 - 2026"
             description={`Gaucho Racing's fourth competing car, once again breaking countless team records! GR26 successfully passed every technical inspection and completed every dynamic event, a first for our team. Climbing 26 places from last year, it became the most tested and successful car in the team's history!`}
-            imageUrl="/placeholder.png"
+            imageUrl="/media/26/gr26-6.jpg"
             imageOnLeft={false}
           />
           <Car
