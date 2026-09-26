@@ -84,50 +84,52 @@ export default function TeamPage() {
               name="Alex Fu"
               title="President"
               titleColor="text-gr-pink"
-              image="team/lead-images/26/alex-fu-26.jpg"
+              image="/team/lead-images/27/Headshot_Alexander_Fu.jpg"
               website="https://www.linkedin.com/in/alexanderjfu1/"
             />
             <TeamCard
               name="Manas Bhargavan"
               title="Internal VP"
               titleColor="text-gr-pink"
-              image="/team/lead-images/26/manas-bhargavan-26.jpg"
+              image="/team/lead-images/27/placeholder.png"
               website="https://www.linkedin.com/in/manasija-bhargavan-9b7798292/"
+              zoom={1}
             />
             <TeamCard
               name="Jackson Tiengtum"
               title="External VP"
               titleColor="text-gr-pink"
-              image="/team/lead-images/26/jackson-tiengtum-26.jpg"
+              image="/team/lead-images/27/Headshot_Jackson_Tiengtum.jpg"
               website="https://www.linkedin.com/in/jtiengtum/"
             />
             <TeamCard
               name="Graydon Bushan"
               title="Secretary"
               titleColor="text-gr-pink"
-              image="/team/lead-images/27/placeholder-profile.png"
+              image="/team/lead-images/27/Headshot_Graydon_Bushan.jpg"
               website="https://www.gauchoracing.com"
             />
             <TeamCard
               name="Zachary Rogers"
               title="Treasurer"
               titleColor="text-gr-pink"
-              image="team/lead-images/26/zachary-rogers-26.jpg"
+              image="/team/lead-images/27/Headshot_Zach_Rogers.jpg"
               website="https://www.linkedin.com/in/zachary-rogers-ucsb/"
             />
             <TeamCard
               name="Ava  Tran"
               title="Mechanical TD"
               titleColor="text-gr-pink"
-              image="team/lead-images/26/ava-tran-26.jpg"
+              image="/team/lead-images/27/Headshot_Ava_Tran.jpg"
               website="https://www.linkedin.com/in/avatran/"
             />
             <TeamCard
               name="Vin  Shin"
               title="Electrical TD"
               titleColor="text-gr-pink"
-              image="team/lead-images/26/vin-shin-26.jpg"
+              image="/team/lead-images/27/Headshot_Vin_Shin.jpg"
               website="https://www.linkedin.com/in/vinshin623/"
+              zoom={1.05}
             />
           </div>
         </div>
@@ -142,99 +144,102 @@ export default function TeamPage() {
               name="Satvik Subbaraman"
               title="Drivetrain Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/26/satvik-subbaraman-26.jpg"
+              image="/team/lead-images/27/Headshot_Satvik_Subbaraman.jpg"
               website="https://www.linkedin.com/in/satvik-subbaraman/"
             />
             <TeamCard
               name="Brian Tham"
               title="Drivetrain Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/26/brian-tham-26.jpg"
+              image="/team/lead-images/27/Headshot_Brian_Tham.jpg"
               website="https://www.linkedin.com/in/brianrtham/"
             />
             <TeamCard
               name="Koa Shen"
               title="Manufacturing Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/26/koa-shen-26.jpg"
+              image="/team/lead-images/27/Headshot_Koa_Shen.jpg"
               website="https://www.linkedin.com/in/koa-shen/"
             />
             <TeamCard
               name="Jeremy Sevilla"
               title="Chassis Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/26/jeremy-sevilla-26.jpg"
+              image="/team/lead-images/27/Headshot_Jeremy_Sevilla.jpg"
               website="https://www.linkedin.com/in/jeremy-sevilla/"
             />
             <TeamCard
               name="Curtis Butsko"
               title="Suspension Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/26/curtis-butsko-26.jpg"
+              image="/team/lead-images/27/Headshot_Curtis_Butsko.jpg"
               website="https://www.linkedin.com/in/curtisbutsko/"
             />
             <TeamCard
               name="Forrest Drury"
               title="Aerodynamics Lead"
               titleColor="text-gr-purple"
-              image="/team/lead-images/26/forrest-drury-26.jpg"
+              image="/team/lead-images/27/Headshot_Forrest_Drury.jpg"
               website="https://www.linkedin.com/in/forrest-drury-734218335/"
             />
             <TeamCard
               name="Kelvin Quach"
               title="Aerodynamics Lead"
               titleColor="text-gr-purple"
-              image="/team/lead-images/26/kelvin-quach-26.jpg"
+              image="/team/lead-images/27/placeholder.png"
               website="https://www.linkedin.com/in/kelvin-quach-095764291/"
+              zoom={1}
             />
             <TeamCard
               name="Casey Zwicker"
               title="Powertrain Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/27/placeholder-profile.png"
+              image="/team/lead-images/27/Headshot_Casey_Zwicker.jpg"
               website="https://www.linkedin.com/in/casey-zwicker/"
             />
             <TeamCard
               name="Milo Pitera"
               title="LV & Harness Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/27/milo-pitera-27.jpg"
+              image="/team/lead-images/27/Headshot_Milo_Pitera.jpg"
               website="https://www.linkedin.com/in/milo-pitera-410502310/"
             />
             <TeamCard
               name="Daniel Hansen"
               title="Elec. Controls Lead"
               titleColor="text-gr-purple"
-              image="/team/lead-images/26/daniel-hansen-26.jpg"
+              image="/team/lead-images/27/Headshot_Daniel_Hansen.jpg"
               website="https://www.linkedin.com/in/daniel-hansen-cs/"
             />
             <TeamCard
               name="Shravya Salem"
               title="Driverless Lead"
               titleColor="text-gr-purple"
-              image="team/lead-images/27/shravya-salem-27.jpg"
+              image="/team/lead-images/27/Headshot_Shravya_Salem_Sathish.jpg"
               website="https://www.linkedin.com/in/shravya-salem-sathish/"
             />
             <TeamCard
               name="Austin Chan"
               title="DevOps Lead"
               titleColor="text-gr-purple"
-              image="/team/lead-images/26/austin-chan-26.jpg"
+              image="/team/lead-images/27/placeholder.png"
               website="https://www.linkedin.com/in/austinchan2/"
+              zoom={1}
             />
             <TeamCard
               name="Alyssa Story"
               title="Business Lead"
               titleColor="text-gr-purple"
-              image="/team/lead-images/26/alyssa-story-26.jpg"
+              image="/team/lead-images/27/Headshot_Alyssa_Story.jpg"
               website="https://www.linkedin.com/in/alyssa-story-76353a373/"
+              zoom={1}
             />
             <TeamCard
               name="Olivia Lewis"
               title="Business Lead"
               titleColor="text-gr-purple"
-              image="/team/lead-images/27/olivia-lewis-27.jpg"
-              website="https://www.gauchoracing.com"
+              image="/team/lead-images/27/Headshot_Olivia_Lewis.jpg"
+              website="https://www.linkedin.com/in/olivia-lewis-793792386/"
             />
           </div>
         </div>
@@ -250,6 +255,7 @@ export default function TeamPage() {
             titleColor="text-gr-purple"
             image="/team/lead-images/26/kirk-fields-26.jpg"
             website="https://me.ucsb.edu/index.php/people/kirk-fields"
+            zoom={1}
           />
         </div>
       </div>
