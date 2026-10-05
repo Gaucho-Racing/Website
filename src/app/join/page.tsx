@@ -281,21 +281,6 @@ export default function JoinPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-purple-400">
-                    <b>First General Meeting</b>
-                  </p>
-                  <p className="mt-2 text-purple-400">
-                    9/28/26, 7-9:00PM,{" "}
-                    <a
-                      href="https://classrooms.ucsb.edu/classroom-inventory/chem-1179"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline transition-colors hover:text-gr-pink"
-                    >
-                      Chem 1179
-                    </a>
-                  </p>
-
                   <p className="mt-8">
                     <b>Weekly Meetings:</b>
                   </p>
@@ -303,7 +288,7 @@ export default function JoinPage() {
                     <b>When:</b> Mondays - 7:00PM
                   </p>
                   <p>
-                    <b>Where:</b> TBD
+                    <b>Where:</b> ESB 1001
                   </p>
                 </CardContent>
               </Card>
@@ -316,7 +301,7 @@ export default function JoinPage() {
                 </CardHeader>
                 <CardContent className="text-center">
                   <p>
-                    To create an account and join, scan or visit{" "}
+                    To create an account and join, click or visit{" "}
                     <a
                       href="https://discord.gauchoracing.com"
                       target="_blank"
@@ -326,17 +311,26 @@ export default function JoinPage() {
                       discord.gauchoracing.com
                     </a>{" "}
                   </p>
-                  <div className="mt-4 flex justify-center">
-                    <a href="https://discord.gauchoracing.com" target="_blank">
-                      <Image
-                        src="/join/discord-qr.png"
-                        alt="Discord QR Code"
-                        width={210}
-                        height={210}
-                        className="rounded-lg"
-                      />
-                    </a>
-                  </div>
+                </CardContent>
+              </Card>
+              <Card className="m-4 flex flex-1 flex-col p-2">
+                <CardHeader>
+                  <CardTitle className="text-center">
+                    <h2>ABOUT FSAE</h2>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p>
+                    Learn more about the competition,{" "}
+                    <a
+                      href="https://www.sae.org/attend/student-events/formula-sae-electric/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gr-purple underline transition-colors hover:text-gr-pink"
+                    >
+                      Formula SAE Electric
+                    </a>{" "}
+                  </p>
                 </CardContent>
               </Card>
             </div>

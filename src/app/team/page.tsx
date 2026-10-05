@@ -212,7 +212,7 @@ export default function TeamPage() {
               website="https://www.linkedin.com/in/daniel-hansen-cs/"
             />
             <TeamCard
-              name="Shravya Salem"
+              name="Shravya Salem Sathish"
               title="Driverless Lead"
               titleColor="text-gr-purple"
               image="/team/lead-images/27/Headshot_Shravya_Salem_Sathish.jpg"

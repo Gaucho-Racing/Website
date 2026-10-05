@@ -670,6 +670,18 @@ export default function SponsorsPage() {
                 height={170}
               />
             </a>
+            <a
+              href="https://www.communityrelations.ucsb.edu/ucsb-affiliates"
+              target="_blank"
+            >
+              <Image
+                className="m-4 lg:m-6"
+                src="/sponsor/2027/silver/UCSB-Affiliates-logo-white.png"
+                alt="UCSB Affiliates"
+                width={210}
+                height={155}
+              />
+            </a>
           </div>
           {/* bronze sponsors */}
           <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
@@ -824,6 +836,17 @@ export default function SponsorsPage() {
                 alt="OSH Cut"
                 width={150}
                 height={150}
+              />
+            </a>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:mt-0 lg:flex-row">
+            <a href="https://www.linkedin.com/in/jeffduong29" target="_blank">
+              <Image
+                className="m-4 lg:m-10"
+                src="/sponsor/2027/bronze/jiffy-jeff-duong-logo.png"
+                alt="Jiffy Jeff Duong"
+                width={200}
+                height={92}
               />
             </a>
           </div>

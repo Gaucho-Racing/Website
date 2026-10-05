@@ -49,7 +49,6 @@ export default function HomePage() {
   });
   const [windowHeight, setWindowHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
-  const [calcWidth, setCalcWidth] = useState(0);
   const [scrollY, setScrollY] = useState(0);
   const breakpoint = 1024;
 
@@ -76,15 +75,6 @@ export default function HomePage() {
 
     setWindowHeight(newWindowDimensions.height);
     setWindowWidth(newWindowDimensions.width);
-
-    const viewportHeight = newWindowDimensions.height;
-    const aspectRatio = 16 / 9;
-
-    if (newWindowDimensions.width < viewportHeight * aspectRatio) {
-      setCalcWidth(viewportHeight * aspectRatio);
-    } else {
-      setCalcWidth(newWindowDimensions.width);
-    }
   };
 
   const createMailingList = async () => {
@@ -122,21 +112,31 @@ export default function HomePage() {
           )}
         </motion.div>
         <Client>
-          <div className="absolute h-full w-full overflow-hidden">
+          <div className="absolute left-0 top-0 h-screen w-full overflow-hidden">
             <ReactPlayer
               playing
               loop
               muted={true}
-              url="home/fastest-lap.mp4"
-              height={(calcWidth / 16) * 9}
-              width={calcWidth}
+              url="home/gr26-shakedown-720p-muted.mp4"
+              height="100%"
+              width="100%"
               controls={false}
+              config={{
+                file: {
+                  attributes: {
+                    style: {
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    },
+                  },
+                },
+              }}
               style={{
                 position: "absolute",
-                objectFit: "cover",
-                overflow: "hidden",
+                top: 0,
+                left: 0,
                 zIndex: -20,
-                // opacity: 1,
                 opacity: scrollY < windowHeight - 132 ? "1" : "0",
                 visibility: scrollY < windowHeight - 132 ? "visible" : "hidden",
               }}
@@ -339,148 +339,24 @@ export default function HomePage() {
               <Card className="m-4 flex flex-1 flex-col">
                 <CardHeader>
                   <CardTitle className="text-center">
-                    <h2>JOIN OUR NEWSLETTER</h2>
+                    <h2>JOIN OUR DISCORD</h2>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-center">
-                    Stay up to date with the latest Gaucho Racing news! We'll
-                    send you updates about all the cool things we've been
-                    working on.
+                  <p className="mt-4 text-center">
+                    Stay up to date with the latest Gaucho Racing developments,
+                    join our community, and help us build a car!
                   </p>
-                  <Dialog>
-                    <div className="mt-6 flex">
-                      <div className="relative flex-grow">
-                        <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
-                          <FontAwesomeIcon icon={faEnvelope} />
-                        </div>
-                        <input
-                          type="email"
-                          id="email-input"
-                          className="block w-full rounded-lg border border-slate-700 bg-transparent p-2.5 ps-10 text-sm text-white focus:border-gr-pink focus:ring-gr-pink"
-                          placeholder="name@gauchoracing.com"
-                          value={mailingList.email}
-                          onChange={(e) =>
-                            setMailingList({
-                              ...mailingList,
-                              email: e.target.value,
-                            })
-                          }
-                        ></input>
-                      </div>
-                      <DialogTrigger asChild>
-                        <div className="ml-2">
-                          <Button>Subscribe</Button>
-                        </div>
-                      </DialogTrigger>
-                    </div>
-                    <DialogContent className="border-slate-700 bg-black">
-                      <DialogHeader>
-                        <DialogTitle className="text-lg font-bold">
-                          Subscribe to our mailing list!
-                        </DialogTitle>
-                      </DialogHeader>
-
-                      <div className="grid gap-4 py-4">
-                        <div className="grid gap-2">
-                          <Label className="font-semibold" htmlFor="email">
-                            Email Address*
-                          </Label>
-                          <Input
-                            type="email"
-                            id="email"
-                            value={mailingList.email}
-                            onChange={(e) =>
-                              setMailingList({
-                                ...mailingList,
-                                email: e.target.value,
-                              })
-                            }
-                          />
-                        </div>
-
-                        <div className="grid gap-2 sm:grid-cols-2">
-                          <div>
-                            <Label
-                              className="font-semibold"
-                              htmlFor="first_name"
-                            >
-                              First Name
-                            </Label>
-                            <Input
-                              id="first_name"
-                              value={mailingList.first_name}
-                              onChange={(e) =>
-                                setMailingList({
-                                  ...mailingList,
-                                  first_name: e.target.value,
-                                })
-                              }
-                            />
-                          </div>
-                          <div>
-                            <Label
-                              className="font-semibold"
-                              htmlFor="last_name"
-                            >
-                              Last Name
-                            </Label>
-                            <Input
-                              id="last_name"
-                              value={mailingList.last_name}
-                              onChange={(e) =>
-                                setMailingList({
-                                  ...mailingList,
-                                  last_name: e.target.value,
-                                })
-                              }
-                            />
-                          </div>
-                        </div>
-                        <div className="grid grid-cols-5 gap-2">
-                          <div className="col-span-3 grid gap-2">
-                            <Label
-                              className="font-semibold"
-                              htmlFor="organization"
-                            >
-                              Organization
-                            </Label>
-                            <Input
-                              id="organization"
-                              value={mailingList.organization}
-                              onChange={(e) =>
-                                setMailingList({
-                                  ...mailingList,
-                                  organization: e.target.value,
-                                })
-                              }
-                            />
-                          </div>
-                          <div className="col-span-2 grid gap-2">
-                            <Label className="font-semibold" htmlFor="role">
-                              Role
-                            </Label>
-                            <Input
-                              id="role"
-                              value={mailingList.role}
-                              onChange={(e) =>
-                                setMailingList({
-                                  ...mailingList,
-                                  role: e.target.value,
-                                })
-                              }
-                            />
-                          </div>
-                        </div>
-                        <OutlineButton
-                          className="!mt-4 w-full"
-                          onClick={() => createMailingList()}
-                        >
-                          Confirm Subscription
-                        </OutlineButton>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
+                  <h3 className="mt-8 text-center">
+                    <a
+                      href="https://discord.gg/gauchoracing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gr-purple underline transition-colors hover:text-gr-pink"
+                    >
+                      discord.gg/gauchoracing
+                    </a>
+                  </h3>
                 </CardContent>
               </Card>
               <Card className="m-4 flex flex-1 flex-col">
@@ -490,35 +366,10 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mt-4 text-purple-400">
-                    <b>FIRST GENERAL MEETING</b>
-                  </p>
-                  <p className="mt-2 text-purple-400">
-                    9/28/26, 7:00-9:00PM,{" "}
-                    <a
-                      href="https://classrooms.ucsb.edu/classroom-inventory/chem-1179"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline transition-colors hover:text-gr-pink"
-                    >
-                      Chem 1179
-                    </a>
-                  </p>
                   <p className="mt-4">
                     <b>Weekly Meetings:</b>
                   </p>
-                  <p className="mt-2">
-                    Location and time TDB! Join our{" "}
-                    <a
-                      href="https://discord.gg/gauchoracing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline transition-colors hover:text-gr-pink"
-                    >
-                      Discord
-                    </a>{" "}
-                    for updates!
-                  </p>
+                  <p className="mt-2">Monday, 7:00PM, ESB 1001</p>
                   <p className="mt-6">
                     Come check us out! We'd love to meet and answer any
                     questions!
@@ -544,7 +395,7 @@ export default function HomePage() {
                     <br />
                     Santa Barbara, CA 93106
                   </p>
-                  <p className="mt-2">
+                  <p className="mt-6">
                     Feel free to send us an email or even some physical mail!
                   </p>
                 </CardContent>
