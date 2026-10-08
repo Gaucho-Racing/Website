@@ -843,10 +843,10 @@ export default function SponsorsPage() {
             <a href="https://www.linkedin.com/in/jeffduong29" target="_blank">
               <Image
                 className="m-4 lg:m-10"
-                src="/sponsor/2027/bronze/jiffy-jeff-duong-logo.png"
-                alt="Jiffy Jeff Duong"
-                width={200}
-                height={92}
+                src="/sponsor/2027/bronze/jiffy-white.png"
+                alt="Jiffy"
+                width={160}
+                height={65}
               />
             </a>
           </div>
