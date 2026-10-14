@@ -4,8 +4,7 @@ import Link from "next/link";
 import InstagramIcon from "../components/icons/instagram";
 import LinkedinIcon from "../components/icons/linkedin";
 import TwitterIcon from "../components/icons/twitter";
-import { FSAE_LINKS, SENTINEL_API_URL, SOCIAL_LINKS } from "../lib/consts";
-import axios from "axios";
+import { FSAE_LINKS, SOCIAL_LINKS } from "../lib/consts";
 import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -16,18 +15,6 @@ import SideMenu from "../components/sidebar";
 import { Client, HydrationProvider } from "react-hydration-provider";
 import { Button } from "@/components/ui/button";
 import { OutlineButton } from "@/components/ui/outline-button";
-import { notify } from "@/lib/notify";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 import {
   Card,
   CardContent,
@@ -40,13 +27,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import LogoSlider from "@/components/logo-slider";
 
 export default function HomePage() {
-  const [mailingList, setMailingList] = useState({
-    email: "",
-    first_name: "",
-    last_name: "",
-    organization: "",
-    role: "",
-  });
   const [windowHeight, setWindowHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
   const [scrollY, setScrollY] = useState(0);
@@ -75,15 +55,6 @@ export default function HomePage() {
 
     setWindowHeight(newWindowDimensions.height);
     setWindowWidth(newWindowDimensions.width);
-  };
-
-  const createMailingList = async () => {
-    try {
-      await axios.post(`${SENTINEL_API_URL}/mailing-list`, mailingList);
-      notify.success("Successfully subscribed to mailing list!");
-    } catch (error) {
-      notify.error("Failed to subscribe.");
-    }
   };
 
   return (
