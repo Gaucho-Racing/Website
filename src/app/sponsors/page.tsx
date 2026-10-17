@@ -683,6 +683,18 @@ export default function SponsorsPage() {
               />
             </a>
           </div>
+          {/* 4th row of silver sponsors */}
+          <div className="flex flex-col items-center justify-center gap-10 lg:mt-4 lg:flex-row">
+            <a href="https://winecountrymotorsports.com" target="_blank">
+              <Image
+                className="m-4 lg:m-6"
+                src="/sponsor/2027/silver/wine-country-motor-sports-logo-white.png"
+                alt="Wine Country Motor Sports"
+                width={250}
+                height={200}
+              />
+            </a>
+          </div>
           {/* bronze sponsors */}
           <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
             BRONZE &nbsp;SPONSORS
