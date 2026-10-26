@@ -8,6 +8,262 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+type SponsorLogo = {
+  name: string;
+  href: string;
+  src: string;
+  width: number;
+  height: number;
+};
+
+const silverSponsors: SponsorLogo[] = [
+  {
+    name: "Airtech",
+    href: "https://airtech.com/",
+    src: "/sponsor/2026/silver/airtech-white.png",
+    width: 200,
+    height: 100,
+  },
+  {
+    name: "SKF",
+    href: "https://www.skf.com/us",
+    src: "/sponsor/2026/silver/skf-white.png",
+    width: 200,
+    height: 100,
+  },
+  {
+    name: "Vi-Grade",
+    href: "https://www.vi-grade.com/",
+    src: "/sponsor/2026/silver/vi-grade-white.png",
+    width: 200,
+    height: 100,
+  },
+  {
+    name: "Santa Barbara Car Show Channel",
+    href: "https://www.youtube.com/@thesantabarbaracarshowchan3555",
+    src: "/sponsor/2026/silver/sb-car-show-white.png",
+    width: 215,
+    height: 100,
+  },
+  {
+    name: "Gene Haas Foundation",
+    href: "https://www.haascnc.com/content/ghf/en/home.html",
+    src: "/sponsor/2026/silver/haasfoundation-logo-white.png",
+    width: 140,
+    height: 100,
+  },
+  {
+    name: "Hakko",
+    href: "https://hakkousa.com/",
+    src: "/sponsor/2026/silver/hakko-wordmark-white.png",
+    width: 215,
+    height: 100,
+  },
+  {
+    name: "Applied Racing Dynamics",
+    href: "https://appliedracingdynamics.com/",
+    src: "/sponsor/2026/silver/applied-racing-dynamics-white.png",
+    width: 205,
+    height: 150,
+  },
+  {
+    name: "Santa Barbara Industrial Finishing",
+    href: "https://sbifin.com/",
+    src: "/sponsor/2026/silver/santa-barbara-industrial-finishing-logo-white.png",
+    width: 230,
+    height: 170,
+  },
+  {
+    name: "BK1031",
+    href: "https://www.linkedin.com/in/bk1031/",
+    src: "/sponsor/2026/silver/bk1031_wordmark.svg",
+    width: 230,
+    height: 170,
+  },
+  {
+    name: "UCSB Affiliates",
+    href: "https://www.communityrelations.ucsb.edu/ucsb-affiliates",
+    src: "/sponsor/2027/silver/UCSB-Affiliates-logo-white.png",
+    width: 210,
+    height: 155,
+  },
+  {
+    name: "Wine Country Motor Sports",
+    href: "https://winecountrymotorsports.com",
+    src: "/sponsor/2027/silver/wine-country-motor-sports-logo-white.png",
+    width: 250,
+    height: 200,
+  },
+];
+
+const bronzeSponsors: SponsorLogo[] = [
+  {
+    name: "Coroflex",
+    href: "https://www.coroflex-cable.com/en/",
+    src: "/sponsor/2026/bronze/coroflex-white.png",
+    width: 180,
+    height: 100,
+  },
+  {
+    name: "All Industrial Tool Supply",
+    href: "https://allindustrial.com",
+    src: "/sponsor/2026/bronze/all-industrial-tool-supply-white.png",
+    width: 200,
+    height: 100,
+  },
+  {
+    name: "Celsius",
+    href: "https://www.celsius.com/",
+    src: "/sponsor/2026/bronze/celsius-logo-white.png",
+    width: 80,
+    height: 100,
+  },
+  {
+    name: "Red Bull",
+    href: "https://www.redbull.com/us-en",
+    src: "/sponsor/2026/bronze/redbull-logo-white.png",
+    width: 115,
+    height: 100,
+  },
+  {
+    name: "SemiQ",
+    href: "https://semiq.com/",
+    src: "/sponsor/2026/bronze/semiq-white.png",
+    width: 200,
+    height: 125,
+  },
+  {
+    name: "Digikey",
+    href: "https://www.digikey.com/",
+    src: "/sponsor/2026/bronze/digikey-white.png",
+    width: 150,
+    height: 125,
+  },
+  {
+    name: "Inertial Sense",
+    href: "https://inertialsense.com/",
+    src: "/sponsor/2026/bronze/inertialsense-white.png",
+    width: 200,
+    height: 125,
+  },
+  {
+    name: "MatterHackers",
+    href: "https://www.matterhackers.com/",
+    src: "/sponsor/2027/bronze/MatterHackers_Logo_White-cropped.png",
+    width: 160,
+    height: 160,
+  },
+  {
+    name: "T-Global USA",
+    href: "https://www.tglobal-usa.com/",
+    src: "/sponsor/2026/bronze/tglobal-white.png",
+    width: 180,
+    height: 125,
+  },
+  {
+    name: "California Filament",
+    href: "https://californiafilament.com/",
+    src: "/sponsor/2026/bronze/CaliforniaFilament-white.png",
+    width: 165,
+    height: 165,
+  },
+  {
+    name: "Sunlu",
+    href: "https://www.sunlu.com/",
+    src: "/sponsor/2026/bronze/sunlu-white.png",
+    width: 150,
+    height: 100,
+  },
+  {
+    name: "Polymaker",
+    href: "https://polymaker.com/",
+    src: "/sponsor/2026/bronze/polymaker-white.png",
+    width: 170,
+    height: 130,
+  },
+  {
+    name: "totalboat",
+    href: "https://www.totalboat.com/",
+    src: "/sponsor/2026/bronze/totalboat-white.png",
+    width: 150,
+    height: 110,
+  },
+  {
+    name: "OSH Cut",
+    href: "https://www.oshcut.com/",
+    src: "/sponsor/2027/bronze/OSH-Cut-white.png",
+    width: 150,
+    height: 150,
+  },
+  {
+    name: "Jiffy",
+    href: "https://www.linkedin.com/in/jeffduong29",
+    src: "/sponsor/2027/bronze/jiffy-white.png",
+    width: 160,
+    height: 65,
+  },
+  {
+    name: "iFixit",
+    href: "https://www.ifixit.com/",
+    src: "/sponsor/2027/bronze/ifixit-white.png",
+    width: 180,
+    height: 50,
+  },
+  {
+    name: "Bspoke Automotive",
+    href: "https://www.bspokeautomotive.it/",
+    src: "/sponsor/2027/bronze/bspoke-automotive-white.png",
+    width: 220,
+    height: 35,
+  },
+  {
+    name: "Fabworks",
+    href: "https://www.fabworks.com/",
+    src: "/sponsor/2027/bronze/fabworks-white.png",
+    width: 190,
+    height: 40,
+  },
+];
+
+const friendsAndFamilySponsors: SponsorLogo[] = [
+  {
+    name: "Online Metals",
+    href: "https://www.onlinemetals.com/",
+    src: "/sponsor/2027/friends-and-family/online-metals-white.png",
+    width: 150,
+    height: 37,
+  },
+];
+
+function SponsorLogoGrid({
+  sponsors,
+  logoClassName,
+}: {
+  sponsors: SponsorLogo[];
+  logoClassName: string;
+}) {
+  return (
+    <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center lg:mt-8">
+      {sponsors.map((sponsor) => (
+        <a
+          key={sponsor.src}
+          href={sponsor.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            className={logoClassName}
+            src={sponsor.src}
+            alt={sponsor.name}
+            width={sponsor.width}
+            height={sponsor.height}
+          />
+        </a>
+      ))}
+    </div>
+  );
+}
+
 export default function SponsorsPage() {
   const [windowHeight, setWindowHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
@@ -78,8 +334,7 @@ export default function SponsorsPage() {
         <div className="bg-black bg-opacity-70 p-16">
           <div className="flex flex-col items-center justify-center text-center text-white lg:mx-16">
             <h2 className="m-16 text-center">PLATINUM &nbsp;SPONSORS</h2>
-            {/* 1st row of platinum sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2 lg:[&>:last-child:nth-child(odd)]:col-span-2 lg:[&>:last-child:nth-child(odd)]:mx-auto lg:[&>:last-child:nth-child(odd)]:w-[calc(50%-1rem)]">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center p-[2vh]">
                   <a href="https://asfb.as.ucsb.edu/" target="_blank">
@@ -128,32 +383,6 @@ export default function SponsorsPage() {
                   academic knowledge in practical, real-world scenarios.
                 </p>
               </div>
-            </div>
-            {/* 2nd row of platinum sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
-              <div className="flex flex-col items-center">
-                <div className="flex h-48 flex-col items-center justify-center">
-                  <a href=" https://www.arts.ucsb.edu/" target="_blank">
-                    <Image
-                      className="mt-4 lg:mt-8"
-                      src="/sponsor/2026/platinum/ucsb-art-white.png"
-                      alt="UCSB Art Department"
-                      width={300}
-                      height={100}
-                    />
-                  </a>
-                </div>
-                <p className="text-sm">
-                  The UC Santa Barbara Art Department has generously supported
-                  Gaucho Racing by granting us access to their manufacturing
-                  spaces and capabilities. This collaboration has enabled us to
-                  fabricate key components such as our chassis right on campus.
-                  Their support has played a vital role in advancing our
-                  engineering efforts and strengthening our educational mission.
-                  We’re excited to continue working together to push the
-                  boundaries of student-driven innovation.
-                </p>
-              </div>
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.nocturnalwelding.com/" target="_blank">
@@ -176,9 +405,6 @@ export default function SponsorsPage() {
                   components are completed with high quality and accuracy.
                 </p>
               </div>
-            </div>
-            {/* 3rd row of platinum sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.tesla.com/" target="_blank">
@@ -231,9 +457,6 @@ export default function SponsorsPage() {
                   collegiate racing.
                 </p>
               </div>
-            </div>
-            {/* 4th row of platinum sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://fireflyspace.com/" target="_blank">
@@ -289,10 +512,6 @@ export default function SponsorsPage() {
                   competitive racing environments.
                 </p>
               </div>
-            </div>
-
-            {/* 5th row of platinum sponsors*/}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.amk-motion.com/en/" target="_blank">
@@ -369,8 +588,7 @@ export default function SponsorsPage() {
           {/* gold sponsors */}
           <div className="flex flex-col items-center justify-center text-center text-white lg:mx-16 lg:mb-32">
             <h2 className="mt-16 text-center lg:mt-32">GOLD &nbsp;SPONSORS</h2>
-            {/* 1st row of gold sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2 lg:[&>:last-child:nth-child(odd)]:col-span-2 lg:[&>:last-child:nth-child(odd)]:mx-auto lg:[&>:last-child:nth-child(odd)]:w-[calc(50%-1rem)]">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.ansys.com/" target="_blank">
@@ -422,9 +640,6 @@ export default function SponsorsPage() {
                   direct pathways into their professional careers.
                 </p>
               </div>
-            </div>
-            {/* 2nd row of gold sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.altium.com/" target="_blank">
@@ -475,9 +690,6 @@ export default function SponsorsPage() {
                   advanced tools relied upon by top professionals in the field.
                 </p>
               </div>
-            </div>
-            {/* 3rd row of gold sponsors */}
-            <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://bambulab.com/en" target="_blank">
@@ -524,9 +736,6 @@ export default function SponsorsPage() {
                   whole team.
                 </p>
               </div>
-            </div>
-            {/* 4th row of gold sponsors */}
-            <div className="center-column grid max-w-xl grid-cols-1 gap-8 lg:grid-cols-1">
               <div className="flex flex-col items-center">
                 <div className="flex h-48 flex-col items-center justify-center">
                   <a href="https://www.solidworks.com/" target="_blank">
@@ -553,315 +762,27 @@ export default function SponsorsPage() {
               </div>
             </div>
           </div>
-          {/* silver sponsors */}
           <h2 className="mb-8 mt-16 text-center lg:mt-32">
             SILVER &nbsp;SPONSORS
           </h2>
-          {/* 1st row of silver sponsors */}
-          <div className="flex flex-col items-center justify-center lg:mt-8 lg:flex-row">
-            <a href="https://airtech.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/airtech-white.png"
-                alt="Airtech"
-                width={200}
-                height={100}
-              />
-            </a>
-            <a href="https://www.skf.com/us" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/skf-white.png"
-                alt="SKF"
-                width={200}
-                height={100}
-              />
-            </a>
-            <a href="https://www.vi-grade.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/vi-grade-white.png"
-                alt="Vi-Grade"
-                width={200}
-                height={100}
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/@thesantabarbaracarshowchan3555"
-              target="_blank"
-            >
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/sb-car-show-white.png"
-                alt="Santa Barbara Car Show Channel"
-                width={215}
-                height={100}
-              />
-            </a>
-          </div>
-          {/* 2nd row of silver sponsors */}
-          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
-            <a
-              href="https://www.haascnc.com/content/ghf/en/home.html"
-              target="_blank"
-            >
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/haasfoundation-logo-white.png"
-                alt="Gene Haas Founation"
-                width={140}
-                height={100}
-              />
-            </a>
-            <a href="https://formlabs.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/formlabs-wordmark-white.png"
-                alt="Formlabs"
-                width={215}
-                height={100}
-              />
-            </a>
-            <a href="https://hakkousa.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/hakko-wordmark-white.png"
-                alt="Hakko"
-                width={215}
-                height={100}
-              />
-            </a>
-            <a href="https://www.triadmagnetics.com/about-us/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/triad-magnetics-white.png"
-                alt="Triad Magnetics"
-                width={215}
-                height={100}
-              />
-            </a>
-          </div>
-          {/* 3rd row of silver sponsors */}
-          <div className="flex flex-col items-center justify-center gap-10 lg:mt-4 lg:flex-row">
-            <a href="https://appliedracingdynamics.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/applied-racing-dynamics-white.png"
-                alt="Applied Racing Dynamics"
-                width={205}
-                height={150}
-              />
-            </a>
-            <a href="https://sbifin.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/santa-barbara-industrial-finishing-logo-white.png"
-                alt="Santa Barbara Industrial Finishing"
-                width={230}
-                height={170}
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/bk1031/" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2026/silver/bk1031_wordmark.svg"
-                alt="BK1031"
-                width={230}
-                height={170}
-              />
-            </a>
-            <a
-              href="https://www.communityrelations.ucsb.edu/ucsb-affiliates"
-              target="_blank"
-            >
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2027/silver/UCSB-Affiliates-logo-white.png"
-                alt="UCSB Affiliates"
-                width={210}
-                height={155}
-              />
-            </a>
-          </div>
-          {/* 4th row of silver sponsors */}
-          <div className="flex flex-col items-center justify-center gap-10 lg:mt-4 lg:flex-row">
-            <a href="https://winecountrymotorsports.com" target="_blank">
-              <Image
-                className="m-4 lg:m-6"
-                src="/sponsor/2027/silver/wine-country-motor-sports-logo-white.png"
-                alt="Wine Country Motor Sports"
-                width={250}
-                height={200}
-              />
-            </a>
-          </div>
-          {/* bronze sponsors */}
+          <SponsorLogoGrid
+            sponsors={silverSponsors}
+            logoClassName="m-4 lg:m-6"
+          />
           <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
             BRONZE &nbsp;SPONSORS
           </h2>
-          <div className="flex flex-col items-center justify-center lg:mt-8 lg:flex-row">
-            <a href="https://allindustrial.com" target="_blank">
-              <Image
-                className="m-4 pr-8 lg:mr-0"
-                src="/sponsor/2026/bronze/all-industrial-tool-supply-white.png"
-                alt="All Industrial Tool Supply"
-                width={200}
-                height={100}
-              />
-            </a>
-            <a href="https://www.coroflex-cable.com/en/" target="_blank">
-              <Image
-                className="m-4 lg:ml-0"
-                src="/sponsor/2026/bronze/coroflex-white.png"
-                alt="Coroflex"
-                width={200}
-                height={100}
-              />
-            </a>
-            <a href="https://www.celsius.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/celsius-logo-white.png"
-                alt="Celsius"
-                width={80}
-                height={100}
-              />
-            </a>
-            <a href="https://www.redbull.com/us-en" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/redbull-logo-white.png"
-                alt="Red Bull"
-                width={115}
-                height={100}
-              />
-            </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
-            <a href="https://semiq.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/semiq-white.png"
-                alt="SemiQ"
-                width={200}
-                height={125}
-              />
-            </a>
-            <a href="https://www.digikey.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/digikey-white.png"
-                alt="Digikey"
-                width={150}
-                height={125}
-              />
-            </a>
-            <a href="https://inertialsense.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/inertialsense-white.png"
-                alt="Inertial Sense"
-                width={200}
-                height={125}
-              />
-            </a>
-            <a href="https://www.tapplastics.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/tapplastics-white.png"
-                alt="Tap Plastics"
-                width={200}
-                height={125}
-              />
-            </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:mt-4 lg:flex-row">
-            <a href="https://www.matterhackers.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2027/bronze/MatterHackers_Logo_White-cropped.png"
-                alt="MatterHackers"
-                width={160}
-                height={160}
-              />
-            </a>
-            <a href="https://www.tglobal-usa.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/tglobal-white.png"
-                alt="T-Global USA"
-                width={180}
-                height={125}
-              />
-            </a>
-            <a href="https://vantage-dc.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/vantage-dc-logo.png"
-                alt="Vantage Data Centers"
-                width={140}
-                height={140}
-              />
-            </a>
-            <a href="https://californiafilament.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/CaliforniaFilament-white.png"
-                alt="California Filament"
-                width={165}
-                height={165}
-              />
-            </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:mt-0 lg:flex-row">
-            <a href="https://www.sunlu.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/sunlu-white.png"
-                alt="Sunlu"
-                width={150}
-                height={100}
-              />
-            </a>
-            <a href="https://polymaker.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/polymaker-white.png"
-                alt="Polymaker"
-                width={170}
-                height={130}
-              />
-            </a>
-            <a href="https://www.totalboat.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2026/bronze/totalboat-white.png"
-                alt="totalboat"
-                width={150}
-                height={110}
-              />
-            </a>
-            <a href="https://www.oshcut.com/" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2027/bronze/OSH-Cut-white.png"
-                alt="OSH Cut"
-                width={150}
-                height={150}
-              />
-            </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:mt-0 lg:flex-row">
-            <a href="https://www.linkedin.com/in/jeffduong29" target="_blank">
-              <Image
-                className="m-4 lg:m-10"
-                src="/sponsor/2027/bronze/jiffy-white.png"
-                alt="Jiffy"
-                width={160}
-                height={65}
-              />
-            </a>
-          </div>
+          <SponsorLogoGrid
+            sponsors={bronzeSponsors}
+            logoClassName="m-4 lg:m-10"
+          />
+          <h2 className="mb-8 mt-16 whitespace-pre text-center lg:mt-32">
+            FRIENDS &nbsp;AND &nbsp;FAMILY
+          </h2>
+          <SponsorLogoGrid
+            sponsors={friendsAndFamilySponsors}
+            logoClassName="m-4 lg:m-10"
+          />
         </div>
       </div>
       <div className="bg-black bg-opacity-70 p-8">
